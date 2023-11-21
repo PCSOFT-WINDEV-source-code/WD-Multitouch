@@ -1,0 +1,541 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Movements_WMGESTURE
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Movements_WMGESTURE
+ identifier : 0x286e7149098c7c36
+ internal_properties : CAAAAAgAAACrzJNYuEMKpxkppWi7w9iN3ubhNWsgMsJcnJMRTzjdiMyUel6g3Fj9t9OMsx8Adc/lBMV6nPiHRGPMT751wI2TddKcVZUmdivK9nxY7XDdXJb6w85fMghjDpaG9RqO7v0Zt4QlgZlkdXRYBvo38pveAN7uQ6K8PxlXIzWDaqxOzYex5iiL43d+JDBHwhxZ0IbcG4FZZ7+v8RdHQVhbtHK7aoM9NnfLDkcIZ4CPQsqGoaoJ+Q+0xUh7ZUaObCrmklAzmVKPRAftIcYdwufjbvTAFkb4Hy53i9OaUUptVInc28xHYPCYSrnXrECtdgle08b5vvBHG2EQUCRpoF6Tx2ztepo5l38I+njvnAYRS32wN9WvCGm7IVTCkEZ3qZ4axsAmBkgkBaaV+5+rX+WO7Uic9Gw5t1wbOWksNTKrObblwmALVBYQskiXdoAQ77wKoRminqKaTnw1xuNVhBfswcivgi7u3kLqaJO0EL4aUXP3tKrOPLLXLio9arvX0gkTLOjgaJAiwjvf+IVBs5i4fL2li8vdpRN+e8iRmpBPXqJ5t2wybX7DT8Y1o4pgWsfXKlxHoajUlzoFgOvatjlwv/r+FDLC2gTT84yexsvWseJJQQaixPZjEBFS4cNjf4ZIGcCP4mrHKjviQFA1wqU+1Qgf8+dmFlNvt7d+xqvVLoHCzpJXUuVioVt3vS17oChVxvhFQhWcHzTp4vudUHFyWQLDrcWuwgpzXXyfSHJLcwTJMR2Cxoe2fUIuJKxZqvoMq/mxCykiKRuiBgmKh3xROrmZQiL2MBA+F8o/EXZ0AK2Ge/80zvNg8WbpO6dS/+IrSHg1IPlQzEi2xEVG2fu+cxgMk3ptbnMbttJbHNcbbUpNzxcR0cfW0tm1EldnDAwHiI7QDMDfvzhixSY6EvObhoY3AyNzzhCjJQ3glYwUMbWUxpcjmQph+7qI8aKq
+ properties :
+  width : 1020
+  height : 772
+  widthClient : 1018
+  heightClient : 740
+ controls :
+  -
+    name : IMG_DRAWING
+    identifier : 0x286e7149098d7c36
+    internal_properties : CAAAAAgAAADi0HezI2pX1+pnW9ugWbn6BPA2vVxOZY3z/JN4UbSpzmvIb+AAWMaUb4ytyIF7hUFUF8lg3sUECpgzMmrA8Me6VY9BN80KlyN7tHhZPQCS1bfjfa7YvwrHNh+8xeykSZ3v4OM92PPd6c5xyPMRp4YQ07CDOwEoGKpJTTd5Wz6+s6LYS/Cb+enGQab+Bg16Ep9iHPYeGpHJYyX0vRLP9mEt2cucrKtaR1ywg+qErsdCnyMdJM0z1/RRzl7sV4rQGSB52gjeCw7Ojv4tsALOMP8wdBNGsIKm7VGEcPt6Va2w4ZsEixIKUFEJDKi4RS77zf7x9a3/dBxClwy/dey5Fb/GVOJIi9te7OhYLMXIgoUUR1YXKmqHBVxaqIEMtmuULuv+w/B92crhaw2ZQXPcaD9UJzbaQxKS84b5CSNawsUmIuOYRquWBtz+dLZK0qrlrvBLt4jCvHBoaL9QhqAVefyuzyXfGYl3tnhHnc7L3vBamLCpDXnB46g+AOg=
+    properties :
+     width : 1018
+     height : 742
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_INFO
+    identifier : 0x286e7149098e7c36
+    internal_properties : CAAAAAgAAADg8Gt8GVC2kC69r0H9NJZUj7RIDqthx/CwMLpHlJ5Xig8Xx2QwPAB5xLw0P+7jYIKO8VWuemXNayTd5qCJzcsQvpU3ofxEj58mqyrfRT1B0dFr93KN9nOEymtRvOXyIt7jJBOcqm+o3K04li4DTDPixMS9cCEmxJjN/rFohddtbzEMYIWqcsbRrIuYITyajd8tX5hJWuVeXCV6UMKxtODNVFmkkbginVxTZLNvhNKmbzz7hrApT3uzBl3RsOZP2iMScXkfDMChXdELsP0wim1De1m1waIxdwEZHUJ3SUCfw+wC0GpjrafAsLSwnKZMODlsN5HrVNP2SwUqETNMNgMvurIkxRLKgevAf53P/Rw/wWNoAI6jRHfaayme46mqZLmyoZSJTeQOxpirQG0Des40UJdIrppixtS9IcyX07NauPXKp11z3cgHAgc+qfw4RJ5vJRvGZiIxWXYNZjwVaY/LDpWrYre32ohQkmNWQs7FpaPS9B78hAXTdFs8pw==
+    properties :
+     x : 6
+     y : 6
+     width : 1006
+     height : 85
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_INFO
+    identifier : 0x286e7149098f7c36
+    internal_properties : CAAAAAgAAAD5IcPR3ujHf7pLlcFfZOPRTdkOhXFx0MJ0kSjqlkCgxgjXSbNehN65pnzsf/8QhxUhmeRq76/KmvMputMBoBj6ABwEkgArWq869+hyI+dixlxloR8zinAwlkJiyw+GjfgwKVGyiY/T4WlY0PaHbLoJwzWVz6Us4N9pkSxLHHpPYmRnFAYbIDfnahMvyZDjwLYVrns6YQjebbiuUcPMyic1sY05MRa0zEQgWawlbNDD6YL2X8/gqZvukJbf8ginlO5w2DAbQHt6Er3tgwEKgvEULy0v/8tO8P/KzEh+an1yGEWQNAHPZt2dcj2boiDAI+PwQpn6O3Fv/faB4pJzK9JWaHd+s0gZpkqTY+mpkBHy9alJoqAeR6V+bOgRHAWxkG/3yqvIuV8rPkmCqU8yPJDHWAv0oPn1uxLUgXB3b3lbdFU4QhXMO/oRRvFroxcY47SB5PtLTOqBLR8QMcLkhC16LaVd+kEjLD1mEu+o5NOS0SDKXNA4AwhydsR2qOQYEw9gn6946NI0P2/61pjI4m6a2WQGu+mhxFEYRKTyqAeBxtOjSrduDGo/vaSAd59zimX82gqN2aUYEiCJ7boyLpZV
+    properties :
+     x : 732
+     y : 370
+     width : 280
+     height : 364
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x2b43698dde98e63b
+  internal_properties : CAAAAAgAAAAjoO+VYAXYh2SYpTvD7AgXCHEHRjuTd5K/qNR3zUpM1aIlQYejrbtK76/LWLozAhgdmcRuoxDXe7vi3lf8PoZYYzNtPYlgCK9AarNrSCSSPpGDp+KLIikSwO2L+lCfwFobS8WKQZu2noN9WV5ipxuLKjTaOvfojbcmu1i6FPrF8FEPa+oQBHdRyMYNLYyLF/nTGn2y7NBixG5dC7y2wsO4aXA1CKpzZUca8sBJUrSr9FqhTJMK37pOOZqMTeCIo+trbOMI1osTdzjD26auXrzETrP8OxsAt+HgvahLwDb4kRpR6lQOjBIj
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAWGYroA/fNRx2cXL61u1ve4mpNbEDcY2Y+hEgXEl9Z6/V259X6hOvv/TGm/ZBlx9I8WKyX9HYxpamY8udS/qN2N/05R0bf0WcHu1NnMB9r7HARUWDSUdC1nt9X
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABLLRJphcdTNg9MHxpED/BJg90MnOiNYxvPsjMgCNXPT9FcbrjzENFNWIPDlMjmnX7XujpQYNRShB4dSL2wAI6krVH0ezV8CFhkTuLcZqKoestJuJPqO3YHQIjthKdR59TVlWcRkphukkSWt+w=
+     code : |1-
+      
+      gnUllArguments	is int
+      gFirstPoint	is POINT
+      gSecondPoint	is POINT
+      gnCenterX		is int
+      gnCenterY		is int
+      grZoomVal		is real
+      grRotationAngle	is real
+      gnWidth		is int
+      gnHeight		is int
+      
+      // Manage the events on the image control
+      Event(OnGestureConfig, 	MyWindow..Name, WM_GESTURENOTIFY)
+      Event(OnGesture, 		MyWindow..Name, WM_GESTURE)
+      
+      // Checks the capacity
+      IF NOT SysTouchAvailable() _OR_ SysTouchNbContactPoints() < 2 THEN	
+      	Error("The Windows Touch feature is not available on your computer.", "", "A multi-point tactile screen or a multi-point device is required to enable the Windows Touch features.")
+      	Close()
+      END
+   -
+     code : |1-
+      
+      // Drawing
+      dChangeMode(drawAntiAliasing)
+      
+      // Initializes the data
+      gnCenterX  = IMG_DRAWING..Width / 2 - 120
+      gnCenterY  = IMG_DRAWING..Height / 2
+      gnWidth  = IMG_DRAWING..Width / 2
+      gnHeight  = IMG_DRAWING..Height / 2
+      grZoomVal  = 1.0
+      grRotationAngle = 0.0
+      
+      FigureDrawing()
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : OnGestureConfig
+     procedure_id : 1760469062789135414
+     type_code : 14
+     code : |1-
+      // Summary: WM_GESTURENOTIFY event
+      // Syntax:
+      //[ <Result> = ] OnGestureConfig ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	variant: // 	None
+      //
+      PROCEDURE OnGestureConfig()
+      
+      stConfig is GESTURECONFIG
+      stNotify is GESTURENOTIFYSTRUCT
+      nHandle  is system int
+      
+      // Retrieves the data
+      Transfer(&stNotify, _EVE.lParam, Dimension(stNotify))
+      
+      // Retrieves the handle for which the movements must be configured
+      nHandle = stNotify.hwndTarget
+      
+      // Accept all the movements
+      stConfig = [0, GC_ALLGESTURES, 0]
+      
+      // Applies the configuration
+      SetGestureConfig(nHandle, 0, 1, &stConfig, sizeofGESTURECONFIG)
+      
+      // Make it follow to the initial process
+      RESULT API(USER32, "DefWindowProcA", _EVE.hWnd, _EVE.wMessage, _EVE.wParam, _EVE.lParam)
+     type : 458752
+   -
+     name : OnGesture
+     procedure_id : 1760469062789200950
+     type_code : 14
+     code : |1+
+      // Summary: WM_GESTURE event
+      // Syntax:
+      //[ <Result> = ] OnGesture ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	Undefined type: 
+      //
+      PROCEDURE OnGesture()
+      
+      nHandle 		is system int = _EVE.lParam
+      stGesture 		is GESTUREINFO
+      bSupported			is boolean
+      CenterZoom		is POINT
+      rRatio			is real
+      rAngle			is real
+      
+      // Size of the structure
+      stGesture.cbSize = sizeofGESTUREINFO
+      
+      // Retrieves the information
+      IF GetGestureInfo(nHandle, &stGesture) THEN
+      	
+      	EndAutomatedProcedure(DisplayInfo)
+      	
+      	// Hides the information
+      	IF STC_INFO..Visible THEN
+      		ControlInvisible(GR_INFO, animFadeIn)
+      	END
+      	
+      	// According to the type of movement received
+      	SWITCH stGesture.dwID
+      	
+      		// Windows has detected a zoom movement
+      		CASE GID_ZOOM		
+      			
+      			bSupported = True
+      			
+      			// If the movement starts
+      			IF stGesture.dwFlags = GF_BEGIN THEN
+      				
+      				// Stores the ullArguments member
+      				gnUllArguments 	= LODWORD(stGesture.ullArguments)
+      				
+      				// Keeps the point
+      				gFirstPoint.x	= stGesture.ptsLocation.x
+      				gFirstPoint.y	= stGesture.ptsLocation.y
+      				
+      				// Convert the screen coordinates
+      				SysScreenToClient(gFirstPoint.x, gFirstPoint.y, IMG_DRAWING)
+      				
+      			ELSE
+      				
+      				// Stores the second point
+      				gSecondPoint.x = stGesture.ptsLocation.x
+      				gSecondPoint.y = stGesture.ptsLocation.y
+      				
+      				// Convert the screen coordinates
+      				SysScreenToClient(gSecondPoint.x, gSecondPoint.y, IMG_DRAWING)
+      				
+      				// Calculates the center of the zoom
+      				CenterZoom.x = (gFirstPoint.x + gSecondPoint.x) / 2
+      				CenterZoom.y = (gFirstPoint.y - gSecondPoint.y) / 2
+      				
+      				// Calculates the zoom factor
+      				rRatio = LODWORD(stGesture.ullArguments) / gnUllArguments
+      				
+      				// Calculates the zoom
+      				PerformZoom(CenterZoom, rRatio)
+      				
+      				// Stores the point and ullArguments
+      				gFirstPoint  = gSecondPoint
+      				gnUllArguments = LODWORD(stGesture.ullArguments)
+      				
+      				// Drawing of the shape
+      				FigureDrawing()
+      			END
+      			
+      		// Windows has detected a move movement
+      		CASE GID_PAN	
+      			
+      			// The ullArguments member contains the distance between the two points
+      			// The ptsLocation member contains the current center between the two points
+      			
+      			bSupported = True
+      			
+      			// If the movement starts
+      			IF stGesture.dwFlags = GF_BEGIN THEN
+      				
+      				// Keeps the point
+      				gFirstPoint.x	= stGesture.ptsLocation.x
+      				gFirstPoint.y	= stGesture.ptsLocation.y
+      				
+      				// Convert the screen coordinates
+      				SysScreenToClient(gFirstPoint.x, gFirstPoint.y, IMG_DRAWING)			
+      			ELSE
+      				
+      				// Stores the second point
+      				gSecondPoint.x = stGesture.ptsLocation.x
+      				gSecondPoint.y = stGesture.ptsLocation.y
+      				
+      				// Convert the screen coordinates
+      				SysScreenToClient(gSecondPoint.x, gSecondPoint.y, IMG_DRAWING)
+      				
+      				// The value of the move is the difference between the two points
+      				PerformMove((gSecondPoint.x - gFirstPoint.x), (gSecondPoint.y - gFirstPoint.y))
+      				
+      				// Keeps the value
+      				gFirstPoint  = gSecondPoint
+      				
+      				// Drawing of the shape
+      				FigureDrawing()
+      			END
+      			
+      			
+      		// Windows has detected a rotation
+      		CASE GID_ROTATE			
+      			
+      			bSupported = True				
+      			
+      			// If the movement starts
+      			IF stGesture.dwFlags = GF_BEGIN THEN
+      				
+      				// Reset gnUllArguments
+      				gnUllArguments = 0
+      			ELSE
+      				
+      				// Keeps the point
+      				gFirstPoint.x	= stGesture.ptsLocation.x
+      				gFirstPoint.y	= stGesture.ptsLocation.y
+      				
+      				// Convert the screen coordinates
+      				SysScreenToClient(gFirstPoint.x, gFirstPoint.y, IMG_DRAWING)
+      				
+      				rAngle = GID_ROTATE_ANGLE_FROM_ARGUMENT(LODWORD(stGesture.ullArguments)) - GID_ROTATE_ANGLE_FROM_ARGUMENT(gnUllArguments)
+      				
+      				// Performs the rotation
+      				PerformRotation(gFirstPoint, rAngle)		
+      				
+      				// Stores ullArguments
+      				gnUllArguments = LODWORD(stGesture.ullArguments)	
+      				
+      				// Drawing of the shape
+      				FigureDrawing()
+      			END							
+      			
+      	END
+      END
+      
+      // For the other movements, we must return the result of the call to DefWindowProc
+      IF bSupported = False THEN		
+      	RESULT API(USER32, "DefWindowProcA", _EVE.hWnd, _EVE.wMessage, _EVE.wParam, _EVE.lParam)
+      END
+      
+      // For the other cases, we must free the handle
+      CloseGestureInfoHandle(nHandle)
+      
+      RESULT True
+      
+      END:
+      // Refreshes
+      DisplayInfo()
+     type : 458752
+   -
+     name : PerformZoom
+     internal_properties : CAAAAAgAAAC5kHglDSfQd4JOD7nCED1fAuM8sIA/0r/foevBF5flskLXnQJt1NtEorreWxFEMSTL7yn3DKVavzCZjaY/xxd0BWndRcTTbXPZAs6TTbtCaYOwwccJo9SNGX6II/Ag/61L1fyTqobbTsZgXi6/fNvVEE58dGazuL3KFykczfs2NQ==
+     procedure_id : 1760469062789266486
+     type_code : 14
+     code : |1-
+      // Summary: Calculates the effects of the zoom
+      // Syntax:
+      //PerformZoom (<stCenter> is POINT, <rZoom> is real)
+      //
+      // Parameters:
+      //	stCenter (POINT): Center of the zoom
+      //	rZoom (real): Zoom factor
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PerformZoom(LOCAL stCenter is POINT, LOCAL rZoom is real)
+      
+      // Repositions the center
+      gnCenterX = stCenter.x * (1.0 - rZoom) + gnCenterX * rZoom
+      gnCenterY = stCenter.y * (1.0 - rZoom) + gnCenterY * rZoom
+      
+      // Cumulates the zoom
+      grZoomVal = grZoomVal * rZoom
+     type : 458752
+   -
+     name : PerformMove
+     internal_properties : CAAAAAgAAACio311E9RsDd6uL/j3TdNu6JXaZTqXYehFf9pkyPUgz+b/VYl/+yno8RKb2UBkBgEUL6EgejwbDlkB/oBVFLMmY/FZbk402diBymCb6QQJnk3CgVirJrkqGPJ3cEn86TB9ktBTSG34LVquhh15
+     procedure_id : 1760469062789332022
+     type_code : 14
+     code : |1-
+      // Summary: Calculates the effects of the move
+      // Syntax:
+      //PerformMove (<nDeltaX> is int, <nDeltaY> is int)
+      //
+      // Parameters:
+      //	nDeltaX (integer): Horizontal distance
+      //	nDeltaY (integer): Vertical distance
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PerformMove(LOCAL nDeltaX is int, LOCAL nDeltaY is int)
+      
+      // Cumulates the move
+      gnCenterX += nDeltaX
+      gnCenterY += nDeltaY
+     type : 458752
+   -
+     name : PerformRotation
+     internal_properties : CAAAAAgAAABCA12Vc97aLfb2t7Af9dv2OOUqZVoHuVA1z1rEuBWgD77X7bGn4ykYOWqz4cicrsmk/zEQCtwfIr0tkmwpgL8yV43FalrYjYx1dtTXbSBlarHOjZRXWu0ubI67LG34hUzRLrzvlNHGjfoOZn2Z
+     procedure_id : 1760469062789397558
+     type_code : 14
+     code : |1+
+      // Summary: Performs a rotation on the parallelogram
+      // Syntax:
+      //PerformRotation (<stCenter> is POINT, <rAngle> is real)
+      //
+      // Parameters:
+      //	stCenter (POINT): Rotation center
+      //	rAngle (real): Rotation angle
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PerformRotation(LOCAL stCenter is POINT, LOCAL rAngle is real)
+      
+      // Calculates the rotation
+      rCosinus is real = Cos(rAngle * 180 / ValPI)
+      rSinus is real = Sin(rAngle * 180 / ValPI)
+      
+      // Calculates the difference of center
+      nDx  is int = gnCenterX - stCenter.x
+      nDy  is int = gnCenterY - stCenter.y
+      
+      // Applies the rotation
+      gnCenterX = stCenter.x + Round((nDx * rCosinus + nDy * rSinus))
+      gnCenterY = stCenter.y + Round((nDy * rCosinus - nDx * rSinus))
+      
+      // Cumulates the rotation
+      grRotationAngle += rAngle
+     type : 458752
+   -
+     name : FigureDrawing
+     procedure_id : 1760469062789463094
+     type_code : 14
+     code : |1-
+      // Summary: Drawing the figure
+      // Syntax:
+      // FigureDrawing ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE FigureDrawing()
+      
+      arrPolygon is array <agrandissement=N> of POINT
+      rCosinus		is real
+      rSinus		is real
+      nDx			is int
+      nDy			is int
+      nAddX		is int
+      nAddY		is int
+      
+      // Defines the coordinates of the polygon
+      arrPolygon[1].x = -(grZoomVal * gnWidth / 2)
+      arrPolygon[1].y = -(grZoomVal * gnHeight / 2)
+      
+      arrPolygon[2].x = (grZoomVal * gnWidth / 2)
+      arrPolygon[2].y = arrPolygon[1].y
+      
+      arrPolygon[3].x = arrPolygon[2].x
+      arrPolygon[3].y = (grZoomVal * gnHeight / 2)
+      
+      arrPolygon[4].x = arrPolygon[1].x
+      arrPolygon[4].y = arrPolygon[3].y
+      
+      // Calculates the rotation
+      rCosinus = Cos(grRotationAngle * 180 / ValPI)	
+      rSinus = Sin(grRotationAngle * 180 / ValPI)	
+      
+      FOR i = 1 _TO_ 4
+      	
+      	nDx = arrPolygon[i].x
+      	nDy = arrPolygon[i].y
+      	
+      	// Applies the rotation
+      	arrPolygon[i].x = (nDx * rCosinus + nDy * rSinus) + gnCenterX
+      	arrPolygon[i].y = (nDy * rCosinus - nDx * rSinus) + gnCenterY
+      	
+      END	
+      
+      // Limit on the left
+      IF Min(arrPolygon[1].x, arrPolygon[2].x, arrPolygon[3].x, arrPolygon[4].x) <= 0 THEN
+      	nAddX = Abs(Min(arrPolygon[1].x, arrPolygon[2].x, arrPolygon[3].x, arrPolygon[4].x))
+      	arrPolygon[1].x += nAddX
+      	arrPolygon[2].x += nAddX
+      	arrPolygon[3].x += nAddX
+      	arrPolygon[4].x += nAddX
+      END
+      
+      // Limit on the right
+      IF Max(arrPolygon[1].x, arrPolygon[2].x, arrPolygon[3].x, arrPolygon[4].x) >= IMG_DRAWING..Width THEN
+      	nAddX = IMG_DRAWING..Width-Abs(Max(arrPolygon[1].x, arrPolygon[2].x, arrPolygon[3].x, arrPolygon[4].x))
+      	arrPolygon[1].x += nAddX
+      	arrPolygon[2].x += nAddX
+      	arrPolygon[3].x += nAddX
+      	arrPolygon[4].x += nAddX
+      END
+      
+      // Limit at the top
+      IF Min(arrPolygon[1].y, arrPolygon[2].y, arrPolygon[3].y, arrPolygon[4].y) <= 0 THEN
+      	nAddY = Abs(Min(arrPolygon[1].y, arrPolygon[2].y, arrPolygon[3].y, arrPolygon[4].y))
+      	arrPolygon[1].y += nAddY
+      	arrPolygon[2].y += nAddY
+      	arrPolygon[3].y += nAddY
+      	arrPolygon[4].y += nAddY
+      END
+      
+      // Limit at the bottom
+      IF Max(arrPolygon[1].y, arrPolygon[2].y, arrPolygon[3].y, arrPolygon[4].y) >= IMG_DRAWING..Height THEN
+      	nAddY = IMG_DRAWING..Height-Abs(Max(arrPolygon[1].y, arrPolygon[2].y, arrPolygon[3].y, arrPolygon[4].y))
+      	arrPolygon[1].y += nAddY
+      	arrPolygon[2].y += nAddY
+      	arrPolygon[3].y += nAddY
+      	arrPolygon[4].y += nAddY
+      END
+      
+      // Refreshes the display
+      dStartDrawing(IMG_DRAWING, dErase)
+      
+      // Configure the drawing
+      dPen(0x194148, 0, 3)
+      dBackGround(0xa9c7cc)
+      
+      // Draw the polygon
+      dPolygon(4, arrPolygon[1].x, arrPolygon[1].y, arrPolygon[2].x, arrPolygon[2].y, arrPolygon[3].x, arrPolygon[3].y, arrPolygon[4].x, arrPolygon[4].y)
+      
+      
+      dPen(0x194148, 0, 1)
+      
+      dLine(arrPolygon[1].x, arrPolygon[1].y, arrPolygon[3].x, arrPolygon[3].y)
+      dLine(arrPolygon[2].x, arrPolygon[2].y, arrPolygon[4].x, arrPolygon[4].y)
+     type : 458752
+   -
+     name : DisplayInfo
+     internal_properties : CAAAAAgAAADXvCpgHa19JNQX+4CLq5D0+SOK/KKLT1Uq9rbpBiUI4KEgVvY7tSLEc+tRoxbkq3/1lBmH+hdVToLZh37E3+okAZ6ojX2iO9/ZNWLJE/2XXFcGqiwKmZSJ0ofGm7dE5UBc+2mJwMtwpf/C3FJsvDJGM+FTi2tdWDDfzjrNnYtY2w==
+     procedure_id : 1760469062789528630
+     type_code : 14
+     code : |1-
+      // Summary: Displays the information caption
+      //
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code, with a time-out set to 1 second
+      // 
+      
+      PROCEDURE DisplayInfo()
+      
+      ControlVisible(GR_INFO, animFadeIn)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b277947005c051a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

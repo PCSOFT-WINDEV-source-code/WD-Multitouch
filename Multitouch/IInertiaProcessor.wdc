@@ -1,0 +1,693 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IInertiaProcessor
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1b227c960063402d
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAB9t2iip+B2coUGs8xoE0bvLSeGUB4bP1+tXMfq3AEpwYfqqNw9JmUdtoVD2mhWy+SNuEjIhl47/5tqUYIzPTkZEHQtWDR17V/9Z9NpUScT324k/Tx96LcmLVVuWRpO/uX0LJB++RQHSQ6gQRo=
+     code : |1-
+      // IInertiaProcessor class
+      // =======================
+      // (Implements the IInertiaProcessor COM interface)
+      // 
+      // Manages the calculations regarding the movements of objects for Windows Touch
+      //
+      IInertiaProcessor is Class
+      	
+      PRIVATE
+      	_this_												is a COMObject		// COM object loaded
+      	
+      	CONSTANT
+      		
+      		// Methods of the interface
+      		
+      		// -> IUnknown
+      		IInertiaProcessor_QueryInterface					= 0		
+      		IInertiaProcessor_AddRef							= 1
+      		IInertiaProcessor_Release							= 2
+      		
+      		// -> IInertieProcessor: Properties
+      		IInertiaProcessor_get_InitialOriginX				= 3
+      		IInertiaProcessor_put_InitialOriginX				= 4
+      		IInertiaProcessor_get_InitialOriginY				= 5
+      		IInertiaProcessor_put_InitialOriginY				= 6
+      		IInertiaProcessor_get_InitialVelocityX				= 7
+      		IInertiaProcessor_put_InitialVelocityX				= 8 
+      		IInertiaProcessor_get_InitialVelocityY				= 9
+      		IInertiaProcessor_put_InitialVelocityY				= 10
+      		IInertiaProcessor_get_InitialAngularVelocity		= 11
+      		IInertiaProcessor_put_InitialAngularVelocity		= 12
+      		IInertiaProcessor_get_InitialExpansionVelocity		= 13
+      		IInertiaProcessor_put_InitialExpansionVelocity		= 14
+      		IInertiaProcessor_get_InitialRadius					= 15
+      		IInertiaProcessor_put_InitialRadius					= 16
+      		IInertiaProcessor_get_BoundaryLeft					= 17
+      		IInertiaProcessor_put_BoundaryLeft					= 18
+      		IInertiaProcessor_get_BoundaryTop					= 19
+      		IInertiaProcessor_put_BoundaryTop					= 20
+      		IInertiaProcessor_get_BoundaryRight					= 21
+      		IInertiaProcessor_put_BoundaryRight					= 22
+      		IInertiaProcessor_get_BoundaryBottom				= 23
+      		IInertiaProcessor_put_BoundaryBottom				= 24
+      		IInertiaProcessor_get_ElasticMarginLeft				= 25
+      		IInertiaProcessor_put_ElasticMarginLeft				= 26
+      		IInertiaProcessor_get_ElasticMarginTop				= 27
+      		IInertiaProcessor_put_ElasticMarginTop				= 28
+      		IInertiaProcessor_get_ElasticMarginRight			= 29
+      		IInertiaProcessor_put_ElasticMarginRight			= 30
+      		IInertiaProcessor_get_ElasticMarginBottom			= 31
+      		IInertiaProcessor_put_ElasticMarginBottom			= 32
+      		IInertiaProcessor_get_DesiredDisplacement			= 33
+      		IInertiaProcessor_put_DesiredDisplacement			= 34
+      		IInertiaProcessor_get_DesiredRotation				= 35
+      		IInertiaProcessor_put_DesiredRotation				= 36
+      		IInertiaProcessor_get_DesiredExpansion				= 37
+      		IInertiaProcessor_put_DesiredExpansion				= 38
+      		IInertiaProcessor_get_DesiredDeceleration			= 39
+      		IInertiaProcessor_put_DesiredDeceleration			= 40
+      		IInertiaProcessor_get_DesiredAngularDeceleration	= 41
+      		IInertiaProcessor_put_DesiredAngularDeceleration	= 42
+      		IInertiaProcessor_get_DesiredExpansionDeceleration	= 43
+      		IInertiaProcessor_put_DesiredExpansionDeceleration	= 44
+      		IInertiaProcessor_get_InitialTimestamp				= 45
+      		IInertiaProcessor_put_InitialTimestamp				= 46
+      		
+      		// -> IInertieProcessor: Methods
+      		IInertiaProcessor_Reset								= 47
+      		IInertiaProcessor_Process							= 48
+      		IInertiaProcessor_ProcessTime						= 49
+      		IInertiaProcessor_Complete							= 50
+      		IInertiaProcessor_CompleteTime						= 51
+      		
+      	END
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1955262171925725229
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor()
+      
+      WHEN EXCEPTION IN
+      	
+      	// Creates an instance of IManipulationProcessor
+      	_this_ = COMCreateInstance(CLSID_InertiaProcessor, IID_IInertiaProcessor)
+      DO
+      	
+      	// The instance cannot be created
+      	delete object
+      END	
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1955262171925790765
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : AddRef
+     procedure_id : 1955264078891387268
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing AddRef
+      PROCEDURE AddRef()
+      RESULT COMCallMethod(_this_, IInertiaProcessor_AddRef)
+     type : 458752
+   -
+     name : QueryInterface
+     procedure_id : 1955264078891452882
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing QueryInterface
+      PROCEDURE QueryInterface(LOCAL riid is system int, LOCAL ppvObject is system int)
+      RESULT COMCallMethod(_this_, IInertiaProcessor_QueryInterface, riid, ppvObject)
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAAAF1QeeguPgu9jlYY6nw6zEtnEdBZTjZ5ZF4FTvNgPflJJ/d4FVfLtknKYjD+E7Ki0PBlqOvZqRJ4pCCZEj0I20mMj2Rb+gCUTf5ECQ2LAXWP1eKyZfF86BDMO5GLWXldxmeSeWfiLUI3Q9+1cAbwDtarSDNcIa5R6krzE6E6W9dL9XIPkda5Xc3onYAFh/HhnE+wf+
+     procedure_id : 1955264078891518465
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing Release
+      PROCEDURE Release()
+      RESULT COMCallMethod(_this_, IInertiaProcessor_Release)
+     type : 458752
+   -
+     name : Reset
+     internal_properties : CAAAAAgAAACjBXVdu6UdJAahnuWq8W/1qm2VLKw6YodJ8yJh3zGTW4CO/tFkAz298p2YDPnyzZsmPwRL6MBQsTAVaqph//Rd2ZqvPSAzQqDjwSut9PUCOhY9yb7v+CdUsAyAK/IpJd1LLOpxUlPTSbcvVN26v877INFkJ2YN+zE+NjdUapov6G/QeUDcyzHGmM/oUPONfyY2j9/G4FEaU5+Cg5B0vXnY2uU996SvcF96/L+rnPlLigV8LS7R3SZRxXmxqnn1Q8pWQsSU/UsAAf5QqH0znhoTT0hpsf+u2Z7iW4H+L4yv+XNoB1A/bhv7FtDBKi/7923MRqV5JnkuWyMs4TAcUcdY/83Luq0hg910ATvEesdT0Wa8p4L9luxUlhjmXa492zgSlNObD3VpAausFjZQK70WAox2upvtNg==
+     procedure_id : 1955267085368735770
+     type_code : 12
+     code : |1-
+      // Summary: Initializes the processor with an initial "timestamp"
+      // Description of input/output parameters of 'Reset':
+      //
+      // Syntax:
+      // [ <Result> = ] Reset ()
+      //
+      // Parameters:
+      //	None
+      //
+      PROCEDURE Reset()
+      RESULT COMCallMethod(_this_, IInertiaProcessor_Reset)
+     type : 458752
+   -
+     name : Process
+     internal_properties : CAAAAAgAAACFb85nWzlG8YUbpN+HrWsDYfdUbDnimQuXBWwEVKML6up4gWxfeRwtGfmISX4iGwqgMJJ0FQDrJbyyJiNYm/l8n7EvVxg/FmcAaiTfs19nZ+3zKX4Q2U3P6F2vmZjAylsGfo/hS8GEOQOF18qz8GP2ZHcloEm/Hx5jx9UjDr6YcqLbkX8rFdOkaLSDByI2hq1bcjqVHWgAysK4KkuAxl/qAgETO9w7qzIWJEd6pHEbjHiM
+     procedure_id : 1955267115433578759
+     type_code : 12
+     code : |1-
+      // Summary: Performs the calculations for a given system "timestamp" and can trigger the Delta or Completed events according to the results.
+      // Description of the input/output parameters of 'Process':
+      //
+      // Syntax:
+      // [ <Result> = ] Process (<bCompleted> is boolean)
+      //
+      // Parameters:
+      //	bCompleted (boolean): Boolean variable that will receive in return the status of the calculation (True if the calculation is completed, False otherwise)
+      //
+      PROCEDURE Process(bCompleted is boolean)
+      RESULT COMCallMethod(_this_, IInertiaProcessor_Process, &bCompleted)
+     type : 458752
+   -
+     name : ProcessTime
+     internal_properties : CAAAAAgAAAAe3rpciuDf4tPfYuaSmcHzCa1bdmj/BRK7vbsJji3nHEfmpawK4NMtJJ/GdBh6g4H9QFcD6eAcs+lf3VITJG1cgdqyH8rE5kybqN9P9T9t7gms8Mdhyu6NYmaaHem+o6na+3LT9vteibxg3JLKaiJgzMDiqnL/c9hQ1oCpF/itmIKExHF8i2bDC3cAPMfVXbqO5RV7+M+wAM0utCsZuv6yZtFd
+     procedure_id : 1955267132613517238
+     type_code : 12
+     code : |1-
+      // Summary: Performs the calculations for a given "timestamp" and can trigger the Delta or Completed events according to the results.
+      // Description of input/output parameters of 'ProcessTime':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessTime (<nTimestamp> is unsigned 4-byte int, <bCompleted> is boolean)
+      //
+      // Parameters:
+      //	nTimestamp (unsigned 4-byte integer): Value of the "timestamp"
+      //	bCompleted (boolean): Boolean variable that will receive in return the status of the calculation (True if the calculation is completed, False otherwise)
+      //
+      PROCEDURE ProcessTime(LOCAL nTimestamp is unsigned int, bCompleted is boolean)
+      RESULT COMCallMethod(_this_, IInertiaProcessor_ProcessTime, nTimestamp, &bCompleted)
+     type : 458752
+   -
+     name : Complete
+     internal_properties : CAAAAAgAAADSKta4jQSOj7wT99fIzS0o3fSp07jE+7BHxVWzZbqOtpAdqun6PrMN8yoLAWwwz/s2zD9NFKgBGGIMmTQM2lj0fiGXtmmWBKXFelnOwVC54q1l9lFbdeizg9sO1bIw6STXqcQmlVL4fvPoTBV/HX2tYL0zPpvam9s1drBI6PNMSjKea5tx5GMxgirJPhYBZjpCeAcFiI269lYji739UeAlEB3R2xQWCJTIrNsmhclckV3kkcDfsJAccf2ZYdLXeuWi1gQs6MzRrRsfGt/7Pn3ufBsqZ2QOrwWnStW+HRSqcTmDfhVJtvdcsUTb8WwaLJROELtDTmYChkvULb5Z+sivfVosX6Ykq+5x7hQ+7ICaMXqv+vDiksxOozHzIdKLGCrG9eKzeyPO8WSpyRA8144dsMjuqWui9HBa
+     procedure_id : 1955267145498488484
+     type_code : 12
+     code : |1-
+      // Summary: Eventually processes the system "timestamp" and triggers the Completed event
+      // Description of input/output parameters of 'Complete':
+      //
+      // Syntax:
+      // [ <Result> = ] Complete ()
+      //
+      // Parameters:
+      //	None
+      //
+      PROCEDURE Complete()
+      RESULT COMCallMethod(_this_, IInertiaProcessor_Complete)
+     type : 458752
+   -
+     name : CompleteTime
+     internal_properties : CAAAAAgAAABUiU9gnnQT5t/LfvIuhR3vTckqJERpoehpkdXpdHtNnN1WnSASXqvPYtME3KI01a1/5HPjDUYc6bcz+0IZWtvE5yKCA14GQvZFSNW3c4Uvcgv/vWxOI4XiQzHfHiJjZGJtHheQS1x1Xm1H7Y8PQzv9Q7e7Q3vsHiUZFWmGPFHayWWvuU4BDKXAYAaZQQwOCsGi8UlXnGOMfGmqEHet9hqeUxsX
+     procedure_id : 1955267166973329520
+     type_code : 12
+     code : |1-
+      // Summary: Eventually processes the given "timestamp" and triggers the Completed event
+      // Description of input/output parameters of 'CompleteTime':
+      //
+      // Syntax:
+      // [ <Result> = ] CompleteTime (<nTimestamp> is unsigned 4-byte int)
+      //
+      // Parameters:
+      //	nTimestamp (unsigned 4-byte integer): Value of the "timestamp"
+      //
+      PROCEDURE CompleteTime(LOCAL nTimestamp is unsigned int)
+      RESULT COMCallMethod(_this_, IInertiaProcessor_CompleteTime, nTimestamp)
+     type : 458752
+  properties :
+   -
+     name : InitialOriginX
+     identifier : 0x1b2281f3006f3535
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialOriginX()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialOriginX, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialOriginX(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialOriginX, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialOriginY
+     identifier : 0x1b2281f700704452
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialOriginY()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialOriginY, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialOriginY(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialOriginY, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialVelocityX
+     identifier : 0x1b2281fb00715321
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialVelocityX()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialVelocityX, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialVelocityX(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialVelocityX, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialVelocityY
+     identifier : 0x1b2281fe00725ee4
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialVelocityY()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialVelocityY, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialVelocityY(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialVelocityY, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialAngularVelocity
+     identifier : 0x1b22820100736b71
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialAngularVelocity()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialAngularVelocity, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialAngularVelocity(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialAngularVelocity, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialExpansionVelocity
+     identifier : 0x1b228205007479f2
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialExpansionVelocity()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialExpansionVelocity, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialExpansionVelocity(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialExpansionVelocity, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialRadius
+     identifier : 0x1b2282080075868f
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialRadius()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialRadius, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialRadius(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialRadius, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : BoundaryLeft
+     identifier : 0x1b22820b007691d5
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE BoundaryLeft()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_BoundaryLeft, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE BoundaryLeft(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_BoundaryLeft, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : BoundaryTop
+     identifier : 0x1b22820e00779e73
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE BoundaryTop()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_BoundaryTop, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE BoundaryTop(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_BoundaryTop, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : BoundaryRight
+     identifier : 0x1b2282120078ad22
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE BoundaryRight()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_BoundaryRight, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE BoundaryRight(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_BoundaryRight, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : BoundaryBottom
+     identifier : 0x1b2282160079bcbc
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE BoundaryBottom()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_BoundaryBottom, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE BoundaryBottom(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_BoundaryBottom, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : ElasticMarginLeft
+     identifier : 0x1b228219007ac7f2
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE ElasticMarginLeft()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_ElasticMarginLeft, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE ElasticMarginLeft(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_ElasticMarginLeft, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : ElasticMarginTop
+     identifier : 0x1b22821c007bd470
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE ElasticMarginTop()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_ElasticMarginTop, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE ElasticMarginTop(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_ElasticMarginTop, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : ElasticMarginRight
+     identifier : 0x1b22821e007cde9e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE ElasticMarginRight()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_ElasticMarginRight, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE ElasticMarginRight(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_ElasticMarginRight, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : ElasticMarginBottom
+     identifier : 0x1b228222007debf6
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE ElasticMarginBottom()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_ElasticMarginBottom, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE ElasticMarginBottom(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_ElasticMarginBottom, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredDisplacement
+     identifier : 0x1b228225007ef816
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredDisplacement()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredDisplacement, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredDisplacement(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredDisplacement, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredRotation
+     identifier : 0x1b228228007f04d3
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredRotation()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredRotation, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredRotation(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredRotation, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredExpansion
+     identifier : 0x1b22822c0080142e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredExpansion()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredExpansion, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredExpansion(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredExpansion, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredDeceleration
+     identifier : 0x1b22822f00811f84
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredDeceleration()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredDeceleration, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredDeceleration(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredDeceleration, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredAngularDeceleration
+     identifier : 0x1b22823200822bf2
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredAngularDeceleration()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredAngularDeceleration, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredAngularDeceleration(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredAngularDeceleration, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : DesiredExpansionDeceleration
+     identifier : 0x1b228236008338fd
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE DesiredExpansionDeceleration()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IInertiaProcessor_get_DesiredExpansionDeceleration, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE DesiredExpansionDeceleration(rValue is 4-byte real)
+         COMCallMethod(_this_, IInertiaProcessor_put_DesiredExpansionDeceleration, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : InitialTimestamp
+     identifier : 0x1b228239008445c9
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE InitialTimestamp()
+         
+         nValue is unsigned int
+         COMCallMethod(_this_, IInertiaProcessor_get_InitialTimestamp, &nValue)
+         
+         RESULT nValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE InitialTimestamp(nValue is unsigned int)
+         COMCallMethod(_this_, IInertiaProcessor_put_InitialTimestamp, nValue)
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x1b227c8f006026e3
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

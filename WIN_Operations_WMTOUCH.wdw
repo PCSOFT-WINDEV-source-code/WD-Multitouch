@@ -1,0 +1,1089 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Operations_WMTOUCH
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Operations_WMTOUCH
+ identifier : 0x286e7148097076a8
+ internal_properties : CAAAAAgAAADZumFfH9G1j0Syd5t0guA2dvIZ+kAbMLSxAhc+X37do9MDIG50RWX2uz1+8W8m4Q5ApmBCdF9dZSI/DLi/tOpZP5WIeTjT24E24HK2mAgoAuU7qCqKvoQYX+K5BT0VeskmIlJK6LJfablxRJc0C3B9IXom//nVuY9ItZ5Pz0HRjTTwPeIued8JPwAQzuE9Gw6fMBWPhlPdxjD5wL9tK4ZfHoavJ45QUuzLR7RTT7gxK5Br0jcuIWXlRcacJctq9YMeXxDJaNaeJMqPuiIIUpCgrIH8LyoRgOnTHM8j6ukUZr5qfXH5VaZi2iIMbx3BRbQwpoIQpRTf1BI85cOGBQaLfhoXpY3hzBIZKhiABD9zHl/nvHUkJEvqVWz6imDF3qEZtsWneghV0kZXnvauICvTFSAkqGCArij24eisOizmZbLk0nPpPqLQmuwbu1tzQ6ytwFVnqnTbPVddmX2DtLEzLIDz28tvt4L+y5t/wArVrLNUP+/tbu/hM/hirjdZtdiDugKJUbbx5wFpvObbnKFF62ggsC7ekyX7WfK/dWH7xbLi+j7CU3txBtHP3Hx0RqnRq8ia6jf/u5r+PGia55E/6Q496XVhQXG79lWgs1MkWeXSOoUCVUVAr1kFfQHkqhoXtBN4htVc853cNp0Vvb2PBfy1JDp+xeyUizKycOUIs05q8MlHeLSOTjqnKoe63y3xuHOyLr2pvhIR9D7j/aIB9vXFI/efIquo+fqZaaaHXP2ULs3N3KN8i2p24horw2Om6u843EIKuHBVkGlk/eIm09tnySoVWrI9GjJeD9rZj7co8DkMh1Q2YLaYqG2UoPBdPNzqrHmZza/k6xHivt2oIdYNneozUYArt65yKegnOHsFNQwPb+Sog5BfkUpt
+ properties :
+  width : 1010
+  height : 762
+  widthClient : 1008
+  heightClient : 730
+ controls :
+  -
+    name : IMG_DRAWING
+    identifier : 0x286e7148097176a8
+    internal_properties : CAAAAAgAAAB9NIKboR8Et2I0SCO5kGr3I7a06DtH3K2lHJ/r+LhYrZsI2J2adQH5nDNeagje+7BlUXldD7CxsbWn8KYWVj0a6McFOCzFU1x/+YOBUmqmyn6J2xSqK9YkStrH4YOKBWTporOohUiU8HOfd/2ii7Aj1p0cwXyqNb3mE6z88jNNQR7nQC6VhtRMczg1xN5P7djDtSa9B+6ORmBaic5fKch4pnx7XqHOfDNCXLownVLvsjE+cbSL2zMo+Gu1Q4lxRmzYmD7jP3eG8wrAA5z0T9BEIdkjOlralPmtVTIq6s/TRPDxtTftS3F7VejSisaOdb8N5nWv0t3E/M5GzF17tBl4MGY975XOj9zvbFj5imFQoswhkeuiTw22+03FL579gFyw0fudWPBz7PaB5tcv5G1VrlA4xk7s5I5IME/UWInGULZQqfrlOVUveKbWfWa8/ci+nNyh5bhPihiN06rswUqYGggnEDZP7iIPo9ZXMNVSsOchyxiOdXDR/6TkTglEf+CvXzJQhGLAeg5/XD241TTAjW0RMawyxnDKyN+o0ez9Aa6RFIvIA76qbzlya9SvDAjZ
+    properties :
+     x : 6
+     y : 49
+     width : 996
+     height : 675
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         rX, rY 		are 4-byte real 
+         
+         // Mouse Position
+         MousePosition(rX, rY)
+         
+         // Sends the data
+         TriggerContactRollover(MOUSE_ID, rX, rY)
+        type : 66048
+      -
+        code : |1-
+         
+         rX, rY 		are 4-byte real
+         
+         // Mouse Position
+         MousePosition(rX, rY)
+         
+         // Sends the data
+         TriggerContactPressed(MOUSE_ID, rX, rY)
+        type : 66049
+      -
+        code : |1+
+         
+         rX, rY 		are 4-byte real
+         
+         // Mouse Position
+         MousePosition(rX, rY)
+         
+         // Sends the data
+         TriggerContactReleased(MOUSE_ID, rX, rY)
+         
+         // End of the manipulation
+         gpclProcessor.CompleteManipulation()
+         
+        type : 66050
+  -
+    name : STC_INFO
+    identifier : 0x286e7148097276a8
+    internal_properties : CAAAAAgAAABYDzYr/1MqusJR1XtH9R1wQWt5k31bbL0K8kZEjCdI39uEX9hq8l2reZbD1NDHgRB8GJNfo17rj7xHK+W2bVTDQDqbOO22D1c5dTILRjxwcS1knqQkMh5J71C98mGJshu44SZpo2IdICR2/4gXzuELpgaz+T92BrZcXSQDyHojDsAcuCiBXXyM2VOCG1sY1j7OJiSRMkHcflTULrN2ZYU9Nkpxhd1ab/wVI/DYWzPSVlEgt53nLuEB8R3IVMiaRJt248u8ChYNLUB1fWXBdhdaE9HdU8FtR2X3Ixos/mfxZ2YSz34ygpTdMmLek6mml7xidbUe4SRGf3l4Sq4rodowwUiHl0j4WXvtn7J9NTioaEpVR5O5tbGcokJFYoOsSSBGwhhafu6UHjqffa088FTvqqg6Y2AMp3p25U2i2XBQpKHfmQTB53z5abUtK3obBlJgCoe3q/G1j2ga6PDCPgP21Q/hbf1jEDVyqg==
+    properties :
+     x : 6
+     y : 6
+     width : 996
+     height : 37
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x2b45c331901bd74e
+  internal_properties : CAAAAAgAAAAjoO+VYAXYh2SYpTvD7AgXCHEHRjuTd5K/qNR3zUpM1aIlQYejrbtK76/LWLozAhgdmcRuoxDXe7vi3lf8PoZYYzNtPYlgCK9AarNrSCSSPpGDp+KLIikSwO2L+lCfwFobS8WKQZu2noN9WV5ipxuLKjTaOvfojbcmu1i6FPrF8FEPa+oQBHdRyMYNLYyLF/nTGn2y7NBixG5dC7y2wsO4aXA1CKpzZUca8sBJUrSr9FqhTJMK37pOOZqMTeCIo+trbOMI1osTdzjD26auXrzETrP8OxsAt+HgvahLwDb4kRpR6lQOjBIj
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAMZBqpKa4s7Yb3G2EVaz9RzkoGL9pyMFRHZGxIHte8tkEyJXi9zYGnLtBw4LlyYns1zLhRhcS0A1i1/KWt/96JT52KVSMOBa231g2Rtd/aASDVv616QGB1TD9QSw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      FIGURE is Structure
+      	TopLeft is POINTF
+      	TopRight is POINTF
+      	BottomRight  is POINTF	
+      	BottomLeft  is POINTF
+      END
+      
+      CONSTANT
+      	FIGURE_WIDTH = 200
+      	FIGURE_HEIGHT = 200
+      END
+      
+      
+      // Objects receiving the events of the manipulation processors
+      gclOperation 		is IManipulationEvents
+      gclManipulationInertia	is IManipulationEvents
+      
+      // Manipulation and inertia processors
+      gpclProcessor			is IManipulationProcessor dynamic
+      gpclProcessorInertia	is IInertiaProcessor dynamic
+      
+      // Identifiers
+      MOUSE_ID				is int = 0
+      TIMER_ID				is unsigned int = 1500
+      gnHandle				is system int = Handle(WIN_Operations_WMTOUCH)
+      
+      // The figure to handle
+      MyFigure				is FIGURE
+      CenterFigure			is POINTF
+      
+      // Indicates whether a manipulation is in progress
+      gbOperation			is boolean
+      
+      // Move direction (for the inertia)
+      grDirectionX			is 4-byte real = 1.0
+      grDirectionY			is 4-byte real = 1.0
+      
+      // Defines the TabletPC properties to disable
+      SysPropertyTabletPC(IMG_DRAWING, TABLET_DISABLE_PRESSANDHOLD + TABLET_DISABLE_PENTAPFEEDBACK + TABLET_DISABLE_PENBARRELFEEDBACK + TABLET_DISABLE_FLICKS)
+      
+      // Enables the multitouch for the window
+      RegisterTouchWindow(Handle(IMG_DRAWING), TWF_WANTPALM)
+      
+      // Receive the events
+      Event(OnTouch, "*.*", WM_TOUCH)
+      Event(OnTimer, "*.*", 0x0113) //WM_TIMER
+      
+      // Start the drawing
+      dChangeMode(drawAntiAliasing)
+      dStartDrawing(IMG_DRAWING)
+      
+      // Initial coordinates of the figure
+      MyFigure.TopLeft = [(IMG_DRAWING..Width - FIGURE_WIDTH) / 2, (IMG_DRAWING..Height - FIGURE_HEIGHT) / 2]
+      MyFigure.TopRight = [MyFigure.TopLeft.x + FIGURE_WIDTH, MyFigure.TopLeft.y]
+      MyFigure.BottomRight  = [MyFigure.TopRight.x, MyFigure.TopRight.y + FIGURE_HEIGHT]
+      MyFigure.BottomLeft  = [MyFigure.TopLeft.x, MyFigure.BottomRight.y]
+      
+      // Coordinates of the center of the figure
+      CenterFigure.x 		= MyFigure.TopLeft.x + FIGURE_WIDTH / 2
+      CenterFigure.y 		= MyFigure.TopLeft.y + FIGURE_HEIGHT / 2
+      
+      // Drawing of the shape
+      DrawFigure()
+   -
+     internal_properties : CAAAAAgAAABHMQaNqboIsvuAO474g2A5X0Ek8LiRQ+fTvg+kBFFHJ2UITmxrdOkhrK8/MJSiZU5DvtLcwHjAEmi3/uOyPjzeNz/CEW9yDl7+mEii6DAWpLWXhrkcCRydqhprcpF3xS6vQ50PjEOCJiiKu+A=
+     code : |1-
+      
+      // Allocates a processor (the window must be opened)
+      gpclProcessor = new IManipulationProcessor
+      IF gpclProcessor = Null THEN 
+      	Error("Unable to allocate a manipulation processor", "This error may be caused by a lack of memory or by an incorrect version of Windows", "", "Unable to continue")
+      	Close()
+      END
+      
+      gpclProcessorInertia = new IInertiaProcessor
+      IF gpclProcessorInertia = Null THEN 
+      	Error("Unable to allocate a manipulation processor", "This error may be caused by a lack of memory or by an incorrect version of Windows", "", "Unable to continue")
+      	Close()
+      END
+      
+      // Callbacks
+      gclOperation.OnManipulationStart 				= "WIN_Operations_WMTOUCH.OnOperationStart"				// Called when detecting a new manipulation
+      gclOperation.OnManipulationEnd 					= "WIN_Manipulations_WMTOUCH.OnManipulationEnd"					// Called at the end of a manipulation and used to start the inertia processor
+      gclOperation.OnManipulationModification 		= "WIN_Manipulations_WMTOUCH.OnManipulationModification"			// Called during the manipulation
+      gclManipulationInertia.OnManipulationEnd 			= "WIN_Manipulations_WMTOUCH.OnManipulationEndInertia"				// Called at the end of the inertia process
+      gclManipulationInertia.OnManipulationModification 	= "WIN_Operations_WMTOUCH.OnOperationModificationInertia"		// Called during the inertia process
+      
+      // Enables the management of the processor events
+      IF EventManipulation(gpclProcessor, gclOperation) = False THEN	
+      	Error("Unable to attach to the events of the manipulation processor", ErrorInfo, "", "Unable to continue")
+      	Close
+      END
+      
+      // Enables the management of the processor events
+      IF EventInertia(gpclProcessorInertia, gclManipulationInertia) = False THEN	
+      	Error("Unable to attach to the events of the manipulation processor", ErrorInfo, "", "Unable to continue")
+      	Close
+      END
+      
+      // Two contacts must be separated by at least 40 pixels in order to trigger an operation
+      gpclProcessor.MinimumScaleRotateRadius = 40
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      // /!\ The disconnection of the events must be performed before closing the window /!\ 
+      ManipulationEndEvent(gclOperation)
+      InertiaEndEvent(gclManipulationInertia)
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : OnManipulationStart
+     procedure_id : 1760469058492266152
+     type_code : 14
+     code : |1-
+      // Summary: Function called when the processor detects a new manipulation
+      // Syntax:
+      //[ <Result> = ] OnManipulationStart (<x> is 4-byte real, <y> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): X coordinate of the manipulation
+      //	y (4-byte real): Y coordinate of the manipulation
+      // Return value:
+      // 	boolean: True
+      //
+      PROCEDURE OnManipulationStart(x is 4-byte real <useful>, y is 4-byte real <useful>)
+      
+      // Defines whether the point is found in the figure
+      arrPoints is array of 8 4-byte real
+      Transfer(&arrPoints, &MyFigure, Dimension(MyFigure))
+      
+      // If the contact is found in the area
+      IF PointInArea(x, y, arrPoints) THEN
+      	
+      	// Allows the manipulation
+      	gbOperation = True
+      	
+      	// End of the previous inertia
+      	EndTimerEve(TIMER_ID)
+      	
+      	// Then, draws the figure
+      	DrawFigure()
+      	
+      ELSE
+      	gbOperation = False
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : OnManipulationEnd
+     internal_properties : CAAAAAgAAADwOKTsUpXqenbd85hYrXEOpe7+9UY/joMititG03gWdgab3iJOX319krL0xM2aS0Rn2M0Bm08H3keCsg3xCrGy4td3Pgl8bwYtBdAWxRJJJMSB9+0OMvX59K/rQpyDmD/JyT6Vps/AP76mELoSabqXkv1HRWKtR+BkwBGVrHzoqeKbn7KkQF8frGNEjsDNZEmQE1kGGBkvmWdpErte7FWUIW2Vx2U5WCICCg==
+     procedure_id : 1760469058492331688
+     type_code : 14
+     code : |1-
+      // Summary: Function called when the processor detects the end of a manipulation
+      // Syntax:
+      //[ <Result> = ] OnManipulationEnd (<x> is 4-byte real, <y> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> s 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): X coordinate
+      //	y (4-byte real): Y coordinate
+      //	rCumulativeTranslationX (4-byte real): Cumulated horizontal move
+      //	rCumulativeTranslationY (4-byte real): Cumulated vertical move
+      //	rCumulativeScale (4-byte real): Cumulated enlargement factor
+      //	rCumulativeExpansion (4-byte real): Cumulated expansion factor
+      //	rCumulativeRotation (4-byte real): Cumulated rotation angle
+      // Return value:
+      // 	boolean: True
+      //
+      PROCEDURE OnManipulationEnd(x is 4-byte real <useful>, y is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      IF gbOperation THEN
+      	
+      	// Setting of the inertia
+      	ConfigureInertia()
+      	
+      	// Inertia timer
+      	TimerEve(TIMER_ID, 10)
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : OnManipulationModification
+     internal_properties : CAAAAAgAAACtcpk8zqZR7mtM50G5rRFUGSZ9FXmtzUL0Bxe8Vei8Q2LpEnc1CR55qAhzEm5xZspub0ELxGFz5ophqVqseqHFM2ItZsbx0kxmJkyTYsRcaqaebtSk2tC9hsPVmeaqI7hJCUoEhwjx/u1wE+m65rUdJ46jYoA3EiJ2bGtMqXLIzqyO2wLbjHh59KcauTTJYaFwI6eMm9txsUzOdJv/xa3yV6ugx6cD0pbcl07xngkcA9dxsYDSnZiGxDLltALjvsyneFux3r5GYJUY4Xbp/Zg2katwM/IYUwnQCo0h5JjS
+     procedure_id : 1760469058492397224
+     type_code : 14
+     code : |1-
+      // Summary: Function called when the processor detects a modification of the manipulation
+      // Syntax:
+      //[ <Result> = ] OnManipulationModification (<x> is 4-byte real, <y> is 4-byte real, <rTranslationDeltaX> is 4-byte real, <rTranslationDeltaY> is 4-byte real, <rScaleDelta> is 4-byte real, <rExpansionDelta> is 4-byte real, <rRotationDelta> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> is 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): X coordinate
+      //	y (4-byte real): Y coordinate
+      //	rTranslationDeltaX (4-byte real): Horizontal move since the last move
+      //	rTranslationDeltaY (4-byte real): Vertical move since the last move
+      //	rScaleDelta (4-byte real): Enlargement factor in % of the last enlargement
+      //	rExpansionDelta (4-byte real): Expansion factor in % of the last expansion
+      //	rRotationDelta (4-byte real)): Angle of rotation in radians since the last rotation
+      //	rCumulativeTranslationX (4-byte real): Cumulated horizontal move
+      //	rCumulativeTranslationY (4-byte real): Cumulated vertical move
+      //	rCumulativeScale (4-byte real): Cumulated enlargement factor
+      //	rCumulativeExpansion (4-byte real): Cumulated expansion factor
+      //	rCumulativeRotation (4-byte real): Cumulated rotation angle
+      // Return value:
+      // 	boolean: True
+      //
+      PROCEDURE OnManipulationModification(x is 4-byte real <useful>, y is 4-byte real <useful>, rTranslationDeltaX is 4-byte real <useful>, rTranslationDeltaY is 4-byte real <useful>, rScaleDelta is 4-byte real <useful>, rExpansionDelta is 4-byte real <useful>, rRotationDelta is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      rXMIN, rYMIN, rMaxX, rMaxY are 4-byte real
+      
+      IF gbOperation THEN
+      	
+      	// RAD/DEG conversion
+      	rRotationDelta = rRotationDelta * 180 / ValPI
+      	
+      	// Applies the rotation first
+      	FigureRotation(-rRotationDelta)
+      	
+      	// Then, applies the enlargement
+      	FigureMaximizing(rScaleDelta)		
+      	
+      	// Finally, applies the translation
+      	FigureMove(rTranslationDeltaX, rTranslationDeltaY)
+      	
+      	// Then, draws the figure
+      	DrawFigure()
+      	
+      	rXMIN = Min(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      	rYMIN = Min(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      	rMaxX = Max(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      	rMaxY = Max(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      	
+      	gpclProcessor.PivotPointX = rXMIN + (rMaxX - rXMIN) / 2
+      	gpclProcessor.PivotPointY = rYMIN + (rMaxY - rYMIN) / 2
+      	gpclProcessor.PivotRadius = Root(Power((rMaxX - rXMIN) / 2, 2) + Power((rMaxY - rYMIN) / 2, 2)) * 0.4		
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : OnTouch
+     internal_properties : CAAAAAgAAAAeQeZWqR4YD9gNuw5ISpse4q5d4YfQh8vxSSLWonylqfGpzXAstIQfjtu5yNZJ9N/c91UXiZv53fcJCNn0zKQH2jXtD1BPimLproJX87E+1RbRiyhFUUvyPW0p6P5mipLcRRthNLb+/G4cHMU2fOcWaLmnLrlIMic+6HTcyeP/rQgO
+     procedure_id : 1760469058492462760
+     type_code : 14
+     code : |1-
+      // Summary: WM_TOUCH event
+      // Syntax:
+      //[ <Result> = ] OnTouch ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	system integer: 0 if the message was managed
+      //
+      // Automatic process of exceptions:   run CASE EXCEPTION:
+      //
+      PROCEDURE OnTouch()
+      
+      nNbContactPoints is system int = LoWord(_EVE.wParam)
+      arrTouch		 is array of TOUCHINPUT
+      rX, rY			 are reals
+      HRESULT			 is system int
+      
+      // Resizes the array
+      Dimension(arrTouch, nNbContactPoints)
+      
+      // Retrieves the information about the contact points
+      IF GetTouchInputInfo(_EVE.lParam, nNbContactPoints, &arrTouch, ArrayInfo(arrTouch, tiElementSize)) THEN
+      	
+      	// For each point
+      	FOR i = 1 _TO_ nNbContactPoints
+      		
+      		// Convert the screen coordinates into client coordinates
+      		arrTouch[i].x = TOUCH_COORD_TO_PIXEL(arrTouch[i].x)
+      		arrTouch[i].y = TOUCH_COORD_TO_PIXEL(arrTouch[i].y)			
+      		SysScreenToClient(arrTouch[i].x, arrTouch[i].y, IMG_DRAWING)
+      		
+      		// Convert the coordinates into real
+      		rX = arrTouch[i].x
+      		rY = arrTouch[i].y
+      		
+      		// Contact pressed
+      		IF arrTouch[i].dwFlags & TOUCHEVENTF_DOWN = TOUCHEVENTF_DOWN THEN
+      			
+      			// Sends the data
+      			TriggerContactPressed(arrTouch[i].dwID, rX, rY, arrTouch[i].dwTime)
+      			
+      			// Contact released
+      		ELSE IF arrTouch[i].dwFlags & TOUCHEVENTF_UP = TOUCHEVENTF_UP THEN
+      			
+      			// Sends the data
+      			TriggerContactReleased(arrTouch[i].dwID, rX, rY, arrTouch[i].dwTime)
+      			
+      			// If it is the last contact
+      			IF nNbContactPoints = 1 THEN
+      				
+      				// End the manipulation
+      				gpclProcessor.CompleteManipulation()
+      			END
+      			
+      			// Contact moved
+      		ELSE IF arrTouch[i].dwFlags & TOUCHEVENTF_MOVE = TOUCHEVENTF_MOVE THEN
+      			
+      			// Sends the data
+      			TriggerContactRollover(arrTouch[i].dwID, rX, rY, arrTouch[i].dwTime)				
+      		END
+      		
+      	END				
+      	
+      	// Process the inertia		
+      	gpclProcessorInertia.Process(False)
+      	
+      	// End 
+      	CloseTouchInputHandle(_EVE.lParam)
+      	HRESULT = S_OK
+      ELSE
+      	
+      	HRESULT = API(USER32, "DefWindowProcA", _EVE.hWnd, _EVE.wMessage, _EVE.wParam, _EVE.lParam)			
+      END
+      
+      RESULT HRESULT
+      
+      CASE EXCEPTION:
+      HRESULT = API(USER32, "DefWindowProcA", _EVE.hWnd, _EVE.wMessage, _EVE.wParam, _EVE.lParam)
+      RESULT HRESULT
+     type : 458752
+   -
+     name : TriggerContactRollover
+     internal_properties : CAAAAAgAAAD+0Bak35IL2ZvsAMhfCK+jcGhj5tZhZ+WNDHrnL7HcgOzhXVpSlcdf+wlPSEUq6PLZRNQ923A184b8b3rN4Ai6JymFgVSBiE0pwooCQP/zCcv9tKTXVl6une4X4Bvii6F+gIjuPp8WfhfuZ+PKBLSAWHPgg1TFWTON1pfwKzEOZjOo6aWx2NDqJXYqCUA2YTnrt35f1w==
+     procedure_id : 1760469058492528296
+     type_code : 14
+     code : |1-
+      // Summary: Triggers a rollover contact (modification of the contact position)
+      // Syntax:
+      //TriggerRolloverContact (<nIDContact> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real [, <nTimeStamp> is int])
+      //
+      // Parameters:
+      //	nContactID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): X coordinate
+      //	rY (4-byte real): Y coordinate
+      //	nTimeStamp (integer): Timestamp
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TriggerContactRollover(LOCAL nIDContact is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimeStamp is int = GetTimeStamp())
+      
+      // Informs the processor
+      gpclProcessor.ProcessMoveWithTime(nIDContact, rX, rY, nTimeStamp)				
+     type : 458752
+   -
+     name : TriggerContactPressed
+     internal_properties : CAAAAAgAAAD+0Bak35IL2ZvsAMhfCK+jcGhj5tZhZ+WNDHrnL7HcgOzhXVpSlcdf+wlPSEUq6PLZRNQ923A184b8b3rN4Ai6JymFgVSBiE0pwooCQP/zCcv9tKTXVl6une4X4Bvii6F+gIjuPp8WfhfuZ+PKBLSAWHPgg1TFWTON1pfwKzEOZjOo6aWx2NDqJXYqCUA2YTnrt35f1w==
+     procedure_id : 1760469058492593832
+     type_code : 14
+     code : |1-
+      // Summary: Triggers a pressed contact
+      // Syntax:
+      //TriggerPressedContact (<nContactID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real [, <nTimeStamp> is int])
+      //
+      // Parameters:
+      //	nContactID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): X coordinate
+      //	rY (4-byte real): Y coordinate
+      //	nTimeStamp (int): Timestamp (default time)
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TriggerContactPressed(LOCAL nIDContact is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimeStamp is int = GetTimeStamp())
+      
+      // Informs the processor
+      gpclProcessor.ProcessDownWithTime(nIDContact, rX, rY, nTimeStamp)				
+     type : 458752
+   -
+     name : TriggerContactReleased
+     internal_properties : CAAAAAgAAAD+0Bak35IL2ZvsAMhfCK+jcGhj5tZhZ+WNDHrnL7HcgOzhXVpSlcdf+wlPSEUq6PLZRNQ923A184b8b3rN4Ai6JymFgVSBiE0pwooCQP/zCcv9tKTXVl6une4X4Bvii6F+gIjuPp8WfhfuZ+PKBLSAWHPgg1TFWTON1pfwKzEOZjOo6aWx2NDqJXYqCUA2YTnrt35f1w==
+     procedure_id : 1760469058492659368
+     type_code : 14
+     code : |1-
+      // Summary: Triggers a released contact
+      // Syntax:
+      //TriggerReleasedContact (<nIDContact> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real [, <nTimeStamp> is int])
+      //
+      // Parameters:
+      //	nContactID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): X coordinate
+      //	rY (4-byte real): Y coordinate
+      //	nTimeStamp (integer): Timestamp
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TriggerContactReleased(LOCAL nIDContact is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimeStamp is int = GetTimeStamp())
+      
+      // Informs the processor
+      gpclProcessor.ProcessUpWithTime(nIDContact, rX, rY, nTimeStamp)				
+     type : 458752
+   -
+     name : MousePosition
+     procedure_id : 1760469058492724904
+     type_code : 14
+     code : |1-
+      // Summary: Defines the position of the mouse in real value
+      // Syntax:
+      //MousePosition (<rX> is 4-byte real, <rY> is 4-byte real)
+      //
+      // Parameters:
+      //	rX (4-byte real): X coordinate to fill
+      //	rY (4-byte real): Y coordinate to fill
+      // Return value:
+      // 	None
+      //
+      PROCEDURE MousePosition(rX is 4-byte real, rY is 4-byte real)
+      
+      rX = MouseXPos
+      rY = MouseYPos
+     type : 458752
+   -
+     name : DrawFigure
+     procedure_id : 1760469058492790440
+     type_code : 14
+     code : |1-
+      // Summary: Drawing of the figure handled
+      // Syntax:
+      // DrawFigure ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DrawFigure()
+      
+      // Erases the previous drawing (faster than dStartDrawing)
+      dRectangle(0, 0, IMG_DRAWING..Width, IMG_DRAWING..Height, White, White)
+      
+      // Drawing of the shape
+      dPolygon(4, MyFigure.TopLeft.x, MyFigure.TopLeft.y, MyFigure.TopRight.x, MyFigure.TopRight.y, MyFigure.BottomRight.x, MyFigure.BottomRight.y, MyFigure.BottomLeft.x, MyFigure.BottomLeft.y, PastelRed, DarkRed)
+      
+      // Draw the center of the figure
+      dCircle(CenterFigure.x - 5, CenterFigure.y - 5, CenterFigure.x + 5, CenterFigure.y + 5, DarkRed, LightRed)
+      
+      // Refresh operation
+      Wait(0, waitMouseAndKeyboard)
+     type : 458752
+   -
+     name : PointInArea
+     procedure_id : 1760469058492855976
+     type_code : 14
+     code : |1-
+      // Summary: Defines whether a point is found in an area 
+      // Syntax:
+      //[ <Result> = ] PointInArea (<nX> is 4-byte real, <nY> is 4-byte real, <arrPolygon> is array) 
+      // 
+      // Parameters:
+      //	nX (4-byte real): X coordinate of the point
+      //	nY (4-byte real): Y coordinate of the point
+      //	arrPolygon (array): Polygon of the area
+      // Return value:
+      // 	boolean:   True if the point is found in the area, False otherwise 
+      // 
+      PROCEDURE PointInArea(LOCAL nX is 4-byte real, LOCAL nY is 4-byte real, ...
+      arrPolygon is array of * 4-byte real) 
+      
+      bPointInArea     is boolean   
+      nDimension         is int = (arrPolygon..Occurrence / 2) 
+      arrPoints          is array of nDimension POINTF
+      rXIntersection     is real 
+      nNbIntersect       is int 
+      stPoint1, stPoint2 are POINTF 
+      
+      // Transfers the polygon into an array of POINTF
+      Transfer(&arrPoints, &arrPolygon, Dimension(stPoint1) * nDimension) 
+      
+      // Stores the first point 
+      stPoint1 = arrPoints[1] 
+      
+      // For each point or the polygon 
+      FOR i = 1 _TO_ nDimension 
+      	
+      	// Stores the next point 
+      	stPoint2 = arrPoints[modulo(i, nDimension) + 1] 
+      	
+      	// If Y[Mouse] is strictly greater than the point     
+      	// the most at the bottom of the segment [P1-P2] 
+      	IF nY > Min(stPoint1:y,stPoint2:y) THEN 
+      		
+      		// If Y[Mouse] is less than or equal to the point the most       
+      		// at the top of the segment [P1-P2] 
+      		IF nY <= Max(stPoint1:y,stPoint2:y) THEN 
+      			
+      			// If X[Mouse] is less than or equal to the point the most
+      			// on the right of the segment [P1-P2] 
+      			IF nX <= Max(stPoint1:x,stPoint2:x) THEN 
+      				
+      				// If the [P1-P2] segment is not horizontal
+      				// (i.e. same y-coordinate) 
+      				IF stPoint1:y <> stPoint2:y THEN 
+      					
+      					// Calculates the intersection point on [P1-P2]                                  // of the horizontal line going through Y[Mouse] 
+      					rXIntersection = (nY - stPoint1:y) * 
+      					(stPoint2:x - stPoint1:x) / 
+      					(stPoint2:y - stPoint1:y) + stPoint1:x 
+      					
+      					// If the [P1-P2] segment is vertical or if X[Mouse]                              // is less than the intersection point 
+      					IF stPoint1:x = stPoint2:x OR nX < rXIntersection THEN 
+      						
+      						// Increments the number of intersections 
+      						nNbIntersect ++ 
+      					END 
+      				END 
+      			END 
+      		END 
+      	END 
+      	
+      	// Next point 
+      	stPoint1 = stPoint2 
+      END 
+      
+      // If the number of intersections is an odd number, the point is located in the area 
+      // If the number of intersections is an even number, the point is located outside the area 
+      bPointInArea = IsOdd(nNbIntersect) 
+      
+      RESULT bPointInArea
+     type : 458752
+   -
+     name : FigureRotation
+     procedure_id : 1760469058492921512
+     type_code : 14
+     code : |1-
+      // Summary: Performs a rotation of the figure
+      // Syntax:
+      //FigureRotation (<rRotationDelta> is 4-byte real)
+      //
+      // Parameters:
+      //	rRotationDelta (4-byte real): Rotation angle
+      // Return value:
+      // 	None
+      //
+      PROCEDURE FigureRotation(LOCAL rRotationDelta is 4-byte real)
+      
+      IF rRotationDelta = 1.0 THEN RETURN
+      
+      AFigure is FIGURE
+      
+      // Recalculates the center
+      CenterFigure = [MyFigure.TopLeft.x + (MyFigure.BottomRight.x - MyFigure.TopLeft.x) / 2, MyFigure.TopLeft.y + (MyFigure.BottomRight.y - MyFigure.TopLeft.y) / 2]
+      
+      // Performs a rotation of the 4 points of the figure
+      
+      AFigure.TopLeft.x = Cos(rRotationDelta) * (MyFigure.TopLeft.x - CenterFigure.x) + Sin(rRotationDelta) * (MyFigure.TopLeft.y - CenterFigure.y) + CenterFigure.x
+      AFigure.TopLeft.y = Cos(rRotationDelta) * (MyFigure.TopLeft.y - CenterFigure.y) - Sin(rRotationDelta) * (MyFigure.TopLeft.x - CenterFigure.x) + CenterFigure.y
+      
+      AFigure.TopRight.x = Cos(rRotationDelta) * (MyFigure.TopRight.x - CenterFigure.x) + Sin(rRotationDelta) * (MyFigure.TopRight.y - CenterFigure.y) + CenterFigure.x
+      AFigure.TopRight.y = Cos(rRotationDelta) * (MyFigure.TopRight.y - CenterFigure.y) - Sin(rRotationDelta) * (MyFigure.TopRight.x - CenterFigure.x) + CenterFigure.y
+      
+      AFigure.BottomRight.x = Cos(rRotationDelta) * (MyFigure.BottomRight.x - CenterFigure.x) + Sin(rRotationDelta) * (MyFigure.BottomRight.y - CenterFigure.y) + CenterFigure.x
+      AFigure.BottomRight.y = Cos(rRotationDelta) * (MyFigure.BottomRight.y - CenterFigure.y) - Sin(rRotationDelta) * (MyFigure.BottomRight.x - CenterFigure.x) + CenterFigure.y
+      
+      AFigure.BottomLeft.x = Cos(rRotationDelta) * (MyFigure.BottomLeft.x - CenterFigure.x) + Sin(rRotationDelta) * (MyFigure.BottomLeft.y - CenterFigure.y) + CenterFigure.x
+      AFigure.BottomLeft.y = Cos(rRotationDelta) * (MyFigure.BottomLeft.y - CenterFigure.y) - Sin(rRotationDelta) * (MyFigure.BottomLeft.x - CenterFigure.x) + CenterFigure.y
+      
+      // Applies
+      MyFigure = AFigure
+      
+      // Recalculates the center
+      CenterFigure = [MyFigure.TopLeft.x + (MyFigure.BottomRight.x - MyFigure.TopLeft.x) / 2, MyFigure.TopLeft.y + (MyFigure.BottomRight.y - MyFigure.TopLeft.y) / 2]
+     type : 458752
+   -
+     name : FigureMaximizing
+     procedure_id : 1760469058492987048
+     type_code : 14
+     code : |1-
+      // Summary: Enlarges the figure
+      // Syntax:
+      //FigureEnlargement (<rScaleDelta> is 4-byte real)
+      //
+      // Parameters:
+      //	rScaleDelta (4-byte real): Enlargement zoom
+      // Return value:
+      // 	None
+      //
+      PROCEDURE FigureMaximizing(LOCAL rScaleDelta is 4-byte real)
+      
+      IF rScaleDelta = 1.0 THEN RETURN
+      
+      AFigure 	is FIGURE
+      
+      // Applies the factor onto the 4 points of the shape
+      
+      AFigure.TopLeft.x = (MyFigure.TopLeft.x - CenterFigure.x) * rScaleDelta + CenterFigure.x
+      AFigure.TopLeft.y = (MyFigure.TopLeft.y - CenterFigure.y) * rScaleDelta + CenterFigure.y
+      
+      AFigure.TopRight.x = (MyFigure.TopRight.x - CenterFigure.x) * rScaleDelta + CenterFigure.x
+      AFigure.TopRight.y = (MyFigure.TopRight.y - CenterFigure.y) * rScaleDelta + CenterFigure.y
+      
+      AFigure.BottomRight.x = (MyFigure.BottomRight.x - CenterFigure.x) * rScaleDelta + CenterFigure.x
+      AFigure.BottomRight.y = (MyFigure.BottomRight.y - CenterFigure.y) * rScaleDelta + CenterFigure.y
+      
+      AFigure.BottomLeft.x = (MyFigure.BottomLeft.x - CenterFigure.x) * rScaleDelta + CenterFigure.x
+      AFigure.BottomLeft.y = (MyFigure.BottomLeft.y - CenterFigure.y) * rScaleDelta + CenterFigure.y
+      
+      // Applies
+      MyFigure = AFigure
+      
+      // Recalculates the center
+      CenterFigure = [MyFigure.TopLeft.x + (MyFigure.BottomRight.x - MyFigure.TopLeft.x) / 2, MyFigure.TopLeft.y + (MyFigure.BottomRight.y - MyFigure.TopLeft.y) / 2]
+     type : 458752
+   -
+     name : FigureMove
+     procedure_id : 1760469058493052584
+     type_code : 14
+     code : |1-
+      // Summary: Moves the figure
+      // Syntax:
+      //FigureMove (<rTranslationDeltaX> is 4-byte real, <rTranslationDeltaY> is 4-byte real [, <bInertia> is boolean])
+      //
+      // Parameters:
+      //	rTranslationDeltaX (4-byte real): Horizontal move
+      //	rTranslationDeltaY (4-byte real): Vertical move
+      //	bInertia (boolean - default value=0): True if the move is performed by the inertia processor, False if the move is performed by the manipulation processor
+      // Return value:
+      // 	None
+      //
+      PROCEDURE FigureMove(LOCAL rTranslationDeltaX is 4-byte real, LOCAL rTranslationDeltaY is 4-byte real, LOCAL bInertia is boolean <useful> = False)
+      
+      AFigure is FIGURE
+      
+      // Defines the minimum and maximum coordinates of the figure
+      rXMIN is real = Min(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      rYMIN is real = Min(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      rMaxX is real = Max(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      rMaxY is real = Max(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      
+      // During the move in inertia
+      IF bInertia THEN
+      	
+      	// Applies the move direction
+      	rTranslationDeltaX = rTranslationDeltaX * grDirectionX
+      	rTranslationDeltaY = rTranslationDeltaY * grDirectionY
+      	
+      ELSE
+      	
+      	// Limit on the left
+      	IF rXMIN + rTranslationDeltaX < 0 THEN			
+      		rTranslationDeltaX = Abs(rXMIN) - 1
+      	END
+      	
+      	// Limit at the top
+      	IF rYMIN + rTranslationDeltaY < 0 THEN			
+      		rTranslationDeltaY = Abs(rYMIN) - 1
+      	END
+      	
+      	// Limit on the right
+      	IF rMaxX + rTranslationDeltaX >= IMG_DRAWING..Width - 22 THEN
+      		rTranslationDeltaX = IMG_DRAWING..Width - rMaxX - 22
+      	END
+      	
+      	// Limit on the left
+      	IF rMaxY + rTranslationDeltaY >= IMG_DRAWING..Height - 23 THEN
+      		rTranslationDeltaY = IMG_DRAWING..Height - rMaxY - 23
+      	END
+      	
+      END
+      
+      // Move the 4 points of the parallelogram
+      
+      AFigure.TopLeft.x = MyFigure.TopLeft.x + rTranslationDeltaX
+      AFigure.TopLeft.y = MyFigure.TopLeft.y + rTranslationDeltaY
+      
+      AFigure.TopRight.x = MyFigure.TopRight.x + rTranslationDeltaX
+      AFigure.TopRight.y = MyFigure.TopRight.y + rTranslationDeltaY
+      
+      AFigure.BottomRight.x = MyFigure.BottomRight.x + rTranslationDeltaX
+      AFigure.BottomRight.y = MyFigure.BottomRight.y + rTranslationDeltaY
+      
+      AFigure.BottomLeft.x = MyFigure.BottomLeft.x + rTranslationDeltaX
+      AFigure.BottomLeft.y = MyFigure.BottomLeft.y + rTranslationDeltaY
+      
+      // Applies
+      MyFigure = AFigure	
+      
+      // Recalculates the center of the figure
+      CenterFigure = [MyFigure.TopLeft.x + (MyFigure.BottomRight.x - MyFigure.TopLeft.x) / 2, MyFigure.TopLeft.y + (MyFigure.BottomRight.y - MyFigure.TopLeft.y) / 2]
+      
+      // During the move in inertia
+      IF bInertia THEN
+      	
+      	rTranslationDeltaX = 0
+      	rTranslationDeltaY = 0
+      	
+      	// Defines the minimum and maximum coordinates of the figure
+      	rXMIN = Min(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      	rYMIN = Min(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      	rMaxX = Max(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomRight.x, MyFigure.BottomLeft.x)
+      	rMaxY = Max(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomRight.y, MyFigure.BottomLeft.y)
+      	
+      	// Limit on the left
+      	IF rXMIN + rTranslationDeltaX < 0 THEN			
+      		grDirectionX = -grDirectionX
+      		rTranslationDeltaX = Abs(rXMIN) - 1
+      	END
+      	
+      	// Limit at the top
+      	IF rYMIN + rTranslationDeltaY < 0 THEN			
+      		grDirectionY = -grDirectionY
+      		rTranslationDeltaY = Abs(rYMIN) - 1
+      	END
+      	
+      	// Limit on the right
+      	IF rMaxX + rTranslationDeltaX >= IMG_DRAWING..Width - 22 THEN
+      		grDirectionX = -grDirectionX
+      		rTranslationDeltaX = IMG_DRAWING..Width - rMaxX - 22
+      	END
+      	
+      	// Limit on the left
+      	IF rMaxY + rTranslationDeltaY >= IMG_DRAWING..Height - 23 THEN
+      		grDirectionY = -grDirectionY
+      		rTranslationDeltaY = IMG_DRAWING..Height - rMaxY - 23
+      	END	
+      	
+      	// Performs the move again while taking into account the changes of direction performed
+      	IF rTranslationDeltaX <> 0 OR rTranslationDeltaY <> 0 THEN
+      		FigureMove(rTranslationDeltaX, rTranslationDeltaY)
+      	END
+      END
+     type : 458752
+   -
+     name : OnManipulationEndInertia
+     internal_properties : CAAAAAgAAAA6TJaGQVlwFV8BeG6dojmkpFzA0w+Nn4KoDTuW3qu3QlJjeOvyiIDxy1S+cIBM9MMSLyaghjiFkyLVD4Jug2+JBdUolPf12G5in0ayZQBHDUJR9uKQ6ezF1nHi5Sf+Om4f+F0FjYXeTQtbNDrbhGlUeXsqPpFLEJMpOCIJxtkNBBC/XvAUwc1hqJxiI3/cAP8rsuLEIrammCj90Nu8lqL6EGEEFqAGHz9RI0MI6phzJ7brCBRro4AVYIBp5UkuASi2Pl88jMNEEQlDvG8JbOlqwiPFvg==
+     procedure_id : 1760469058493118120
+     type_code : 14
+     code : |1-
+      // Summary: Function called when the processor detects the end of a manipulation
+      // Syntax:
+      //[ <Result> = ] OnEndManipulationInertia (<x> is 4-byte real, <y> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> is 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): X coordinate
+      //	y (4-byte real): Y coordinate
+      //	rCumulativeTranslationX (4-byte real): Cumulated horizontal move
+      //	rCumulativeTranslationY (4-byte real): Cumulated vertical move
+      //	rCumulativeScale (4-byte real): Cumulated enlargement factor
+      //	rCumulativeExpansion (4-byte real): Cumulated expansion factor
+      //	rCumulativeRotation (4-byte real): Cumulated rotation angle
+      // Return value:
+      // 	boolean: True
+      //
+      PROCEDURE OnManipulationEndInertia(x is 4-byte real <useful>, y is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      IF gbOperation THEN
+      	
+      	EndTimerEve(TIMER_ID)
+      	
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : OnManipulationModificationInertia
+     internal_properties : CAAAAAgAAABHP92F8Mj9IXYngRuB3ueWHPtwSvAEwGHlowG/Sxev9JCTs11qZBRGl4EcRD3HMUnaJz0tvtCI9tDdYOxBrhgmSvtLmvjFr+gCxnGzU7LfiA9VxFLBEi4RXy+oiADEB7rnh+nnyC30UxzA6W1UalSJSHKpvF4a4vAORQ8nlKMxNeHlINnfeZGhpdO0f+PiTJavEUZGoJHpbDjI97aV4Q547UnGyC0NxvzYusmsrrFQIxn009ICqayTanVu/NKSEImnLjI1
+     procedure_id : 1760469058493183656
+     type_code : 14
+     code : |1-
+      // Summary: Function called when the processor detects a modification of the manipulation
+      // Syntax:
+      //[ <Result> = ] OnModificationManipulationInertia (<x> is 4-byte real, <y> is 4-byte real, <rTranslationDeltaX> is 4-byte real, <rTranslationDeltaY> is 4-byte real, <rScaleDelta> is 4-byte real, <rExpansionDelta> is 4-byte real, <rRotationDelta> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> is 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): X coordinate
+      //	y (4-byte real): Y coordinate
+      //	rTranslationDeltaX (4-byte real): Horizontal move since the last move
+      //	rTranslationDeltaY (4-byte real): Vertical move since the last move
+      //	rScaleDelta (4-byte real): Enlargement factor in % of the last enlargement
+      //	rExpansionDelta (4-byte real): Expansion factor in % of the last expansion
+      //	rRotationDelta (4-byte real)): Angle of rotation in radians since the last rotation
+      //	rCumulativeTranslationX (4-byte real): Cumulated horizontal move
+      //	rCumulativeTranslationY (4-byte real): Cumulated vertical move
+      //	rCumulativeScale (4-byte real): Cumulated enlargement factor
+      //	rCumulativeExpansion (4-byte real): Cumulated expansion factor
+      //	rCumulativeRotation (4-byte real): Cumulated rotation angle
+      // Return value:
+      // 	boolean: True
+      //
+      PROCEDURE OnManipulationModificationInertia(x is 4-byte real <useful>, y is 4-byte real <useful>, rTranslationDeltaX is 4-byte real <useful>, rTranslationDeltaY is 4-byte real <useful>, rScaleDelta is 4-byte real <useful>, rExpansionDelta is 4-byte real <useful>, rRotationDelta is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      IF gbOperation THEN
+      	
+      	// RAD/DEG conversion
+      	rRotationDelta = rRotationDelta * 180 / ValPI
+      	
+      	// Applies the rotation first
+      	FigureRotation(-rRotationDelta)
+      	
+      	// Then, applies the enlargement
+      	FigureMaximizing(rScaleDelta)		
+      	
+      	// Finally, applies the translation
+      	FigureMove(rTranslationDeltaX, rTranslationDeltaY, True)
+      	
+      	// Then, draws the figure
+      	DrawFigure()
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : OnTimer
+     procedure_id : 1760469058493249192
+     type_code : 14
+     code : |1-
+      // Summary: Timer triggered by Windows
+      // Syntax:
+      //OnTimer ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE OnTimer()
+      
+      // Process the inertia		
+      gpclProcessorInertia.Process(False)
+     type : 458752
+   -
+     name : ConfigureInertia
+     procedure_id : 1760469058493314728
+     type_code : 14
+     code : |1-
+      // Summary: Configuring the inertia processor
+      // Syntax:
+      //ConfigureInertia ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ConfigureInertia()
+      
+      rVelocX, rVelocY, rVelocA  are 4-byte real
+      rXMIN, rYMIN, rMaxX, rMaxY are 4-byte real
+      
+      // Ascending direction
+      grDirectionX = 1
+      grDirectionY = 1
+      
+      // Minimum and maximum coordinates of the figure
+      rXMIN = Min(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomLeft.x, MyFigure.BottomRight.x)
+      rYMIN = Min(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomLeft.y, MyFigure.BottomRight.y)
+      rMaxX = Max(MyFigure.TopLeft.x, MyFigure.TopRight.x, MyFigure.BottomLeft.x, MyFigure.BottomRight.x)
+      rMaxY = Max(MyFigure.TopLeft.y, MyFigure.TopRight.y, MyFigure.BottomLeft.y, MyFigure.BottomRight.y)			
+      
+      // Center of the shape
+      gpclProcessorInertia.InitialOriginX				= rXMIN + (rMaxX - rXMIN) / 2
+      gpclProcessorInertia.InitialOriginY				= rYMIN + (rMaxY - rYMIN) / 2
+      
+      // - Speeds: acceleration, angular
+      gpclProcessorInertia.DesiredDeceleration			= 0.003			// px/ms²
+      gpclProcessorInertia.DesiredAngularDeceleration 	= 0.000015		// rad/ms²
+      
+      // Retrieves the move and rotation speed calculated during the move
+      gpclProcessor.GetVelocityX(rVelocX)
+      gpclProcessor.GetVelocityY(rVelocY)
+      gpclProcessor.GetAngularVelocity(rVelocA)
+      
+      // Copy the parameters between processors for the inertia
+      gpclProcessorInertia.InitialVelocityX			= rVelocX
+      gpclProcessorInertia.InitialVelocityY			= rVelocY
+      gpclProcessorInertia.InitialAngularVelocity 	= rVelocA
+     type : 458752
+   -
+     name : EndTimerEve
+     procedure_id : 1760469058493380264
+     type_code : 14
+     code : |1-
+      // Summary: End of the event timer
+      // Syntax:
+      //EndEveTime (<nTimerID> is int)
+      //
+      // Parameters:
+      //	nTimerID (integer): Identifier of the timer
+      // Return value:
+      // 	None
+      //
+      PROCEDURE EndTimerEve(LOCAL nTimerID is int)
+      
+      // End
+      API(USER32, "KillTimer", gnHandle, nTimerID)
+     type : 458752
+   -
+     name : TimerEve
+     procedure_id : 1760469058493445800
+     type_code : 14
+     code : |1-
+      // Summary: Triggers an event timer
+      // Syntax:
+      //EveTimer (<nTimerID> is unsigned 4-byte int, <nTimeour> is unsigned 4-byte int)
+      //
+      // Parameters:
+      //	nTimerID (unsigned 4-byte integer): Identifier of the timer
+      //	nTimeour (unsigned 4-byte integer): Time-out
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TimerEve(LOCAL nTimerID is unsigned int, LOCAL nTimeout is unsigned int)
+      
+      API(USER32, "SetTimer", gnHandle, nTimerID, nTimeout, Null)
+     type : 458752
+   -
+     name : ElasticPoint
+     procedure_id : 1760469058493511336
+     type_code : 14
+     code : |1-
+      // Summary: Calculates an elastic point
+      // Syntax:
+      //[ <Result> = ] ElasticPoint (<rPoint> is 4-byte real, <rBorder> is 4-byte real)
+      //
+      // Parameters:
+      //	rPoint (4-byte real): Value of the point
+      //	rBorder (4-byte real): Value of the border
+      // Return value:
+      // 	Undefined type: Elastic value
+      //
+      PROCEDURE ElasticPoint(LOCAL rPoint is 4-byte real, LOCAL rBorder is 4-byte real)
+      
+      rNewPoint is 4-byte real
+      
+      // No border, no elasticity
+      IF rBorder = 0 THEN
+      	RESULT rPoint
+      ELSE
+      	
+      	nQ 			is int = Abs(rPoint) / rBorder
+      	nDirection	is int = modulo(nQ, 2)
+      	
+      	rNewPoint = Abs(rPoint) - (rBorder * nQ)
+      	
+      	IF nDirection = 0 THEN
+      		RESULT rNewPoint
+      	ELSE
+      		RESULT rBorder - rNewPoint
+      	END		
+      END
+     type : 458752
+   -
+     name : GetTimeStamp
+     internal_properties : CAAAAAgAAACImkxmISeTH73M5CY5TCfbhqwpKmiLT6uzoL7NQd3o5Dods/YIhzcB2U0PdjdezAbDnAL5HT6BBTRAM0SzEEjSscHH4Q4j2Md/PmcLV6pW2NgIt2nCoRPzbu9wQbIdDph3e/NX7dZf13RLjIRB31MD/Z4jwB/Ydtwyu5BRcqTdqSQbFEpcszVPnj8vCkfp7GO1+TgVLQ==
+     procedure_id : 1760469058493576872
+     type_code : 14
+     code : |1-
+      // Summary: Returns a Windows timestamp
+      PROCEDURE GetTimeStamp()
+      RESULT API(KERNEL32, "GetTickCount")
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b437a6404eaa9c9
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Manipulations_WMTOUCH.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

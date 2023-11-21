@@ -1,0 +1,160 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IConnectionPointContainer
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1b264b0a00827043
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      // IConnectionPointContainer class
+      // =======================
+      // (Implements the IConnectionPointContainer COM interface)
+      // 
+      // Takes into account the connection points for the connectable objects
+      //
+      IConnectionPointContainer is Class
+      	
+      PRIVATE
+      	_this_												is a COMObject			// COM object loaded
+      	
+      	CONSTANT
+      		
+      		// Methods of the interface
+      		
+      		// -> IUnknown
+      		IConnectionPointContainer_QueryInterface				= 0
+      		IConnectionPointContainer_AddRef						= 1
+      		IConnectionPointContainer_Release						= 2
+      		
+      		// -> IConnectionPointContainer
+      		IConnectionPointContainer_EnumConnectionPoints			= 3
+      		IConnectionPointContainer_FindConnectionPoint			= 4
+      	END
+      END	
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1956333594469429315
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor(ppObject is system int)
+      
+      // Keeps the pointer
+      _this_..Address = ppObject
+      
+      // The object cannot exist if the pointer is null
+      IF _this_..Address = 0 THEN delete object
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1956333594469494851
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : AddRef
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956333843577656020
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing AddRef
+      PROCEDURE AddRef()
+      RESULT COMCallMethod(_this_, IConnectionPointContainer_AddRef)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : QueryInterface
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956333843577721634
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing QueryInterface
+      PROCEDURE QueryInterface(LOCAL riid is system int, LOCAL ppvObject is system int)
+      RESULT COMCallMethod(_this_, IConnectionPointContainer_QueryInterface, riid, ppvObject)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAABhuWPqTr8816SpBaILN2Co+r2RuZj4ZU2RFGhtsrIJ9H7rgz8jKk22QMKZf4VXSl37en6sgzhHlR6e9zEfNEVkYBiik/3Op3JvLFW9w+VaLdKr/Oea3JuUU9ZurSB8kNljPjzDjSPl8seEtODP+PPifwGQcgGtkU7aWcvE5jKJoEv7HN1Zt9mgcr1sVJRD0k2Y12sa
+     procedure_id : 1956333843577787217
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing Release
+      PROCEDURE Release()
+      RESULT COMCallMethod(_this_, IConnectionPointContainer_Release)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : EnumConnectionPoints
+     internal_properties : CAAAAAgAAAC5AVu3JT/E//yprcIj/4CoYpUBQYDAFQ2RLJjlcjLx7I77iz8T6uVeeALxDz0/2m1DMi60u5DXVY52l5k/1O3sgLjaA50ujwpXbAHRF7kecR5XKMuGKN+QD1rqEVTgFF3/euhnyZ9JXuPYkOSD7Fdm6y1cJp15ZWr2bXcIelZ9lEeH+IGFQ21s/iF4qJgXtjjwr7NC
+     procedure_id : 1956333908002377044
+     type_code : 12
+     code : |1-
+      // Summary: Creates a enumerator to list the connection points supported by the connectable object
+      // Description of input/output parameters of 'EnumConnectionPoints':
+      //
+      // Syntax:
+      // [ <Result> = ] EnumConnectionPoints (<ppEnum> is system int)
+      //
+      // Parameters:
+      //	ppEnum (system integer): Pointer toward a system integer that will receive the address of the IEnumConnectionPoints interface
+      //
+      PROCEDURE EnumConnectionPoints(ppEnum is system int)
+      RESULT COMCallMethod(_this_, IConnectionPointContainer_EnumConnectionPoints, ppEnum)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : FindConnectionPoint
+     internal_properties : CAAAAAgAAADI3Xw7Zo6jTGEih6rM1OsYj+rgfDfwQiRpxLWC/7Uy2M4MuLTDz08KZC0qPwbIrbWHSMBKtJoZVPavDGZmtIKeveR9UTrEjjpToPq1IaKXfTwuH+K9cTQnhnmPtBc1R3KazV/yPPy8ywytBU1yHbLT9igX2/YgAIczRtD7dYu2WgfXuHHVM1kYSvWyCFI6yoWi3B2hF9qN+x8kfnvKbPDOoWRFMg==
+     procedure_id : 1956333929477283646
+     type_code : 12
+     code : |1-
+      // Summary: Returns a pointer toward a IConnectionPoint interface for the specified IID, if this IID describes a compatible interface
+      // Description of input/output parameters of 'FindConnectionPoint':
+      //
+      // Syntax:
+      // [ <Result> = ] FindConnectionPoint (<riid> is system int, <ppCP> is system int)
+      //
+      // Parameters:
+      //	riid (system integer): Pointer toward a WDGUID structure that contains the IID of the interface for the object to connect
+      //	ppCP (system integer): Pointer toward a system integer that will receive the address of the IConnectionPoint interface
+      //
+      PROCEDURE FindConnectionPoint(riid is system int, ppCP is system int)
+      RESULT COMCallMethod(_this_, IConnectionPointContainer_FindConnectionPoint, riid, ppCP)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x1b264b09007f6c5c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

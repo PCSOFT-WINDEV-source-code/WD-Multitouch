@@ -1,0 +1,229 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IConnectionPoint
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1b26494900689475
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // IConnectionPoint class
+      // =======================
+      // (Implements the IConnectionPoint COM interface)
+      // 
+      // Takes into account the connection points for the connectable objects
+      //
+      IConnectionPoint is Class
+      	
+      PRIVATE
+      	_this_												is a COMObject				// COM object loaded
+      	
+      	CONSTANT
+      		
+      		// List of interface methods
+      		
+      		// -> IUnknown
+      		IConnectionPoint_QueryInterface					= 0
+      		IConnectionPoint_AddRef							= 1
+      		IConnectionPoint_Release						= 2
+      		
+      		// -> IConnectionPoint
+      		IConnectionPoint_GetConnectionInterface			= 3
+      		IConnectionPoint_GetConnectionPointContainer	= 4
+      		IConnectionPoint_Advise							= 5
+      		IConnectionPoint_Unadvise						= 6
+      		IConnectionPoint_EnumConnections				= 7
+      	END
+      	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1956331666027418741
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor(ppv is system int)
+      
+      // Keeps the pointer  
+      _this_..Address = ppv
+      
+      // The object cannot exist if the pointer is null
+      IF _this_..Address = 0 THEN 
+      	delete object
+      END
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1956331666027484277
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : AddRef
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956332215784081945
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing AddRef
+      PROCEDURE AddRef()
+      RESULT COMCallMethod(_this_, IConnectionPoint_AddRef)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : QueryInterface
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956332215784147652
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing QueryInterface
+      PROCEDURE QueryInterface(LOCAL riid is system int, LOCAL ppvObject is system int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_QueryInterface, riid, ppvObject)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAABhuWPqTr8816SpBaILN2Co+r2RuZj4ZU2RFGhtsrIJ9H7rgz8jKk22QMKZf4VXSl37en6sgzhHlR6e9zEfNEVkYBiik/3Op3JvLFW9w+VaLdKr/Oea3JuUU9ZurSB8kNljPjzDjSPl8seEtODP+PPifwGQcgGtkU7aWcvE5jKJoEv7HN1Zt9mgcr1sVJRD0k2Y12sa
+     procedure_id : 1956332215784213235
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing Release
+      PROCEDURE Release()
+      RESULT COMCallMethod(_this_, IConnectionPoint_Release)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : GetConnectionInterface
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956332340338358623
+     type_code : 12
+     code : |1-
+      // Summary: Retrieves the IID of the interface managed by this connection point
+      // Description of input/output parameters of 'GetConnectionInterface':
+      //
+      // Syntax:
+      // [ <Result> = ] GetConnectionInterface (<pIID> is system int)
+      //
+      // Parameters:
+      //	pIID (system integer): Pointer toward a WDGUID structure that will receive the IID of the interface
+      //
+      PROCEDURE GetConnectionInterface(pIID is system int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_GetConnectionInterface, pIID)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : GetConnectionPointContainer
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1956332383288041816
+     type_code : 12
+     code : |1-
+      // Summary: Retrieves an instance of the ConnectionPointContainer interface for the parent connectable object
+      // Description of input/output parameters of 'GetConnectionPointContainer':
+      //
+      // Syntax:
+      // [ <Result> = ] GetConnectionPointContainer (<ppCPC> is system int)
+      //
+      // Parameters:
+      //	ppCPC (system integer): Pointer toward a system integer that will receive the address of the IConnectionPointContainer interface
+      //
+      PROCEDURE GetConnectionPointContainer(ppCPC is system int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_GetConnectionPointContainer, ppCPC)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : Advise
+     internal_properties : CAAAAAgAAACqc4kjkCjPrw9bjrKeld1/fVkaKsxhLaTZvVkZtDsJrI2KlWyBdqrxaNmcOnlw+/FlOJejuWDsY3G/5TKb5K3E8Upq5xK8jiQL8I+H1TdVXgEAjHstFmo55pJemaVyZ2U+H34H0ic6FSAMAA6GLoZM0NSOfm7peFONmcn649i8LyvRt6y3Uu/6ghD3D6KMFMl6OdEftBtE5FFCWAY6i9/gFWXp
+     procedure_id : 1956332400467980655
+     type_code : 12
+     code : |1-
+      // Summary: Establishes a connection between a connection point and a client object
+      // Description of input/output parameters of 'Advise':
+      //
+      // Syntax:
+      // [ <Result> = ] Advise (<pUnkSink> is system int, <pdwCookie> is system int)
+      //
+      // Parameters:
+      //	pUnkSink (system integer): Pointer toward the instance of the interface of the object with which the connection must be established
+      //	pdwCookie (system integer): Pointer toward an integer that will receive a connection cookie
+      //
+      PROCEDURE Advise(pUnkSink is system int, pdwCookie is system int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_Advise, pUnkSink, pdwCookie)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : Unadvise
+     internal_properties : CAAAAAgAAAApEytcQ1OMFBuZKblf0oPG++La1oHWaK91cofNKot4BHAG4I7kk3rS5IoohTP347cs+cCv4vKQRwDUBz2WKUWQlW7srgBcF4i0XUAS09Qlz9dIjVooNcEx0J1h8oalmhqtykuqLbIXcKc5PWnZ6U0Va5PjiVHec/wuesT54rdPyrCI7AvO3bdiK4nQIU14gpj+mftbhGCc/HWlxThkk4ipsrT6f87G7AefdNhbXi6oi1n2Gg==
+     procedure_id : 1956332413352951246
+     type_code : 12
+     code : |1-
+      // Summary: Ends a connection between a connection point and a client object
+      // Description of input/output parameters of 'Unadvise':
+      //
+      // Syntax:
+      // [ <Result> = ] Unadvise (<dwCookie> is unsigned 4-byte int)
+      //
+      // Parameters:
+      //	dwCookie (unsigned 4-byte integer): Cookie of cookie returned by the Advise method
+      //
+      PROCEDURE Unadvise(LOCAL dwCookie is unsigned int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_Unadvise, dwCookie)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+   -
+     name : EnumConnections
+     internal_properties : CAAAAAgAAAC5AVu3JT/E//yprcIj/4CoYpUBQYDAFQ2RLJjlcjLx7I77iz8T6uVeeALxDz0/2m1DMi60u5DXVY52l5k/1O3sgLjaA50ujwpXbAHRF7kecR5XKMuGKN+QD1rqEVTgFF3/euhnyZ9JXuPYkOSD7Fdm6y1cJp15ZWr2bXcIelZ9lEeH+IGFQ21s/iF4qJgXtjjwr7NC
+     procedure_id : 1956332430532889710
+     type_code : 12
+     code : |1-
+      // Summary: Creates an enumerator to list the current connections of the connection point
+      // Description of input/output parameters of 'EnumConnections':
+      //
+      // Syntax:
+      // [ <Result> = ] EnumConnections (<ppEnum> is system int)
+      //
+      // Parameters:
+      //	ppEnum (system integer): Pointer toward a system integer that will receive the address of the IEnumConnections interface
+      //
+      PROCEDURE EnumConnections(ppEnum is system int)
+      RESULT COMCallMethod(_this_, IConnectionPoint_EnumConnections, ppEnum)
+      
+      CASE EXCEPTION:
+      RESULT E_NOINTERFACE
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x1b26494800658fb4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

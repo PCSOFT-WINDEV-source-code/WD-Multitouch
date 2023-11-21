@@ -1,0 +1,237 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pManipulationAPI
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1b22648f00ce674a
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACOR2BmYaQq0fku0bbb1Gp5cpxnG2Q0hwBGuCofjYRC+cLc4RbK4fUgiVH5E7wsRjEb3Dgd9sdK+oIdT1etOoQ9SP6kJ/MxXQOn4cCin7BZCrDKuInwrtxROY3s9cdgLWKySa3RFIKWG8VWLz+j29Omd4wl0pkGmNCJbeAgIIjr6boxDvN4kAdEm8jgG5IiGVvK
+     code : |1-
+      
+      CONSTANT
+      	
+      	// MANIPULATION_PROCESSOR_MANIPULATIONS enumeration
+      	MANIPULATION_NONE			= 0											// No manipulation was performed
+      	MANIPULATION_TRANSLATE_X	= 0x1										// The manipulation consists in moving the target horizontally
+      	MANIPULATION_TRANSLATE_Y	= 0x2										// The manipulation consists in moving the target vertically
+      	MANIPULATION_SCALE			= 0x4										// The manipulation consists in enlarging or reducing the target
+      	MANIPULATION_ROTATE			= 0x8										// The manipulation consists in performing a rotation of the target
+      	MANIPULATION_ALL			= 0xf										
+      	
+      	// Identifiers of classes
+      	CLSID_InertiaProcessor			= "abb27087-4ce0-4e58-a0cb-e24df96814be"
+      	CLSID_ManipulationProcessor		= "597D4FB0-47FD-4aff-89B9-C6CFAE8CF08E"
+      	
+      	// Identifiers of interfaces
+      	IID_IInertiaProcessor			= "18b00c6d-c5ee-41b1-90a9-9d4a929095ad"
+      	IID_IManipulationProcessor		= "A22AC519-8300-48a0-BEF4-F1BE8737DBA4"
+      END
+      
+      CONSTANT
+      	
+      	// Error constants for the COM returns
+      	E_NOINTERFACE = 0x80004002
+      	E_POINTER 	  = 0x80004003
+      	E_NOTIMPL	  = 0x80004001
+      	S_OK		  = 0x00000000
+      	S_FALSE		  = 0x00000001
+      END
+     type : 720896
+  procedures :
+   -
+     name : EventManipulation
+     procedure_id : 1955281602363148611
+     type_code : 15
+     starred : true
+     code : |1-
+      // Summary: Intercepts the events triggered by IManipulationProcessor
+      // Syntax:
+      //[ <Result> = ] EventManipulation (<pclManipulationProcessor> is dynamic IManipulationProcessor, <pclManipulationEvents> is dynamic IManipulationEvents)
+      //
+      // Parameters:
+      //	pclManipulationProcessor (dynamic IManipulationProcessor): IManipulationProcessor object whose events must be intercepted
+      //	pclManipulationEvents (dynamic IManipulationEvents): Implementation of IManipulationEvents that will receive the events
+      // Return value:
+      // 	boolean: True if the events have been intercepted, False otherwise
+      //
+      PROCEDURE EventManipulation(pclManipulationProcessor is IManipulationProcessor dynamic, pclManipulationEvents is IManipulationEvents dynamic)
+      RESULT TouchEvent(pclManipulationProcessor, pclManipulationEvents)
+     type : 458752
+   -
+     name : EventInertia
+     procedure_id : 1956364642809527346
+     type_code : 15
+     starred : true
+     code : |1-
+      // Summary: Intercepts the events triggered by IInertiaProcessor
+      // Syntax:
+      //[ <Result> = ] EventInertia (<pclInertiaProcessor> is dynamic IInertiaProcessor, <pclManipulationEvents> is dynamic IManipulationEvents)
+      //
+      // Parameters:
+      //	pclInertiaProcessor (dynamic IInertiaProcessor): IInertiaProcessor object whose events must be intercepted
+      //	pclManipulationEvents (dynamic IManipulationEvents): Implementation of IManipulationEvents that will receive the events
+      // Return value:
+      // 	boolean: True if the events have been intercepted, False otherwise
+      //
+      PROCEDURE EventInertia(pclInertiaProcessor is IInertiaProcessor dynamic, pclManipulationEvents is IManipulationEvents dynamic)
+      RESULT TouchEvent(pclInertiaProcessor, pclManipulationEvents)	
+     type : 458752
+   -
+     name : TouchEvent
+     procedure_id : 1956365171090562709
+     type_code : 15
+     group : 2
+     code : |1-
+      // Summary: (Internal) This method is used to branch the management of events on some IInertiaProcessor or IManipulationProcessor objects
+      // Syntax:
+      //[ <Result> = ] TouchEvent (<pclProcessor> is object dynamic, <pclManipulationEvents> is IManipulationEvents dynamic)
+      //
+      // Parameters:
+      //	pclProcessor (dynamic object): IInertiaProcessor or IManipulationProcessor object whose events must be intercepted
+      //	pclManipulationEvents (dynamic IManipulationEvents): Implementation of IManipulationEvents that will receive the events
+      // Return value:
+      // 	boolean: True if the events have been intercepted, False otherwise
+      //
+      PROCEDURE PRIVATE TouchEvent(pclProcessor is object dynamic, pclManipulationEvents is IManipulationEvents dynamic)
+      
+      ppvConnectionContainer	is system int
+      ppvConnection			is system int	
+      pclConnectionContainer	is IConnectionPointContainer dynamic
+      riidConnectionContainer	is WDGUID = [0xB196B284, 0xBAB4, 0x101A, [0xB6, 0x9C, 0x00, 0xAA, 0x00, 0x34, 0x1D, 0x07]]
+      riidManipulationEvents	is WDGUID = [0x4F62C8DA, 0x9C53, 0x4B22, [0x93, 0xDF, 0x92, 0x7A, 0x86, 0x2B, 0xBB, 0x03]]
+      
+      // Checks the version of Windows
+      // - Windows 7
+      // - Windows 2008 Server R2
+      IF pTouchAPI.OS_VERSION < 6.1 THEN
+      	ErrorThrow(1, "Incorrect Windows version")
+      	RESULT False
+      END
+      
+      // Runs the test of the object
+      IF pclProcessor = Null	THEN 
+      	ErrorThrow(1, StringBuild("The <%1> object is invalid", pclProcessor..Class))
+      		RESULT False
+      	END
+      	
+      	// Runs the test of the IManipulationEvents object
+      	IF pclManipulationEvents = Null THEN 
+      		ErrorThrow(1, "The <IManipulationEvents> object is invalid")
+      		RESULT False
+      	END
+      	
+      	// Checks the class of the object
+      	IF NOT pclProcessor..Class IN (IInertiaProcessor, IManipulationProcessor) THEN
+      		ErrorThrow(1, StringBuild("The <%1> object is not a IInertiaProcessor or IManipulationProcessor object", pclProcessor..Class))
+      			RESULT False
+      		END
+      		
+      		// Checks the status of the connection
+      		IF pclManipulationEvents.Cookie <> 0 _AND_ pclManipulationEvents.Connection <> Null THEN
+      			ErrorThrow(1, "The events are already intercepted for this <IManipulationEvents> object")
+      			RESULT True
+      		END
+      		
+      		// Retrieves a manager of connections on the object 
+      		IF pclProcessor.QueryInterface(&riidConnectionContainer, &ppvConnectionContainer) = S_OK THEN
+      			
+      			// Allocates a IConnectionContainer
+      			pclConnectionContainer = new IConnectionPointContainer(ppvConnectionContainer)
+      			
+      			// Retrieves a connection point
+      			IF pclConnectionContainer.FindConnectionPoint(&riidManipulationEvents, &ppvConnection) <> S_OK THEN
+      				
+      				// Freeing
+      				pclConnectionContainer <- Null
+      				
+      				ErrorThrow(1, StringBuild("Unable to intercept the events of the <%1> object: IConnectionPointContainer::FindConnectionPoint failed", pclProcessor..Class))
+      					RESULT False
+      				END
+      				
+      				// Assigns the connection
+      				pclManipulationEvents.Connection = ppvConnection
+      				
+      				// Freeing
+      				pclConnectionContainer <- Null
+      				
+      				// Establishes a temporary connection
+      				IF pclManipulationEvents.Connected() <> S_OK THEN
+      					
+      					// Frees the connection
+      					pclManipulationEvents.Connection = Null
+      					
+      					ErrorThrow(1, StringBuild("Unable to intercept the events of the <%1> object: IConnectionPoint::Advise failed", pclProcessor..Class))
+      						RESULT False
+      						ELSE
+      						
+      						// The connection is established
+      						RESULT True
+      					END		
+      				ELSE
+      					
+      					ErrorThrow(1, StringBuild("Unable to intercept the events of the <%1> object: IManipulationProcessor::QueryInterface failed", pclProcessor..Class))
+      						RESULT False
+      END
+     type : 458752
+   -
+     name : ManipulationEndEvent
+     procedure_id : 1964931672361994719
+     type_code : 15
+     starred : true
+     code : |1-
+      // Summary: Ends the reception of events of IManipulationProcessor
+      // Syntax:
+      //ManipulationEndEvent (<pclHandlingEvents> is dynamic IManipulationEvents)
+      //
+      // Parameters:
+      //	pclHandlingEvents (dynamic IManipulationEvents): IManipulationEvents object that received the events
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ManipulationEndEvent(pclHandlingEvents is IManipulationEvents dynamic)
+      
+      IF pclHandlingEvents = Null THEN RETURN
+      
+      // Disconnection
+      pclHandlingEvents.Disconnect()
+     type : 458752
+   -
+     name : InertiaEndEvent
+     procedure_id : 1964931899995380295
+     type_code : 15
+     starred : true
+     code : |1-
+      // Summary: Ends the reception of events of IManipulationProcessor
+      // Syntax:
+      //InertiaEndEvent (<pclHandlingEvents> is dynamic IManipulationEvents)
+      //
+      // Parameters:
+      //	pclHandlingEvents (dynamic IManipulationEvents): IManipulationEvents object that received the events
+      // Return value:
+      // 	None
+      //
+      PROCEDURE InertiaEndEvent(pclHandlingEvents is IManipulationEvents dynamic)
+      
+      // Disconnection
+      ManipulationEndEvent(pclHandlingEvents)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x1b22648900cc5179
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

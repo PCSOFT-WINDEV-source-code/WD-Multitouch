@@ -1,0 +1,1180 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Drawing_WMTOUCH
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Drawing_WMTOUCH
+ identifier : 0x286e714608f6711b
+ internal_properties : CAAAAAgAAADHp55aPObEZAiSfKaxNGx6HPrl7Y38lDIJVkx7BmcuAod0nUnlFiohzltsZaz88p03BzOkwy/1TrjI//t7DYqVghzyZ8YayEk0iZogV2OI7kjX3oLqyCS9s5ZjlH9BG70SuB/umcQar1eqI4y/sI/Qwl9s1R3MV0NcF8tE5GcN9+Fs+M86wbMTzzkEsrlH6ITPrGXgF8wMntFZMa/JCvj0qI4oRloyu4IguNzOS3jPMHug0dES3AWzhr7SPGd8amxboSzUyccAQHQo3GXm4DVjMjMxLsaJq1xJ/IddseetDqlwAMpXeuSYD+caTg6gf5eugSAcEDRLIAeM8vTBNrmIlBoFDq7kbgZv/SOD571njCqKYcaDtOVHmCGWFi822Uzo/DXz1bPuqWolw6n1gCzeRaJqs05VpFFsgr06V2hbhYAzQx6bAYCewbADVswfYd0kDc1ymR7xAnmuAUEnbhGYpAmEdSTxU7G8emgmTREMK5c7jmvYMKHaNVlsIA35x1jITsdL1gR14ToUky1h81mdp5DD2AJX3ueugUDRgWA/pyX8r4jlJX/+UHyGM7mFuzooWZfAF7OlUEmtmvoJCBF7VW3OaBQKo2Bupt3k0022VQoeDhMyALaJNoQv+BRmaDF1fsVhXJISOOFx5APU//laakxVwNdhhI+u3tY6YS5Y3Np5gLRUuDdlG1l49fI7lMz/jYhIbCm6VwGRFhWN5oq8jAqfln6UCxl4wsq0/oDErZIuDHKzARLZWiiDc9iDw+K7lpRD/idFj79wy9XkZARkO+WueK5vlbnK5tpfb57029xg666ZPLQCLkVBE0T04Y45dlnkZCVQa3xJtrgiyPsg0YwSS6CyX47Rj3CLltNSNFCcwKxfO7w=
+ properties :
+  width : 1010
+  height : 762
+  widthClient : 1008
+  heightClient : 730
+ controls :
+  -
+    name : IMG_RIBBON
+    identifier : 0x286e714608f7711b
+    internal_properties : CAAAAAgAAADC6FXJxY6E95uhJriR0L5gv37rvpTLw0ei5+A2CBTuQm+DepKbARdcPAehV/uRK2vuOxdBPwW8NHLrVjYkf06/X+PaFRdNs+bVnjU8Lm2VUIdZiQXq31INmXRvcpEJx78VwEQ70SMlvIugzBwWQDL3r/iEhGkCx2/gg5FUyjDnIPfbPdJlFQAWAeGNKO3EaX49V+XQJheCDyjH9V4X0C38DS6ukZGiuLRFneM+UxGI6CigEk99iVE6m6IOQwjaabQKjIHcuVqvsmzqhByP4WHl09/RRKB+/U7EQiRnPWZ5EHr/KEwb92Ni2ZyQjTGO00SeeZGnxhejvu+KqCFsINAZNLOW0PC9IAz9zUhvg7cFbhQE67DdnUP+02yyW/amAnGfoubwg6EfRi59XPn+KjMjzR8yNwTCU7Liw5wPFt+U6ly3n8sRmlLYQr3YKK1C8EPPqNX8cJGP/XO7YV9icIW0iMrEBladfiS6FF4rX3k1uf0JtWYk+msXM5TTrFcaOBXcYzJdLAhNA413X6KE5HfaL3I3nMYGSzjQkY7Hj9vMvm+Lh2KjRx7QbEM+ZQ==
+    properties :
+     width : 1020
+     height : 93
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_DRAWING
+    identifier : 0x286e7146090c712a
+    internal_properties : CAAAAAgAAABg059a8pJiaV4CZw3vLoJwyi66bdAl0NhdfQ9h2Qgd38uYLmxWezwgYiS8ik7Bi8BXcMBDO/E4K+o1ZMX+joApt1Pv9ljBqU1hCsNpEGe77FDyn1k3ofMplGJyQuBnIs6sEKATJ2HfOn2MW7kGMBNVTLTwEcqUYzGJcdQ/UfC6B71DOai6i35gXI1L10R/A8hWNxZ+z3FRAWKhp5VHB1ivnjLZFAWq7fBdwKGJS4vLH9qB7tWeOhLY8mN2yIjfil3pY6CffhFkBu+ZLD6GH12F4wA1t6RalE7phA/tYKIrddPdS1WXQ2g0a1Qo428UzxiN/jWkXQqlg5M/KuymsW9RYPbFx8piyUM74CPFJFj3ifK17bhVz6/Nu3z4dVUTD0btJFltGYUDrKAV0I2BKHuO24H02rkhBkZYVpWIuitPcyiJqcB/0jytmYnAKjFSlWy3mj3BUb9Pt1cVsTJ4FvP7NE5vUl0tn7wQ2qSG/e4zaUCSPl0wc6Wih82IZcE8cgRFrA6nlXTccHtDQKpfZCf4Hd+eRa5rSmXT+ad7fdraOWVRTROe7QGo5ib9dzN7QkVX5wQHb8oM7X2Ut9SYFNKM2RtmGTajUZsX1MMPpHPdYJgdmpCfCJGCqA==
+    properties :
+     x : 6
+     y : 99
+     width : 996
+     height : 625
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         gstDot = [MouseXPos, MouseYPos]
+        type : 14
+      -
+        code : |1-
+         
+         // Continues the drawing on the control
+         IF KeyPressed(kpLButton) THEN
+         	
+         	// Draw the line
+         	dLine(MouseXPos, MouseYPos, gstDot.x, gstDot.y, gnColor, gnSize)		
+         END
+         
+         // Keeps the position of the mouse
+         gstDot = [MouseXPos, MouseYPos]
+        type : 66048
+      -
+        code : |1-
+         
+         gstDot = [MouseXPos, MouseYPos]
+        type : 66049
+      -
+        code : |1-
+         
+        type : 66050
+  -
+    name : BTN_SIZE
+    identifier : 0x286e7146090d712a
+    internal_properties : CAAAAAgAAABh/0EPuyhBMpKYU5zML57BNTqegwiNcZzyEpfaSd/4IsZs1U7yYlHvwYHpw5/FDYjY6q+y8v1etYfw+pUDHC6PFxxpX4gTHz8n1X80eKZj7XQRYoRMijWkRmeBtk5njBqQ8r7BAiX5MUTw2BIg74lsCNuFeseTcRnjavaeNuJAoY/j7pQG7vS9jLpgWKislbjakaklG0CcbaJOFPONgdYqFcCvBYu8uYovwqgb3GR52YQKjr5KKnnLHq5eimgyrF6Q7wDZfBKXX5z7zEcVbJ2BmaSdOqahUUk+RJXc5WKyZwuibP/10fyWM5TMb36SxCEsmtMcAvmBCkV/UM8m5r9+u2F+yu58s5d+oqpRmD7AkdKO1sWjXdMGw5Ewzr/VzmPgPKRcxJRQJvDQ2QvgT2ZukrOClSn4137jIiXYF5ZOMwqw3nBaBvu7qGy0EEzlfhb7/fVyelq5wmce2VnbYrcGzPt4PjSee9luKTNBg16st4yNgHRL+aeus1oh4cEEcSHVGJUP9LGGKyLf17uliwLFeVVEuweaA+i/o/tRkS91SxEZliMc+17ZDNRo5GhTdBxfHd8CyRh0VxaPPHXf6RQcJPl+fa/mawB12KvfN/W4PSuaMi5tHLjz956QE9u9PtWS0VD+FshyuWhiHf6pymSs0n+4Vn/MjiPWuUgQmzzrXqULnFeZ/2Q3p9TTzgvYnc2TdCIeDP9Dzg7SvlgOrKfvf9BA4URqxMIBDYuzeBwUiR2agTEpbLFKrJ20/lo=
+    properties :
+     x : 6
+     y : 10
+     width : 70
+     height : 70
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         BTN_SIZE..Pushed = True
+         
+         // Opens the popup of sizes
+         OpenPopupPosition(POPWIN_Size, poAccordingToControl+poBottom+poRight, BTN_SIZE, Val(BTN_SIZE..Note))
+         
+         // Selected Size
+         gnSize = SWITCH(Val(BTN_SIZE..Note), 8, 16, 30, 40)
+         
+         BTN_SIZE..Pushed = False
+         
+         // Restarts the drawing (the size popup is drawing)
+         dStartDrawing(IMG_DRAWING, dNoErase)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SHP_Shape1
+    identifier : 0x286e7146090e712a
+    internal_properties : CAAAAAgAAAAhJfoqYhtLkGGuFv6P2DvhBRMjo3dB6+wOSDTM8y5Oj3WUuAXQXWwCpS0JYp4VPlWV6BKJZTJggNXh9wd+mK9j2qffczkOGfrKOxL+GM0SjjOjEGO3qhYIiVQgZv5N+VGJp+UtA5dSAgSMP4UxT9dmtDzTGqJpIf/UuIN0maILEWwSN2JLJr5BrlQsWWSEu1iRS0niYW/w8oqTbg+/1aVGq3zT1QOHRj8F0fCfnhC6VrdykWrp1mKdZ8UhxtlSCo2DlEPo4XDxE9hmv/3EzIaEbfw1c1hqOCZSZEZ++4v2K6A2wmWcBV3z+Q==
+    properties :
+     x : 82
+     y : 7
+     width : 2
+     height : 77
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : IMG_BCKGRDCOL1
+    identifier : 0x286e71460910712a
+    internal_properties : CAAAAAgAAABrbxSvk+dhbhsxmBYM4FsMpLmcIaq8SLyr0Vc+X9K/HvtCACS37nl167KcHTP1lNP3PNBY9doyd0uNbFqXd+JklrVJ6KRF2oeeBJTkqqni5oTMytW/VgNpV5ftmNlkl56csul0271mVY3E8RbD5RY6QpFa+0ml7edOJAaPymSM2zdhK91Lop+Y9PbZe7+arDxjjH5n8KKiZJ91KQ+d7rP4lpbopyG8Pk4vmX17MjzPY0T0RxMdsyivuEVmRL9AGd89E6wxMbqg0kOtUkW+djIsMDCHuGPkGYH8BL/psxvYSqIkdmbP4HckDzyUl54htUA9AmSsFr62MrU/AKrVEgwr2md0+h1TxVFknB78/+whVMLIrjsCloUSzR5khZRFEgnHivPF+fZiCPQQtdJ9r03nWRMf4tUNDzvpPYj5fcMNdkusc53Nvv8gGW6gy+NIiLrz2F+2fLfbl3qFMJOsUFol79+EcUaGMLQglKia34PN6LzhRdAg2Om1/VxnMCOrR/NnED0VCLIvvIWSrSo=
+    properties :
+     x : 141
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL2
+    identifier : 0x286e7146090f712a
+    internal_properties : CAAAAAgAAACKjHfOMo5I3XiiGY3Nm44Hg167wDUrS8MIwqyKMr3Il2ztqa5Her9XN9oAjnlFTw+yPcM4tCW/hA7qWWlIaOyOnAOAcRm82MVcv8O98aRpQbQQ4u7l8ERqNsY0GWznnNsJqHLSI9nOQbt+BvBWz3rmbh3WgVVtF4Wq+MRjtD6gPxv1TzPfzrVjIPr1VxMWjORHAD7L6Eb6ANs5JfM5ylMoAoc2Ub/qdkKpH/2FskxhkPwK8s8TJr6B6iX0wk72md+5j2wk2ab2qGy2hwp9N706Libv/GPUTGIbfBHXSHZZySOl6dW8C17N/IF2IWR736577CZm/JhoRBPFytzjZK5JaNFGVJSc3mh1jUf10rnsocEbl9zZ97Y1IqvxouvuRcdVDQwyYI/r82GdMm2QDO5ObuBkFXjqUJow1AMUXHTSQdSNtMJok85R9uNRGD4duTF4YdjFmwie2L2QM+DzGSG2npotIrUX6T81AV0deojW/8W2Eo9LvVB6PlU0Ny5AGjjai6hCtdVMW2SxTEs=
+    properties :
+     x : 141
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL3
+    identifier : 0x286e71460911712a
+    internal_properties : CAAAAAgAAAA9IdqRgf0fTOkT7gS6KOW+Cg9qv/h6OpLhm1WfcSxllBVsMk+Iw4zQvjH7t7BMWJgvAEDV6Y6kFVFBODqvTx3HqXb5htp19db++XPXKXyXb4puHGJPNggibAhUx6BbwjkvPlhKQddqha3UzkJqO2QIsN+UyUMTa508FhR1IILiuZ1nbcvVaKVLsghFidPWThaNZvRzTpjyVI1nPTnpkhme3PEkgf2QOjpbPbmnvtjf9r5MgH+JOHalrvncMIoyaxm/TVq8t9jLj41HPHMMOLAvVc3yxVYhvTUgSbYAtxfEtj6oUnq7HLNQ+bYjQqOsInMOF3Of560hn6Dq+/HeGQEWp7RLdW/Bp4OqcrRmYYqDOii2nM18HM/cG6zyN0YzjMDc6Glba0RESgr2j8YvHc2nKTNdIm/zRYEpzXT5f0GF7nMgffdJOvN01fIkiWNI+Orj8O86VJeb17x/ZsGw3Njv+clcH64WTkIwfNy6k2/dOAx9aTicbAGtbQRjwLfXja1RAhfTJqQdqrdE3/g=
+    properties :
+     x : 179
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL4
+    identifier : 0x286e71460912712a
+    internal_properties : CAAAAAgAAABTRwy3qxv16kf1xNKgJmtsoPW89cooSPgfPbOFz+q7yku6TF3ySYrWPCNxpUa6bm4dzhIjI0Riy/9b3lhNLTN1v2yT7JyrK9TCO3uHsWyjA0puKIrzvtwK5JBM55Ar7rUf1nyyFY+u3fUMnoICAxhEAH+IWT8DV/VcFnQFeLKuTQ23WbOxSNGbCoBt8bt+sjplRqAbEgguBD2nfeE5ip0ypLHwcWmQPgJ73bkvVuizSj7UVLfdCHIVmAlMEGJas6lXzeocFyj/o2nLaD+QNEyDWQG292wLlx/ep9ASjSHGrJQa9NxBljUyn/zlhMGexImEkX255a+DYX4gbVNci4NUtf51X33zSSWwUK4An1xFMC6glicSvmG+OXJ04WztVhbCKjNlGdbm/Hi06YAl55etn+0HjD3l5wMn40YLVetXxNnyF3nLuPV2qxja07Vm2shBVsXUzh2l4QoN9HNiiqo9J/+KYWhcCPx+Cmo0FW3fPrKbD4JGulN/M1rJWgllf6On2H19iDq3xJ16hRI=
+    properties :
+     x : 179
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL5
+    identifier : 0x286e71460913712a
+    internal_properties : CAAAAAgAAABcph67YkQt67yQJWyUIQFInCR+JBeD+Fp0ePAFAIDBaqhxWuYSM3wpqUlujLztKG8Kaq4D8dG1LwkGC+XENrOUyTMn9eV2qWbe4u+LGSXCYu7OreHFJ9cqtA74COjtEHWht/w5Ml3GXTgMFiVUCjsf+eTCmO+5bYx/0gdsZiXkFjlRbjaFIM7hnUudtfyg+CdRK1U0g8K34u6vA8iwz1MqMGep5N1uGxhF3jKedIb2jwKydRupNUtAuqcdjIEQt2BpZ+rL2Yj5wMlGpbVJ5hJetjG32JJrg/QUbtGSTJ20c7mqkYGvWlFJbRNKCg62ME53mzqWyVFT+sj7Nq+ttcuRjFoU6CPTlzaSbTGQVJqVfyvC2zYu7AMt3/8b/1O7dgEznHCICaRIX91tzxWjJrnHw2MyDLbiTBOKcWosSYTKLkcLrS8YtT4KOFI6DuXrpbO3dPrTmM9RGp3jV9Aa42CAKohyQ4n+leN87xLE244pt4Op2CNO/mO5mA7nH7T+bKRUioRByv5F
+    properties :
+     x : 217
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL6
+    identifier : 0x286e71460914712a
+    internal_properties : CAAAAAgAAADN0YoBcU2PHLljXlQquNXuGn8ab2jKqiKx64XvIfyVRCWcYr84E3xgDgGrh6BcSMg/cHDF2Z5U5WFRKEof3413OeZpNkrFZSZ5c4dj1UDHH14i3N6nYnAWIEQY05Q/wtFzKrD2eWMyiXHA+s7Gx+yQ9JN87WMnu+G4ypCxfPbi+VErPddFXDWnFuRJDS9StoaZGtR/Vsxy0OnLGZ3NvuF+2PUkBW2EUk7HkWUbWiwHNvJImPsxzDahwrd8EKqSiznfrTocN1h7Hx33LKPcyCCfhR1cd5Sbty9WB/j6tZm+7MQyZFTRPo36L3RlBEGOxJGssRV5LW9DoaYQRRtkk4ukNeZVR207cf3QOP4wD3yl2IZQXtea/pFukTIcabS1fvbyohM9aX5eBPi8GbD1t0flx+2fbDU1N4OvMz5jrTOPNBn6r+dZKuNkxeIUmXNY6NrzgH+q5AcLRyzv1lEAbEhfSZmsT35GfnJgLAxKY78N6FzNOejs3HEdnfRT0Ifn/R0hUueDdhSNGif0D4g=
+    properties :
+     x : 217
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL7
+    identifier : 0x286e71460915712a
+    internal_properties : CAAAAAgAAADC1J9GuhbAJfAqsSVV85bf6zbzCA1jE/sQOjR4UMPC4TKTZwRNANHFLQzeFBfrOXk4a2k+wpvBKhx0/39uDl4A6rk+R4eyIuO3qy9xDaBZqVCkcmJN1GR++oJAhagr5POVFIKGEyWW5R9aktzCw+oOQtG21XWxB4k2bFjPkMKQd8/Jf1ff6j2HxLY5a0fitFyLbN7n4FJijPdNsVeNvuOA1vtO1Y/W/hbNuwHZnvgxCNiuokNrAtZ1zs0wDmqaiT/d89yQwaosXlaoRQC3ndsMoPQpPvGOhgzJkguZLgDTR2Gn8+dibRB/oqdQ09LtcfTRpgggSkqaBlFDvCYpLmj/jouITsL2yKIzE6EnIEtWB6cNidZnaejXgDEbfIF4Pz07d+bUpkHNxb9DbDeeHth0dCq+py70WoQm8iU+ugZMP0JPluJcL27x1vMliGLJeWng9WS17zzGgJWYDxjPPXkOFu758tkj0cc1ccGdvtR2V62eCodDhRhC9p2Mn1YoMtByIzDKPU3E0+wJFIM=
+    properties :
+     x : 255
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL8
+    identifier : 0x286e71460916712a
+    internal_properties : CAAAAAgAAAD+6JNaTjokOZRGtRl51zpzX0JPxJmfn3eMrkArgx6NJDnIvmGYg3IyVtlV7xqWbOwrxDiDucJG74FxxhqJ6eWXGY4BZJ5B/2iHiZtd4STtxQSIRkYxmPgqNsacody/6B9pyJaaFyn6ASv+fsiGhy4KBoWKWZnVuxXykMQ7VNYEs6NdA6uzTlFzwColF1tmSIhfYNLrZNYWWMOBXfMB4qdMal+CCWO6IgJp3x0lIlxFtByipocv9rqB8G9Qrgq6aZ+9U7xwAWocbiYYdTDH7Qv8EAQ3duFW7vTpuhvpfiDDrzmXe2fKDdC/aleIy8pl+UQxDniY2vLS3uG7PIap3ijHZtvAjkomCGJL0ynv6OMuZ/eFiT5nYRCfwPmL7NEIr+Xj9x4kPqH9hfejdG+WhmD0NBI+L55MQoymGhV+2mbch0qvjvoWNc4BvBETWHDLfa1kPT5pDZ6KNN8ilbCtz/VCqmpbLod9RZvbn099vFbqy6GKfhO3CaTOQikYC/qUTuxuJ8yuWWnY5/ANKLc=
+    properties :
+     x : 255
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL9
+    identifier : 0x286e71460917712a
+    internal_properties : CAAAAAgAAADy5O9WSgbQVeAagRVl4yZvm4aDGN1TI6vAasSvZzJR6P2Eeq3Ufw5eIq0BK9ZSuCh3CGw3PUZ64wVtSi79/ekLHZoNEApda/R2X0fBPSDV9cC8PhrhrGBOSpJo3ZgjaO+F5E6e/2Wq1Q86ikRSu+ZK+klC3SF5E8l+FHgn8Do804eB61/rCmH3dObZy++CGBijTEoXZPJGZB+FeZc1tm/8XnOyvatGwrZNa7H5/gi9ZKhmPovPEgqlbHckss62yX8ZL7yUGQZuEISOv4I1n+UiRg7FnKvUfGKTDLnfsB4xWbNNKT3sI0Y1HHlmAUSbPwYjHO42JKh4VGuVErT7bLYJWDnG7MT0NiC1Bff1kklMOckrrxxBF7YlWps52mMWrecF9ZyK0BeTG8EV4k1QzK6GNjA8xfAq8DpoRMu8ZOxawSRVrMZa6fotaE3flLQXqVkwAfotSVrO+BMWmbSpQ3nGrnbvmiuR0SfXm0t5sMIG591OuldzVeiSBm3cTwaYQuBiEyDaLV3U4/wZJLM=
+    properties :
+     x : 293
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL10
+    identifier : 0x286e71460918712a
+    internal_properties : CAAAAAgAAACXk1gTd0eRFqNZQE4M0jd4TBkQaW7MrCxD6YfoIv2uxaJjBwq13CPDISgcMDH9GQkII0XQyvNX0LCgmUuY2Iok1l3SIVsCOGlsh4unmYSbY9Iu6Nqj7vxCDCgUH1D7nt3/7rRazddWbeWcPkJqu4D0mO9Y+W+jN61EzowNKEIuNS1fMeuZEOmr2kCtsWMGigpdJmB7UkhunIVPFcl5iq1qZCnYqYHYhtJ73dkvTjCLKoZE1PeNuEIdIG28wKLaQ0mXDboMlwh3y8FD4Ldo3BTLEUkCMyhPY1uCM1TmmYVKOPAmUHj9ilE+43i5qO1y2GVADfkFUUOffcI8sTc4r/fQAWpRW5mXVeF03NIk++A5LDpMwnM+Uu3KPa7YdfhxOnKOBo+xpXpSeGxgfdQRi2vJ60ljKEmZk1/LX6q/Ac9r0PWea7lV9o2+eV7gi6O4DjyV7m+4vC8ZRSz/8hPIpJ7p8zOsXVaudEi0uGhkW7cL6l7PO9by1ncjl/5t/vWJU/cbVOGZbB6TIDnGUU4=
+    properties :
+     x : 293
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL11
+    identifier : 0x286e71460919712a
+    internal_properties : CAAAAAgAAAC3s7gzF+dxdsN54O6sMlcYrPmwyc6szEyjyedIAp0OpcKDZypV/AMjQci80FHdOSnog+UwKlP3cBCA+at4eGoE9n2ywfsiGMkPpSc7dbhTc+aaqI6L0gR2MPQoazxXLi0bGnT2bcPGueGA4ramZzBcbNvQVb/P50HgsmgZTO4e/dmzieeRFJGPlgRJHV+i+iqpwjBPupR++OFTsZ3FruVy2O0wDWm8ln6vOT1rKkRbuoq43GuVpNJ5zKdc8Eryq5m/DVp8dxgrby3nHJMsmNAPdS381Y4hvTUoaQ44z//slq5QAuKrZIv4KX5jAkOM0pu2R6uPH32Bb8gKs+k2IXmWh6xLbU8Z71v6+jTm4ZrzovDGxC00HK8sU7zaT37rVNDM8AkTmwyMItoej+YPDe0P8UPlohfDRZGx7Wwhp7kNfhO4DRn1Fq1e2f4Aq4PYbpx1zk9YHI95JcxfUvPohL6JE9PMvfbOlGiU2AiEu1fryr6vG/bSNteDN17NXhVpc5e79AH5DL4zQBnmcW4=
+    properties :
+     x : 331
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL12
+    identifier : 0x286e7146091a712a
+    internal_properties : CAAAAAgAAABSRA+2qmbw9UD6YXVFg4bPu6bjOH3zgwtgCuRPB5LxCN3kmg20365+Ao1hCzbyGIgXKExXXWZawyUN6k6d3Ymr/Xot8Oo9ixRJmSNlKXyFvcxALr6pkDBCzn4kqQT3gFfxgD7yb8Hy+SN25rCuv+aCjv0ycdHt040qaMwjvM6c6+uVq8NLpsnrmAL7/wsuhCS/8F7r6KbaeOMx7QtJeiMwAk/O2YeyjsJ5762FyiT5wKRqYm+Tpl45QjfwzrLykZ8Fk1yg8RrY+rqEqeRTQa8oLCBreK+ImA5PGIUbtArdRc8R5fFYf6pJ4G1aRYBPk9rnaMLCyMxUQAeBfhDfGHKFXPuATormOCKLY6l/WIOe1zf1We530VBPsFl77NG4D0VTd/7EvmHthXez1J8GhnDEVOIO/46cYpy2WoX+Wnbch1pPjuY6ydoNCK2/9NT3SflQIZqN6fpuGHO2OdSJY1kmDtZPOotxsQf3e6vZ0KImh33u2rcT9Ygy5o38b2Y4IsBCc4B6jT20w5x5hBM=
+    properties :
+     x : 331
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL13
+    identifier : 0x286e7146091b712a
+    internal_properties : CAAAAAgAAABPWwCL/88Jnjvh2Mb0ar/w1NEocaaE9GTroU83UZyJqG0U1tc8E3AgHlG751jULLTXqFxFTX5wpQkp6Hrn/9mDGVbVhr5lof44DjZCTO8qSpHnQ9OulbXfdaEDZh/yreRO37sPgBYXdoZbswla4JgT8U7V9CxN9zEQ4jjp8bvmBRWvoeupAOlzQpj1eaNK2hrNtnALIjg+TDX/pXmJej16FDmo+dEI1gIrDWnfnuDbOvYU5EcdKFINkNfQRN5uI5nDEVpgD3QdcSPlHp0qCmqly5eyg9ifM6tSQ2SWSXVayOAWwIjtmuFOc8gJGB2iKDUwfekVQVMvjVKMAefon4NUBV71P30z+WXw4C6Qb5yD8uA2NL2k7PPggXIAE1gBuPRwcO87LbqUOiDU7abN/+lL/QOHbjUtgb1vW85lwZ8lVqvgn9WDwNECvzQqp+1e7tyVDqXQdr1JFWbRzK+iSnbBW5eKXaAkXFCCFiq43YXD4qaXcy6qHr/rr8alhn0Ry2+TzGkB9JYLmKF+mQY=
+    properties :
+     x : 369
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL14
+    identifier : 0x286e7146091c712a
+    internal_properties : CAAAAAgAAABqbBeuku5ofdgC+e2tO25no/6b4NVLK6MoYsy21hF800AB3VLrLiMzk76M2l1po6tWIddMeIlT8Mr+VVVsDED6YIcEdW0wDBGYjVPNMST5gTTQst6lkNQqxmY0OfxXPGvZ2DKyEwmukTvuloAWD6qGzn0mkdWNJ4UaWATD5M6gT4vFL1PP/lVzQCoF5zN2HKTHgK4baCaKAEu5hXOpWjO40reWMQ+6tvLpT41VcowRMDyKwr/Thk7BemNQ7tLSMX/l87wAsdoISkq0mdSjEV9Y3PCHtHv8BIpz9OnvQB7BsdstAc2UM3b1VPnuuTwDZzZT9L7elABgbEu9wtSbTFbxgPl+TIzkVjCNZb8NyoGUyZljb/Rx325dmkNpmiNW7a9NVUQKuDfD25lVSiVIdHbWhuicbfAyKOJIrFsslNxaySx1LHLgoz7xLqOZMHYloREombjNi6C2gB0Yg/DjibH+lkq1om0XyT89UdXVMtB+H+VWsm9rXfCaHnXUVw5gepi66wjiFbUsu4SRrCs=
+    properties :
+     x : 369
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL15
+    identifier : 0x286e7146091d712a
+    internal_properties : CAAAAAgAAAD63IdeQj7YDahSqT2dy14Xs65L0IWbm3P4sryGhuGsw5BxzULbPtMDo048ao25U5smEUf86JlDABrOhSWcXPAqcDd0ZR1A/GEGC7exxeg9BTi8vlrRbFDW4oqQleij+GelTCbWF83CFc/6agRaQ+66AkkCrZFJA/GWTFCvgCrc+9d5I8djkpmHVKZp+zfKUJj7vFo3dMKGfPfdoV8F5q907qsqNVPuqiZda1H5hnCVdLDGXsv/osqdFKFQLhKS8f/lM7xAcRqo6qqUuTSDsT/4vJBpcN+QMJZPcBXblCo9bbdhLTFQv9p5qO0SfZinOwqnoPLK2IQM+McZbgBvGALdjO0KEOhAioRRmSOBZuUoXa1fM5D1U/qJdk8lxjcimds5maCOxCOXD015bhlkyJq6ClRQGWTGpL6UWPdo6GjWRcjpuOJw026hnlPJwMb1UUH46Qh92xAmcA0I80AzWWEuplpFEv2HOa+twUWlwiCuzzUmgh+7DaDKTiUEZx5waoiKO9iSZWXc6/QBHLs=
+    properties :
+     x : 407
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL16
+    identifier : 0x286e7146091e712a
+    internal_properties : CAAAAAgAAABmQAuC5tIMkTze3cHxX7L718rXfKGH91+k1hhhYYSHdrdmdHfWaUSQHANT5RgUbjZpul4hryA4BRcDVKhXDz/pv2wnUuTvaQ7usWONabxR8eyQsi4lwBSS/p78IRznPKOZQMq6G6EWcdvudvDupwK2Vv1m0bVNZ+1SEHw75A5Qd3v9p0vX9r1jwAqVJwsuBOR/cB7raCZauGMx7UuJuuOwgg/OGcdyzsI5r+2FSiT5gGTqou8TJl75Qi9gfnKywT+l88zQcXqQ4lLcAfxL6RfQhMgL2I8ouC4veCX7lKq95S+xhVE4n8ppQE36peDvc/rHiGKiKGz04OfhnnC/OFKlZD2igDBAiuTJGaspDn2gzY1HszgFixKRdnfVFkcCqaPxSeg+LLNHv6V5FkHs0JKq6rzQsQTeXPZUQCdo6PhGLSC56BLiGdZpVIn/gIQ3pRUMkSIBWUpaBG/S2UAR+8XSKpavRnNRdUsLX/P9GHrK81nCJvvfIbzmqsGgg3IM1nSWz2QG8ZEAj6h1gB8=
+    properties :
+     x : 407
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL17
+    identifier : 0x286e7146091f712a
+    internal_properties : CAAAAAgAAAAhPSa9rRn7WPUnmgC2FPG6FhNuo/x+Ppbllxldd3oXTtOCcOV+MbaubFMJtUZyqtpFdm4zH6wGM3ezNqgd3XdhT5xvDLhzT2Qosls3GQQLYxJuGMqjjgxCnCh0XwBL3s2PHpSa/Qe2veWMbrJqO3DUuA8oiQ+jJ0007sztOHIO5f1P8cvpYCkbOpCdYQOm+grdprCLEmh+nNXPVamp2k2a1Lk4KREoBkL7bSl/TrB7SsYERKftOPJ9EH/QRN5uI5nDEVpgD3Sd8aNlnh2qiuolSxfai+BXe2Oayyy+sQ3SQMgO6PBVcqmmm/ARYEWawE3YldHdqSuXJTpUaW9w9x84efJpU3H/bcls1Oqck8jBtNLUOosWumVyFabwDXAZoppmLkcJfaIqoETY9awJs7NRQ9H74IGha6eDd6K3ORezmA1GlZuhmqdYyeZkPRsATEb/+Oc2FJcfa4CjFhUoxOyDfel8c0aGqi4kIMzeO6chRJiBZTyYaAWxYQhnxLPLkbFVDivPOki5xpNg++Q=
+    properties :
+     x : 445
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL18
+    identifier : 0x286e71460920712a
+    internal_properties : CAAAAAgAAABKTDeO8s4InTji2c2NW87Hw577AHXriwNIgqyBySxvVk929KfGWbR4JAtrLcj0Li7pkhb5ZwgwRXdjVJgfx3dZtzx3ItQPuQb+8h+hrQCJqbAEIvJNNJQ+CsIgBbhbxAMlhGJm43W2FT/qQszCw1ouojFmBVWx12kGzDgPYDKwJ/8Zn7fP2n2XpCaJO2dC5DzrzE6XgFIybCcNEVedbsOQ5quOVX/GfmZNKxEpXjhhSFiuUhNLwiaVXjcEEiaecW/xn0zEiXYKvPgqA6YRM0n+ouoRxrmGrsQxWnOBdlgLv2mfW28KhbhXys/Yu/rFCUwZfjBoUgKCflkrpA4xJmC3tmNQdmrOMDobu8kvyIOOP49FMZ7voVBPiBmjhMmwF1WDb46cztk1XYdLVD+mllAsXOJmD5aMYpyOOi3GYn7E90oH1M5+zdIFuAUDpOD7WVH4jQ4dBS4mUKOu3XRtDxluZqIL4k+1cVef+weR9J4uTwV2Us8L/ZA6/pX0d24A2niay2gC9ZUMm6RxjAs=
+    properties :
+     x : 445
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL19
+    identifier : 0x286e71460921712a
+    internal_properties : CAAAAAgAAADO2IMKfkqUCaRWpSlp56oj7zL/NAnvjwdc/rD1ndCzGoNCAAOihUBkEA9nGRSgeuo1xqoNS/xUGcuvCPxje1v9ixiDfvArleIxqEvFCSzhSSyYagaNmNxSbg5M0ZQ/RJPRYCoaGzF2mQPW7tjO19LOBoV+eT3VL60i4Dw7/HZoN6NtZ3t35h07aNI9H0v+pMyfaKajMC6SqNNBPeshwlvgyr/ueVeC3tpR16XNCnS52DRSOoc7zhbpguFU4mbeQQ9Rv7x0CRYydCASyy656wE2aiK3pMuspDqj9JlPwG5h0ast4e2Uc0Y1lOnuqexDl+azpO4uJLAA3Ht9cnR7fJaxcNnezCwExlDtNf89GsHkmVmzvySBD05NikMZeoPGbe/9tSQqeLeTG9kFqvUYFOZG5lhsHWDCqHJYjEvMFCyaiRxVkpqi4e4hhFHfgIQntS3U4drBYYp6JHfykbipw+1CWp4P7jOJTbM7R9PNKEr6m/FaTsMH+ZQ+8pmIm0okPtx+N9yeaRmIFyD9GIc=
+    properties :
+     x : 483
+     y : 13
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BCKGRDCOL20
+    identifier : 0x286e71460922712a
+    internal_properties : CAAAAAgAAAC8nkUQAHiaz2KYA4/PnYgBhWC5wpudnX2SuA5rI77ZsOmYWsl8846i3tHdd+JGQEBbHPwDtfrCb8ExPoIRwXHb4b71JNIJO7gBfje5tfgRgVicGroFbNx2MtqojdCj/Ks9LMqeC52O/XcSGgRqu+LGCgm+7U0J/4HuJOBXGJpoj5fBx0/XQlV/3G7B8096TBSTZMZ/+KpahO/FOf9VFhuYXjMWTaeONu5lswnB5hCJIIBGKjtD+q4NZtPUou7WOT8ZL8yEWSaG2FyG15ptJ01K/lbp/nHOdgzJostpHgDjl8F3IxdSfTDP8qcgc7K9EVSB5ihgaioqpjFzfHZZjvjPLttYflImCBKjM7EH4Bt2JxfNyXYHSXh3YCG7rDHYby17Z3aktjENta8jvJf+rriUpKo+J46U6iSGIgUuiqYcT6LfpIy8jxDD+sdFGh49nxuiNyALK8A0Xj0Ip6JTqYfYcLSVaLUPV72xzWl3knDc+S8YjAXBB6bQQFc2NSxCGDrclaJYoyeaKTbDXnk=
+    properties :
+     x : 483
+     y : 51
+     width : 26
+     height : 26
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_BACKBCKGRDCOL1
+    identifier : 0x286e7146090b712a
+    internal_properties : CAAAAAgAAABoRB1428i1tEKMPtGy1aGz67n9BcQ9osIMOiKfnPI7xmNuu5smjSg3P7RnTXPJ43nhofK9/GoCH8ZxnUzI+u8L8UyAuE4E0PmKKFNXa0qcAC9Qii6OciuRNZsI/XIQricaaOYxtph9CxkyREFoFZVEE7bxmMYbVAvTT81KN11PXAT4KP4NwBoDR1GYGiA3s1+ZIg0hXsDQpuZTBhPBbI/NWLH2PFyFQVw9x6csFc+/mHC7gwXreOtCXNdsS2ZV80v+Qo0bWcfapIf/pOU1l8K+Vd3PNAisrJAxbduzGQlPdixBG0odMUqBPseD45feOLm94+ya53hnqjEQLfEaTe8aXs5leWabjk72bcLwdAi+EbwEd4V5aLn4J0mC/h1InQ+kMSNnlzqQsqN7THdeLXuP8mb9XfdfyakVUiKUSYjV9b0M8So+cfAsmhHK/J9CSHCj2un61SeIL7T7nRT0fJb/cvAYiR565oGexXqnxTsPAhUSLy7O/FnQWnpAfjEV+zO+CcXy
+    properties :
+     x : 138
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL1..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL2
+    identifier : 0x286e714608f8711b
+    internal_properties : CAAAAAgAAADYlCKrgM9RhEHr0OcLX63Ji4tJMm3jV72bRrbe/bcV/Da9zsMlYFbh3mgdLNNM28/IeIBFhzaM9kH4+j8V/QpZLSstdHGYVu9DjvRsPIECZgb1cTzul1BnOMfqXeYEPO9vAj2jPVBpEsmFdDs3voRdR2bCXqYXnh7V0HdZmdSexPbu67J9/UGIEWYMEHlE07mQB1DrDkw68341L3Tpmk7i3xJYY8JTbTZ/UwM/t3JP065GJaQg5vzjjGnkv0Ydru6F7YEmg6A82RCfUUkBPvra7BFLx4VBxoOPkPkkgvjcGpCijJbfTZXgGNDJRBbGZZYCtPDeBrBUf2oHpkN5h7ZCQsA/Q9qrTHPGlkxq1abNjRun6hDMG1T+rZVffX50TpaKt9m1YgsgJgc3raWm9zfC8C+zHOnuAbjEEjX7Q/qKTE/zNAfHMi+DMAS9Gdf7EzbTDhuThy/AqAqEPx+Gf6AHuhAVXHDD2QxN2eGljfgImGhxQnSiJHr3/BHjocE=
+    properties :
+     x : 138
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL2..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL3
+    identifier : 0x286e714608f9711b
+    internal_properties : CAAAAAgAAABq/oTJ4i2zpmPVtsFtocebJQUL8C+hkW/10AQxTiKgb5NkpYZ6O+fKv8WCozCzJtIhA+cI3EElnz5xf/oqrIUeYenTHif6jLUhvMYa4seQzPSrx9YEkUblrvVU41xicu11APtdm7pPcB/DzrFtpKLjjXzA2OTZJOTDPom/v1pSxuhkweCvq5s2A2TCsjPyDXvSRY65SFocGTjzfc5DgOh8YVjuKbzRZ3w5FdG7/1QmXcYiuWJUPFQDkHv6q1IJayNYuNTV0DVXzNOsEnZo+SqGwqmHB1EZ3h9brL0c5rgMzixWJKbrZa0cpNTFRBLG9RKGoOAO0ricS8ajEuOdp5ScdMJxCQhtwmnI4A7AQ2gDt30RRE6aDYok99fJE5SOpGg02dMTGMXu5CHpxzvM0V3UuiFl0h+4z5b23GfRJV4uhjE9ooslcq/1RmhxbQ2Xb4BFWPGzWRu0LoyMz4sk01S5zKKnygZ1l0qPmyMbOypeckJLpJKABljVnnNFB28=
+    properties :
+     x : 176
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL3..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL4
+    identifier : 0x286e714608fa711b
+    internal_properties : CAAAAAgAAAAfU+NqT4qcd1Ts3fh+kNZ01lZ64VCmlnxaB3cdqv7gKdPeYRzC9dPK02sgoyAfygRlqat2hKsdc7o/cVb2dE01AQXtXv0mRjNbsPJY6DW+IFrLXeo6+WzDkGl81X68kI2DMA19gUJ1UpGn6gfDBoxbd1AqQCoNcs5dql0tLUgGPs7oQzTBw1WMHRxqWMGcnwtMJZzRaoryO7ZvhchtHt5UX5R02RrBoa67+Vmf9zJ3lY7YWdoq3EyLoEsay1IJF18cFLDR3AkrwA0W8OLkfcUdqWb4dOyYZ9Qsd1h9ZQfPHZWfHaPOfMaFzQOMTck9bJ0LPQlXedt5hA9+Ddjwkq2500HcnJW+EbgbtZs/PCFIeHzgx0mfphm3eiTu7uETqQFvfCpGtR495ySSaFYhbj7BscjovUxxxhF93VA8HhXhORr2gzCUybAGR+v87iBORt86VY4AILKVk9FbNrQf0tc8cU/UHbGCmk+AjBRqSjtPYVNkTXmv1zcyO9AiYoI=
+    properties :
+     x : 176
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL4..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL5
+    identifier : 0x286e714608fb711b
+    internal_properties : CAAAAAgAAACC5lyBquXrblv97ukVWa+zzV1zmAepmWf9yKwnZNyGjYH2H+jwxV2k7UcEqS5F5EAXVSEKyoOTcUzzgWA4/iOX8aHbesPeeEXVPGLuvgeECAhzB1JwPVLVegVQx3iqzhHRkCuRlwaTMNOjYq1BJEbXgawQlDClgHw3RpWLg7JwJkD8yQhH01vGq9yq6htKNbNSJW5JeHrEsahT7Q4jYHhciWCWISQ5BxxRcaHBSVBBzYgUO/q3jgSTIDuKC0K587swwDx9OK0PBmg/mc2ZirYCjLFvKyXlalun8BnwUgww8shaSGoPMXm4ICihqA76OebyBHRCpjQIJ8JXLoeZu+oKyni7P/JH4IPWZpQ+HUoxZUsXrrQMP7DuXc034a6YEt6K512Regfsjr93dVlG6zvC8C+niFFKXcgEUhUnt4pqRnGtfs8N9uOdDqABIT0DCzCVeF0n8U8gduTUh9d0b7AZpHqP0g5tj0K3cwtzUwIGmmpzXGq4ziAd1jud7xc=
+    properties :
+     x : 214
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL5..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL6
+    identifier : 0x286e714608fc711b
+    internal_properties : CAAAAAgAAACjx78mC0bIA/BYwXT6LFIAonKedfRaqlBOW0PHjIQSk820/+L0w624zVEmBYqVBBbv75n8TnlPQaTV30C4gv+QfxenNFccAH2FkgD6CodgAlxdP0hM96aFSmvSX6Amyi8lEq+TExgnXBPhKAFFiFYl2fLcZizT/Piv3Evnd4JACBAanSIrIT+m525omhNOMb1eL25HXNik3fiJq+oHEKj+aR72n0yvqzBNg8dJIfxJ31iyY9BeqSzzHOl0X/Ztlsb91QmuC5j09Asc/rSGu3dTJ8SGHm5mIf4a7Sa3vx2xc3N9e73YktgXQzGirwv7PuO5oy85s/mTHvUco0piAK9PsYey3l/8W+IRo7HZlifShlJ+LbsR3BupGIp8oGPR2yd9ssgg9yRPSVrQPtCLFJCHDy5uvxan+OMDq+YOKAVxRQ7y8yCQIUgauxeoTjxmHsNGGfaQnPqd92VXeizL+j+w3SMgQZ2evnPkILiOtq/T5dfgMQUTqwN+d5x+zjY=
+    properties :
+     x : 214
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL6..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL7
+    identifier : 0x286e714608fd711b
+    internal_properties : CAAAAAgAAAAfU+NqT4qcd1Ts3fh+kNZ01lZ64VCmlnxaBzdQf3EvmAT1xKc7nHhjGGxJalkmgatitEa5DSKChOMUmnGvgwSJ9xXjqqlC8o/3DFbEpGGK7LaH8R6+XfAHFN1IOXKAVPEH5GlZ3X6Rbh3DTjM/Epg3Y7yuxK4xNkKRnmnRMXzq4gKcD4Bt31G4yTi+lD2oyxd4sTD1vr52D5ojcazhgrII8+gghdYNPdpXtb3Ls47zAUo0/X6oZvQjMNtaC9Jpm9PoKOSl4MWnNqlyrD4o+TH5RcqEeOiESwgAm6xxIVtjoRkLgU8y0BKB2Z94ST2JKMnX0cUrlcdtiHMSQfwsVlHt503guGkivVT30XcLsP2ExCikc31L8i1bzsgy8r13vQVTiI4CCYJZ88D+FDI1erqt3QyUIcj9SqVxsb6y1EsrgcK+O2pMY5bae1VWmEBkKM8KdV6+NGgPi9lRfC7XwHFkEU/UHbGCmk+AjBRqSjtPYVNkTXmv1zcyO9AiYoI=
+    properties :
+     x : 252
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL7..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL8
+    identifier : 0x286e714608fe711b
+    internal_properties : CAAAAAgAAACzpcTfDJXx6qaoF2rS6CLYT+rlXvpPJ4YIgSuzEtez+OFwLxml5r1mpKywc9zyE+CT4VUVk0FiZuHoXbLtxdD4UodDCr+6Lo7eBT5rmrqxVRBE2gdB9d8p6LzrgsV3DA4zhZSvML9SXOFzpo+Sg+7B5ZoVlvKzc21DRhVglom8uqJY/Wi7k6qML4POQSxLoOFUqUNi2M3OTGQldL2/+pHGhwITR2jQGI89rrYFJQdqY/vCNuc8g8N9BcHJOzam+ttslseCIVHQe2bZUr+kBjPV1++yJ1Dd5HjmwHj6mlpiqKZs1ByLmH0rtzFLdSOkLoENhkN8qHAaE1N4Sux+OqNemjZIHORlQ3LZHlNW8Vm0X3YUCIUGwx2HOvGHnnfE6xz1jyw4NYprWwkSgnuL8dOtvJN/5Ly26IKRxPeMqEhvyVyKZp6qiZrQ3k8GzvrIsin51bRWUubAFYuKj4DkZcke/ysM04a6Wx5a1WYnLuWXH/V507gLHbSosQ5vdA==
+    properties :
+     x : 252
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL8..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL9
+    identifier : 0x286e714608ff711b
+    internal_properties : CAAAAAgAAAANWeEUffzidVL655akzjSi/CQwW8ZoJCKolcFECyGLpCDVJEM3iCSDnDQ1hhUu/b8GlL6lOYb+DG+U3hVzo1hbPd+PuJOApCUJckyu5t8sRhAl/7S4s0rlpuOOi2Ru/kPRgi9HD4yDdDcZFEXxWGoJtfLk2vDn6MgTXP9LUwJUBHTSpeY31bMma46Evq9eFcHin/6rcLSQZbRph8ZbSBwinf5Gk9hDr+jB4yNdxdxdy4TS+6R6m6T7nGnkr9ZtUgKhgbXax9y4qi1+WA4kESn1ga5sOBT8g3SMH8gBvbOLVRUfmR9OGGI1ratcsVlh0H3TRU0bwf+d3IduHeww/qlBQ6G4MA0CXfBjTcPL7L20+OTYOyWfYqVP0nRG6sFf1Sk//IYaDcLh99RCuFoRkpKZ6QC84RTFEtE9nVDwCgVxT3AM1UB2RTwUUXs07uLOtk3ImwAcBkrt9Wev2oxxIpcSp+Vij0MwTIH2Mko8ZBFxB/mCU2Ox1SkkKc4gbJQ=
+    properties :
+     x : 290
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL9..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL10
+    identifier : 0x286e71460900711b
+    internal_properties : CAAAAAgAAAB59YXI4SC2WWY+ozo40ig2EAg8pxJk0D7kwbXQh40ngAxhSKe7rHj3+HhhSlnCAUMqCMoRdTJaqHuA8pHvKGKbt/PrND8cIBEVfhA6cst4skyxY8hMp85Zyuear9jycueVdnuTa0hf4OP1ODGtpEbVgf7YbgQbvAwncAvvh9Y4WGjGgWIDMa/yt/rYumuk7SES88qzSFQAaVTVn8ZzfMTKtUrKM6AzL/Rhl9NtBaANE2wG/1xK6wRfvBX8r15xrNyb+5sEdUrqyC9wUkgCP3tHeyBaSjK6PSpmuaIjM4m9D6+hJyFk7jyrJ1WWg1ePGjk/OSkfrSsBEPuS4dAsEi01V+3cPNFGmZwvma/X4InwpHC8xymbrinjVsgazv3Taa3jSCpG0SYNk4A+9NbFji4lFQRoVaBxhlWhMRRkamZsu9yAMQSyIRA45U8IIi5SOuE8xwQ44rZR2RuTPmANhqsmW5GW2/dEWI3CTlYoCH2NI5Umj6d9AV3YnXJEAGA=
+    properties :
+     x : 290
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL10..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL11
+    identifier : 0x286e71460901711b
+    internal_properties : CAAAAAgAAACjx78mC0bIA/BYwXT6LFIAonKedfRaqlBOW8NLEFh25xmAM1YYN4lkEWWC2d5pOIpLi00w0q2LfdgJy4TM5oNW8wmxPgUOHh/bNIpoODG2KGLPKVISOcT3SAXkbdaIYOWT7Gnd2aq1TmEDsrdDKkxD96y+UCr14sINbp3dHVz23na8FyTpC/3QffCiCOHgP+PUofhR+roCt65jPeAVWm4sF/DgGeI5WbprndE/f6ZHhZ50XarsOFw7EOsqK0K5v/f0nBj5pEFj5DvEVlAmX0ur37y6Mia6fc46xbbLlykt68O9x4noTlSXwwnyY8vf0nMhSwPNK413pn3s4x4CbLtHQcdeooeA53rZ+2lVBtMuZkoGgVdhiMeBEAr0PPPNd7/toiTEP5izufqwznR7OHT/R8byI+6L5NMzm+YSRN2ZbS4Cm6A4gXAyswdA7pwG/hMOUUZ4jALdV5WfimTTAjeo3SMgQZ2evnPkILiOtq/T5dfgMQUTqwN+d5x+zjY=
+    properties :
+     x : 328
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL11..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL12
+    identifier : 0x286e71460902711b
+    internal_properties : CAAAAAgAAAA0MMYPJLMlKBWvHLu/U5HNn49FLmnvU6k3EspDAGT6CT3+/+zkgdlc0V8YfVpl4FTbpVH2Zr8n2ViTDZRcpld6/z0vHjei/EkpUG4yUktYPMzXI94MuU5hRhFE47RW2q3tfL/1a7rHBCcnHmG1mMrL9VBscIzB3BjDAqmHDy68gqx4jVwrt48Kf7C2zn9OiUe22WqFNNaArYRPoapPfCQ4ZXxaReiNu5DV5d0VbbSFofyoB6bJrGyrAOu6q9KpJ28MpCCBDDkb4GyzHbG1bjqWIN1zl8nZZidjvAWcVkgM3pReFB57zd1MhExVjBqOnbrmwOje+lg0477T2mNNNwYWtpynQ/4TdAe6mujSWU6l6Q8jUjCgQ3yKadlzfRKkHvpm66lllkNgcqNrCT0SP3/2hEs7ZJUOGVSAXtGzN8i0eAM/DLEjnJXLeFqzc3v5HcIHarPRX31SXO6ukRm6LYJ7DlzpCMS31QhJxd2hgfQUpBSlDjjukO5rYLUHRa0=
+    properties :
+     x : 328
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL12..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL13
+    identifier : 0x286e71460903711b
+    internal_properties : CAAAAAgAAADaTjS50t3DFvNlxnH9EVcLVdX7YN9RoV8FIBQ2ZcudVD5h+nvtcK4FzlQlTEP4s//43KTtf1ZUehEUim89EUpC6bmjYttG4N19lKqm1q8cECD7n+rYlcrdMg1oLwDiFmnZqPMZTw67CLub6gU5DJ6/2XQoLFg92KSPjs2zKyq4Hqj0sfAfW4MeE3RSApMy7TuKzSbhQDKcGYB7hRareABUUbheidzBT5RZqQnZoVj5NUC8c3IuQ+R/OPfSkwp9WRlWPuYrcq/NLVBXweVR4l6q1BknQz1tMoP/mFG4ehQo6oCy8NK3qfFQ6OAJAIYSIc7aDGz63tywbzrfxi8hIwIi4rBDx1o/2Fuevpx2NUK57fNfRswE51h2NZWvKdbgSpaCf8VZwt/ERkfPfVHeY0PK+Ne/AAnyBVC8mo3vf9A8hslVsuHFmMGJKo4vw60R9Rj1WLnVXT3a5hQeuZnUDSKZLPJ3+talx3r/C5Pry7rO4tLbNAIQtggFziP1V78=
+    properties :
+     x : 366
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL13..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL14
+    identifier : 0x286e71460904711b
+    internal_properties : CAAAAAgAAABZMNasMKtt1UjHqkZw+hVbnl+lt/Rb3gq/mgcEjw22m6jZQ5w1cjcPic/IEsV3KbXfOK8WQAErZYX6dJ7hKgR5hKNDgFm7J66qLuxr1TiOdrFsev6vEuFe3aUio5ME4jKKNTjV61kZRMt7KqnwMKk7PMiJIHuVSh4w9F+AIS0UtC6JFD4dj3fZ8Tmtn+uifSyV3lEWxugA2K2btUsnPyviED0ov0dfxKxtD0vs0xgjQDZch49bW5C/Oji0fRqYbNB4+Us+6GvJi1m8OkmIcpwg+d87aYCkiwXMA+DMCaz2bPlw4F64Qvj089XyPHOO80TH5HpMA3uxtQ/ML+uENTZ8xdyh2cmQf6tZS50ERizh6VzDDFzj6t2WysAm4zVWtlpBi2MjX4gD7qKGECe77c96sa1zvJRdMpanJ+ZrYNhe4DYrHvFmoz4bZf9kXNkp7LhRHrWfsGcCXSvfFg84YzZYdL3vAq2yKc7MAUojOMmPVnUPrhd/f2zz6Q==
+    properties :
+     x : 404
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL15..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL15
+    identifier : 0x286e71460905711b
+    internal_properties : CAAAAAgAAACixrwhCkXLDvtdzkn1OU8TrX2TeKfJOcfd6IyfzJTOJel+BxBYDXWMZT/8wTadrLj/fakyMqsrmcRreZjgNsvzF3+5gK3EekO/yri4aF2+ovopvUjq8xSbhIMueZIgiAtjhvmPeaytllVhKMcDyuBpC/ruChJTQjJhjOv1xXC60Joix65JmcUcDXIADLVQnzVk+3yXikieF4oRIxAFFip+o7Z0n+7fcZr7LzfbI947z5JqwSDIgJSPLNXsD06h9LQzwyNsPaKClcjfKbmhfjqK9Pm7PxX5xhNPKOks6mB0sjDCNPZnDV04gPDBFNbmVYbavMAWtviUTwpvBvsBT+4KwoBHo4LLZPuuBjRKxdat7fPfysgcI6RO3U3vxVaMtg5at4FlyisIro8H9WVmNwcSePejlFlGUaj02lXTx7pKliHNLh+9xvMdnrDhEd1jGzCVCN2ncW9AJoQ0F5cE/7ApVBovsi4NL+IXE6uTs6Lm+srTPAoYrgB9dpt9zzc=
+    properties :
+     x : 442
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL17..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL16
+    identifier : 0x286e71460906712a
+    internal_properties : CAAAAAgAAAAhTS1QuchesY42q9LQmuB+CBA0X9pcqKY8Ce31ospI8aM6xZRa9cNei+egs4Dj+vRtPW+mVGPFD2Lbmc5egNXkTamJWvmB6IFlgPJeJptU8IAni+rIBTJx0vkg97A21pHhXI9hD16brKO3apUh6PYHKejkHDjNwPDnMoVTQ45AdpDIVUjHu7PaY4DisitWrduC+RoRiFI8hSjvBY5LVGg8KdRCqSyhjxDRJYlBIfz5ZTBYPxIXLrynKMeCcyoN5ZUqGqLnrhOxzBKRsz/PgKh0BlvtpdsrrJnhIhuquBIq9Ir0jhR9LzOOOrIbOpwgk7A8XjokrOqKJdwJSPHfgSzEBFL5mXD9WtEQoLbQg0gzZ7Xp9GZa9WqEN+8Jm0xmTKD0aTuzYHVWbEnJb4tcIZ2UIkllan8wD5n1XehMTgMDy7QIqXpqTzp8KYVWiKbsoLEUv1xappB3YcN1CI4FkJF2AznOE8+swHX6Nk4wEEVFW60+l69lGXXw5QrsWLg=
+    properties :
+     x : 480
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL19..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL17
+    identifier : 0x286e71460907712a
+    internal_properties : CAAAAAgAAABazrQ5Ul1DlnPlRvF9kdeL1VV74F/RId+FoBQNah58S3coMaImZyt+K0FGP4yfkq6VVyME+P3pUwq9w/ZGqJE5bSVnFs+6LMmhOKaaqgNg9Iy3w64M2Xa5lqHUEyRGai0FZOf9s7KnpI9vpolNgNKzpfC8UKxxdBADIun3P36s4oQwFXTTz196h4jettf2YX/WGQrl1KaYpfSvsRofjET4LcRi7eCFi5CtLaX91YzdaWwYx0ZSNVTDUDv665JJC0O42DR1MNW3Nbj3CVVxwn5KfEHH261l4sPfoIFQ8mxQktBSSOKP2dmo0IBRsKYygZ7y9GzS/vTQ34pnNoeZu3qKQgDLl3K/UPNW/mSmVWKZzRvH5vTEH1gWtW3vMf7o0i5iTy3JWn9c7s/PZeGe49NKcA9P2Dl61UCsgt1nl5Z2vsHtOotNQnctngipPd1nHzDt4CEb6ZN0/ny0jwO8y9zBzHL3elYlR/p/ixNrSzpOYlJbtIKQNoiFTqN11z8=
+    properties :
+     x : 366
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL14..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL18
+    identifier : 0x286e71460908712a
+    internal_properties : CAAAAAgAAABlAflsRVR6nWrCv95sptyaJPwYw37wTLqQrclXFDjS65WII1I0g0VsHXXGrcpBjEY/C80URsHPPSRJhzBg9n98O/cn8Gu4zL2x2rSW3ifErijdt4zQCzI9Lmv2c3z2tmuJuucfZ8RLrN+hnC3JQGJxLYq8Eghf8ADb5Cdza+rsbIyqHX6PDZv+s5YspmcmDcnaN5aj6My4PTzxD+4TcPTq1bbey5D7F0DpywvFveSVUxwKMxySl1zDrEkEn0a9vv71/fGW8xBs2i3+KG40IQnlUc68SASsc7T8DyjxvdN7tTVvOZ/uWGKlLatsUSmRkK0jZR0rkc9tfBf+nVxwHpmhY7FYsG0ivcADrfPLXE00aHT4SxWvElWPAqSmOiH/xQkfzOYaDaLBx/QiqFoBgjIpWQCskWR1whFtzXCAjqPjPwjUiRKuLyLIddGKoKLMQOUoK+zKMmgHhddZPKYZaDmiL13qd2vI5BleqjIUPClZb0FKq5uJPZGMQdY4FHw=
+    properties :
+     x : 404
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL16..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL19
+    identifier : 0x286e71460909712a
+    internal_properties : CAAAAAgAAACM2F6HrOv9EO1XNEPni/nlh6et1kHXW6E/CvLtwipkQ38s/XruD+O6Q93+d1Tzcn7lwz/EaEUp3wpRg94WhJnLg29RHKmQvnvTMpzsvKWilibh1ezOz0AbKDPapd4IrH+/vokzdSA5TvmZpMNfMnRl19qWHhbProodZOe5CShGBCaaH6KtrZHM2Trc+BHQa9ko0zwLtuTCb8a5h/xxFnaC//bM62rTXTpvR7OPlw5Xc/4i6aRkirTvzLUM704B5KTDszN8DTIS/wadpz/LuADIsp+dfdfrtCV9hu+aRHpCgDaIPuSBx9OSzgbPOtjAc5zIksr8+FrykXidJMmb+bRQcGbpgbx92v1cfPrQrxhjG8HNlN7WNWoomws1o6heVJyIpcO7TLXegK1lo6tQMf0ATs2FqjPoPyq6mKuJoXwI0LN/EIVToJHbeFIrh6v1mULfgq/tN1k+lDb+WX0yQWZTplTREMyvzQBxvcW5mcw8TLzNJhAGuBYT2D2f7RU=
+    properties :
+     x : 442
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL18..BrushColor)
+        type : 18
+  -
+    name : IMG_BACKBCKGRDCOL20
+    identifier : 0x286e7146090a712a
+    internal_properties : CAAAAAgAAABNky2cTfNZqadi93r4i8g/M9E3kMWXJZm1Qfsi4Fj0KJ5JXEVDFdva7OYPvfQvS69qp0YtOoBF9BIqMblhrW4fgW4tJhWq+pfjsZK2XJOMa6ZBLnG3R5rdYOen42ahsaF0qsTUuFR4irx+TlfcV+aWCZ8O9NJJX4ESDeVvmfpAO0NI4jrkgGLe09GdCbAaCP5g/RHNIjq134eH0gOaz7eGW4ZVwL/Ph4+l3CJpK3MCGtHT6k6mi3x2lATM4myR5c1Df03NCtkkdY2pkibzNEvUDT6Gx3lzZ+No9tjz9q7p5HlPu1Bdy3qs9SDIXyDOCHSx98n0HrbBt+UM5URl9LRV1wpbKAz0+YwrbWNYCTLXzL/nJHuNcCbv7RoF2fEZbvXAobXs26YwICCryj4YAeSofXg6RgmYPPJPCs58l/Hq8DKCofGBHLhTM8IS1vV3OpTcE8obZjQ6UUwZhUPPrKi83r+mUyOOxdPF1AN9zOtKjG/sjuGSrYYYqgZrhMbx
+    properties :
+     x : 480
+     y : 48
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         ChangeColor(IMG_BCKGRDCOL20..BrushColor)
+        type : 18
+  -
+    name : BTN_OTHERCOLOR
+    identifier : 0x286e71460923712a
+    internal_properties : CAAAAAgAAABw/HIzmDJ1iGKuChm/9CSWdmxkx5yhRp2cKnilrBivRSwJI8AeMi8Ddd2qmH6WIzzaBpj8t3SzLN98Fiz4CKKv1S4zPhk57bxYBftfJsV7r/Q8VwFNP5iHVhpIOtVsmAB8a9w9H9NmzbzRuemURryd+jbqQcM+BZHxjm+8fN8IuCtwgmHxNAtJBDT0S2YOzbAs12GXpVnxdjs02Bxipugb0OlKQTKwRdCSCwWZrcujmS5ypxvylK2PBDfFrAVD/6OOId68z12wR/8bbQngwHvlay3k/r4QZnm80I0jfoShqxDRl9otE7LOO9HE0c+Rc1ZYtbvS6r0IHUhkwkL5TrbK3N+yvfirJtoZ93gedbSjwv7ExmDCv3zorj7K0xXAlLw8Vtxao+a3sYTJoGCaA3h6BMH3yfuXnWHYA2h/E0gFqqtQ1soh5P5VbYuevbSBMU15NHeKBmWrbC3QFHouvkbj7+2M48Qr6VDPUqM44S4tWvm3dh9W7x7raUdvv3m0t6OqON7lqpat8Sml+ixUkgAbmnpwli73KH+cApJiw5Iipy1y18odKKtj0UsXNDmk8nrJBnH968GgcbZEE80NVI6WjPZBGxnb+FmNB3fZPiHCUDOsl7RzL+clN7D1nMeldeDK3bLxHdTrnocW1kBA9YWTOwOzaE3PPvdyBkiQxXajhwaLBHyXcpTFvvxrA+ZX5NzxE844EozeWPIi5vOfU521HrJqoKexoK60sxPOriQ2Ea0fmCSKFGM=
+    properties :
+     x : 518
+     y : 10
+     width : 70
+     height : 70
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // Keeps the initial color
+         nColor is int = gnColor
+         
+         // Opens the color picker
+         IF SelectColor(nColor, scInit) THEN
+         	
+         	// Applies the new color
+         	ChangeColor(nColor)
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_SELECTEDBACKCOLOR
+    identifier : 0x286e71460924712a
+    internal_properties : CAAAAAgAAACwFpNd77aY05mchvXgf2v/Em0BkHWFVXUmqaIbrmrigCz6P5LVQmJs2x2txNjuNV8CtQCJRCUxLGQ6p13qJLZZpTPpMpruBeAUUcpuYcwKa8NaMIdkUpbgWDa/LYms9wWqzqx/MPC7xIdWuNV6IOUusB9OYkhr+Vu28oXuomD56XnFLQKtsSGKXLN7DCCEv2gdLcnO5CN8eDHqM9C8FOYu7mTuiPsWWvaVlBP0OBC+5iTVjCnyNLo6EyWjZYKqy6gfT2AsSPKaG83IW35kjCwaq8cPaCGFPMcsEfokLbtQDzUcJpIG78GXfacP4vytMzsYRv0IHiQcut/2PKQgfE7sHbdW75msqB1bIZXCa/uAx/UaG+KyixiGuHOnydNXsNJ6dl9SyJW483tl3yJWOty9gbpdE71goqg8SlkBAIpbBvM/iPmQeiQL8Hw/2rEn75fvF7MFQMH08jNhMInp1jDwItm3LbkS7hFCVM5L4GaaRX6gXBvcr/3VPJBO15Idpw==
+    properties :
+     x : 90
+     y : 10
+     width : 42
+     height : 70
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : IMG_SELECTEDCOLOR
+    identifier : 0x286e71460925712a
+    internal_properties : CAAAAAgAAAC9Jr5PR58OPwq3Aq3HZjDTTlzhtECJIaDsVdFs5DFBoo0XyS/uC285mj8ZEjiTCm4I2GqpNclNsqYlWqD4aSYrDrLm3j4Jkq5D5FEfcR6rJh8jdk2TVUEC8NbtbkawIAUc9fIMBs/J+Bf5gy5gJV5vpo8dBijOM88I58zBaco6wRXbZ9rF/r4dNflF/sBxG98a+7Xv6JHBs73MVsYRRWxTuXPal79eoCSN3YeFje5ZLxGsyriKm0NNiYXIV59oWdkXhseGr5/vwACE0E7Jl4Bq3ZQjVB+HtHSknUrhvp5K0OfnFHzIsscl0+aIK7yOnr4bNPFkzLE1gNtk+F57202w8v6o2Q93eqvE4ZEOjWYggxKhuYJ2ZgCuKEFjhmBi44Aq+y0sl915mVm7h8cCOLyST49RnAOK7G4blBFcXH59y1BaJ1TBgCmTIl3ZwfwzjxuF/ozAD/DlYawE5El6N+NWi9TzlAAuTj4G+mkGi3bhR8GBF2XSvY4bQu80v8PpkhbV7tIJQlk=
+    properties :
+     x : 93
+     y : 13
+     width : 36
+     height : 64
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : SHP_Shape2
+    identifier : 0x286e71460926712a
+    internal_properties : CAAAAAgAAABrUFSIGacA2zPp4jmeczt0SNs0dLzeKPX96vmL+GNRT0SJWNubor56ENeg8zZ4nzbiqXY7yBK2FScvtQcUtt/BNjpgVusiCG4Ncd5DZf+2UeV4ZllJxi+lteZM0g4SZzRhrVqcgmv5mLE9dXcFkWVcdatLvPX4TmXnobrlH2u2mVb2bVfRPhDEfDCwTez3Ilti1RZrihr9w4rmYrIEq7ymvLfjBkB8nvJlVzwSe0SmaY8vC6LykzaP4D8080Bh/mKZt0Eo6C7QtOeiN05oSbHAijE4uPYITDCV7A5IKzrWffTkaA==
+    properties :
+     x : 594
+     y : 7
+     width : 2
+     height : 77
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : BTN_ERASE
+    identifier : 0x286e71460927712a
+    internal_properties : CAAAAAgAAACKkaHZttHb+NSFebDCmkVndNLm7Z/QX6fD/AtpRIo7gh2P8Jogv1+JJDpRyEmCR+t8g3IuM7Cy5sAuZ7I/rFeHo5ubYl0brta/WecZXxKoyOYBh3HRgxiybsLqoED7OKgvFR40adwUjgtRIXFepGLxG2MG9AfhPrqR0cy38gh+sxmX5j73u3WkkDMluJG/Q6APm5D1//lkw+rnBWiELXxQvMmxw9fcroSXqrBBOfoUnr+vSkWZqJnG1IUyCak/pnqk8xmYvnazJ2M23oke+HQdElnTvVH8p/A35LGkwkRR8u94s6tzwQ5oNgky/rY7mxJF/Uj5p6kZdgUiUXLYA8l6v9h6vk1ZZOCnNqPcYR7EF2Pk+s7BTf8JRU8xzhqgRvZQdKmUdPO8gb8quxtBTdkyI9uooSbKhactJ2+HkIun1vjGMQCVENLlHX5/jGoceSoYi09BQqARkAJqXMjcg47r72d++XSKqUejEU8UkPD4A7IJVwfaJ1Z1Viox01iOBARiCUgSW9lyMsttCztKmhgGfNX6epzlbIGIkLXg8XZ2wK+XVNt7U9gxR/BBfYfJIeqrEJfQk4y/yJqrCUvZs3nhdcvhJafo9gulUsEtIqXQsQR6DlabLtl+91lpv0tbbDloyVwgh0yrrur2gFRbNYgAIYyvEz7rFhAUX3Q1BxHf/AiGsqQeL7YbcfkNFljEBDzL8mtO/SwPsdwKFmRVcv1AWCvWLcNuCu13n2Usdq6Fhg==
+    properties :
+     x : 602
+     y : 10
+     width : 70
+     height : 70
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         AnimationPrepare(IMG_DRAWING)
+         
+         // Restarts the drawing
+         dStartDrawing(IMG_DRAWING, dErase)
+         gbInit = True
+         
+         AnimationPlay(animFadeIn)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SHA_Shape3
+    identifier : 0x286e71460928712a
+    internal_properties : CAAAAAgAAABnVFg8bWuEX79lfvXKD/cQXEew8DhatGEBHi3XwSwyePd68wz4PyUfy46Raj95YBM9arG0FV9N6tI67m4dL9hMKVgYEhtaLJoVRTL75ceqES1MFtUJJlspFTKwCh6Ce0RxQXK4wjPNTNkxMT/FoTmcPbWpMgOe6D9B02CbHZnw10TQu4Un9MpuLnoO23qlzAFwp7wJaEBfVTwIeLByyb4kKiVT9Nbkxrrdsfg89Vi6+8HpXzh4G7Z/kGXsEV5RrpCvlYEq2iLEmJsWu8LkzTVEDr1MlCrcGHwheJrEr4YCKQDoZA==
+    properties :
+     x : 678
+     y : 7
+     width : 2
+     height : 77
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : LIB_Number_of_points
+    identifier : 0x286e71460929712a
+    internal_properties : CAAAAAgAAACLGDdZbsHtzIwTDDigZfZt5TwoZcAup0bk4qiFB3lFieSmMzlF61MpH1BsPgwtmDSpi6vLw9yP2ZpzQUFTxehSVkpR8bYYydjauQaCNFxToe45nn0lMBm0HvnpS/0QUHC9ZA1s47y3K8R0SaLP6isnjTGpJ+p/V0ik/DibsMBvvuNVkJ/yEU70mNkJr3YCYdWlY7XEwOhBYUt3hB/N91kMdRqS52h54KrLWguC9CD3SzRHrHhVl+T37NeoxX3gYH3P6t3IOtsb7bZ95JXyP9Vfazmq4ogcyxkf/62CaCQ9XUTSexfP1TkY7SQajmaH+Zs+hvaBtERYNUbbZGHLAbdLVjSTohhT80eveBcLrGj5zfjYnu6ohutn8gto5duq+IrSw0xwsQf5S62sAudj1MKMNelmUQ==
+    properties :
+     x : 758
+     y : 34
+     width : 173
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_NBCONTACTS
+    identifier : 0x286e7146092a712a
+    internal_properties : CAAAAAgAAADEafS3377if7UMHrrrJ/SbWFoPJcwKuoucmWIc6/5JfMhWL4elYzKMcVOSbJ9rTTuxV93iLOcMglZM3aHhzZ9aa7twP2/ZDIt2PjcjYeNGdCcigoR0HAB015DgGNraZRGLaW7+xd2r4wC2nIR6RhAPACryhuTIl0f8+0ddgYJRdyoBLGKJwE4AOejn8Ri0Xw6laI2ACqetP8QWzem/wT6jmbYoSMsoxe3Tzk4PLcOdIf0i8e/v0y2BGYy1QYt1cbRZLByEfVdNkAQuV0Z4wuYyGLqwwqO/QFCmqlF8pR6GZIoEtCBbtBmPbBuWEhP5p+egMrKzGeCd0No/6xy7ieeKUfM5p6iaPF8yAyDAdyujqbx8yUQj86p47AgWgQ==
+    properties :
+     x : 937
+     y : 34
+     width : 56
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x2b436987da44ccc2
+  internal_properties : CAAAAAgAAAAjoO+VYAXYh2SYpTvD7AgXCHEHRjuTd5K/qNR3zUpM1aIlQYejrbtK76/LWLozAhgdmcRuoxDXe7vi3lf8PoZYYzNtPYlgCK9AarNrSCSSPpGDp+KLIikSwO2L+lCfwFobS8WKQZu2noN9WV5ipxuLKjTaOvfojbcmu1i6FPrF8FEPa+oQBHdRyMYNLYyLF/nTGn2y7NBixG5dC7y2wsO4aXA1CKpzZUca8sBJUrSr9FqhTJMK37pOOZqMTeCIo+trbOMI1osTdzjD26auXrzETrP8OxsAt+HgvahLwDb4kRpR6lQOjBIj
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAC/+elMyM2DlH9YkNjiGHYYBZOppkFtd4LPjAJh9oXhzNfY+1ivVzlr6OYc/qmKtYBoI4V6SDEl8n2CNUJoI/q7cIqZZBwVfiQ+LdTK7patVpdMJjbj3wGUr9Lj+A==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACiGsdY2iLEne5p4oSP/0JoF14dgXL0tg08jju7/Be+jt1V3pQ9LTpRikmOqRQQTVgOG1Sn8UnCOOM+Bcp+1KfUYI1z8fVNkxeRKOtlnqEQ7xaQ0H1/nmXSsoJR4AiSuQMlQmVoqISoKEGXpq316UX+HgS/zruUKXhm6Ib/p7hnSR5RA4WXQdQqTpuBBdT7Vj9fDQOU7M2xO1ZQHCLV7c0zXjpgWXuqRFtc1qx6Zg6uepFjd9gzq2i/i3eVuJqanfJCtZM9O2i85bOiyDnMiIVLscEMyCT0MbGCe8/Y0LSE6ftYfLcmgk+AQKg=
+     code : |1-
+      
+      gnColor is int
+      gnSize  is int = 30
+      gstDot  is POINT
+      gaaPoints is ASSOCIATIVE ARRAY (*, *, wlInt) of POINT
+      gbInit	  is boolean = True
+      
+      // Default Colors
+      IMG_BCKGRDCOL1..BrushColor  = HTMLToRGB("000000")
+      IMG_BCKGRDCOL2..BrushColor  = HTMLToRGB("ffffff")
+      IMG_BCKGRDCOL3..BrushColor  = HTMLToRGB("7f7f7f")
+      IMG_BCKGRDCOL4..BrushColor  = HTMLToRGB("c3c3c3")
+      IMG_BCKGRDCOL5..BrushColor  = HTMLToRGB("880015")
+      IMG_BCKGRDCOL6..BrushColor  = HTMLToRGB("b97a57")
+      IMG_BCKGRDCOL7..BrushColor  = HTMLToRGB("ed1c24")
+      IMG_BCKGRDCOL8..BrushColor  = HTMLToRGB("ffaec9")
+      IMG_BCKGRDCOL9..BrushColor  = HTMLToRGB("ff7f27")
+      IMG_BCKGRDCOL10..BrushColor = HTMLToRGB("ffc90e")
+      IMG_BCKGRDCOL11..BrushColor = HTMLToRGB("fff200")
+      IMG_BCKGRDCOL12..BrushColor = HTMLToRGB("efe4b0")
+      IMG_BCKGRDCOL13..BrushColor = HTMLToRGB("22b14c")
+      IMG_BCKGRDCOL14..BrushColor = HTMLToRGB("b5e61d")
+      IMG_BCKGRDCOL15..BrushColor = HTMLToRGB("00a2e8")
+      IMG_BCKGRDCOL16..BrushColor = HTMLToRGB("99d9ea")
+      IMG_BCKGRDCOL17..BrushColor = HTMLToRGB("3f48cc")
+      IMG_BCKGRDCOL18..BrushColor = HTMLToRGB("7092be")
+      IMG_BCKGRDCOL19..BrushColor = HTMLToRGB("a349a4")
+      IMG_BCKGRDCOL20..BrushColor = HTMLToRGB("c8bfe7")
+      
+      // Selected color
+      ChangeColor(Black)
+      
+      // Default size
+      BTN_SIZE..Note = 3
+      
+      // Number of contact points
+      STC_NBCONTACTS = "0/" + SysTouchNbContactPoints()
+      
+      // Enables the multitouch for the window
+      RegisterTouchWindow(Handle(IMG_DRAWING), TWF_WANTPALM)
+      
+      // Receive the events
+      Event(OnTouch, "*.*", WM_TOUCH)
+   -
+     code : |1-
+      
+      // Initial drawing
+      dStartDrawing(IMG_DRAWING, dErase)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      // Disables the multitouch
+      UnregisterTouchWindow(Handle(IMG_DRAWING))
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : HTMLToRGB
+     internal_properties : CAAAAAgAAAA2Gpto0YvWXGrlS8iTE4695gpVCZ/rvNG+jTJxISTgySGkRo8ekBEpr8lCC96qsgtUaVF7zo24oRCHsXuP4wmnjHx7o1QUGVJCwQCE8KvSxEw+96i51M15S209uyogW5bRVQCLYzJMjcZOV0dj2jSTwIuUgUTiDpYXg96+6R0tVINbMaeo6/JOlsUBZ7UlFgtSSLyxfWjMxFeg2iVpPADHdW42LQHtCj14eXO5EJiSXi4Txrt4p8pSi+d+0/TTg2CTJtKA84YRpX0Xq+EUzkFjh9UhvVyGNULNK6+SBPhn6UgS37JUHGLz7ieCRWKBTqQTWQTSBgyl/RR6VQBMeRaIE5SuuW8e5DaK0/hcxtU9N0YwdnEGKGpbexbPESwBuGiP5jrL
+     procedure_id : 1760469049900691739
+     type_code : 14
+     code : |1+
+      // Summary: Converts an HTML color into RVB
+      PROCEDURE HTMLToRGB(LOCAL sHTMLColor is string)
+      
+      nColor is int
+      
+      sHTMLColor = NoSpace(sHTMLColor)
+      sHTMLColor = Upper(sHTMLColor)
+      
+      // Deletes the #
+      IF sHTMLColor[[1]] = "#" THEN sHTMLColor[[1]] = ""
+      
+      // Compiles the color
+      nColor = RGB(Val(sHTMLColor[[5 TO 6]], "X"), Val(sHTMLColor[[3 TO 4]], "X"), Val(sHTMLColor[[1 TO 2]], "X"))
+      
+      RESULT nColor
+      
+     type : 458752
+   -
+     name : ChangeColor
+     procedure_id : 1760469049900757275
+     type_code : 14
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //ChangeColor (<nColor> is int)
+      //
+      // Parameters:
+      //	nColor (integer): <specify the role of nColor>
+      // Return value:
+      // 	None
+      //
+      // Example:
+      // Indicate an example.
+      //
+      PROCEDURE ChangeColor(LOCAL nColor is int)
+      
+      AnimationPrepare(IMG_SELECTEDCOLOR)
+      
+      IMG_SELECTEDCOLOR..BrushColor = nColor	
+      gnColor = nColor
+      
+      // Restarts the drawing
+      dStartDrawing(IMG_DRAWING, dNoErase)
+      
+      AnimationPlay(animFadeIn)
+     type : 458752
+   -
+     name : OnTouch
+     procedure_id : 1760469049900822811
+     type_code : 14
+     code : |1+
+      // Summary: WM_TOUCH event
+      // Syntax:
+      //[ <Result> = ] OnTouch ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	Undefined type: // 	None
+      //
+      PROCEDURE OnTouch()
+      
+      nNbContactPoints is system int = LoWord(_EVE.wParam)
+      arrTouch		 is array of TOUCHINPUT
+      stPoint			 is POINT
+      
+      // Number of contact points
+      STC_NBCONTACTS = nNbContactPoints + "/" + SysTouchNbContactPoints()
+      
+      // Resizes the array
+      Dimension(arrTouch, nNbContactPoints)
+      
+      // Retrieves the information about the contact points
+      IF GetTouchInputInfo(_EVE.lParam, nNbContactPoints, &arrTouch, ArrayInfo(arrTouch, tiElementSize)) THEN
+      	
+      	// For each point
+      	FOR i = 1 _TO_ nNbContactPoints
+      		
+      		// Point
+      		stPoint = [TOUCH_COORD_TO_PIXEL(arrTouch[i].x), TOUCH_COORD_TO_PIXEL(arrTouch[i].y)]
+      		
+      		// Convert the screen point into client point
+      		SysScreenToClient(stPoint.x, stPoint.y, IMG_DRAWING)
+      		
+      		// New point
+      		IF (arrTouch[i].dwFlags & TOUCHEVENTF_DOWN) = TOUCHEVENTF_DOWN THEN
+      			
+      			// Keeps the point
+      			gaaPoints[arrTouch[i].dwID] = stPoint			
+      			
+      			// Draw the line
+      			dLine(stPoint.x, stPoint.y, gaaPoints[arrTouch[i].dwID].x, gaaPoints[arrTouch[i].dwID].y, gnColor, gnSize)			
+      			
+      			// Move the point
+      		ELSE IF (arrTouch[i].dwFlags & TOUCHEVENTF_MOVE) = TOUCHEVENTF_MOVE THEN
+      			
+      			// Draw the line
+      			dLine(stPoint.x, stPoint.y, gaaPoints[arrTouch[i].dwID].x, gaaPoints[arrTouch[i].dwID].y, gnColor, gnSize)		
+      			
+      			// Keeps the point
+      			gaaPoints[arrTouch[i].dwID] = stPoint
+      			
+      		ELSE IF (arrTouch[i].dwFlags & TOUCHEVENTF_UP) = TOUCHEVENTF_UP THEN
+      			
+      			// Draw the line
+      			dLine(stPoint.x, stPoint.y, gaaPoints[arrTouch[i].dwID].x, gaaPoints[arrTouch[i].dwID].y, gnColor, gnSize)		
+      			
+      			// Deletes the point data
+      			Delete(gaaPoints, arrTouch[i].dwID)		
+      			
+      			// Number of contact points
+      			STC_NBCONTACTS = (nNbContactPoints - 1) + "/" + SysTouchNbContactPoints()	
+      			nNbContactPoints --
+      			
+      		END			
+      	END			
+      	
+      	
+      	// End 
+      	CloseTouchInputHandle(_EVE.lParam)
+      	RESULT 0
+      ELSE
+      	
+      	RESULT API(USER32, "DefWindowProcA", _EVE.hWnd, _EVE.wMessage, _EVE.wParam, _EVE.lParam)			
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b432316009bceb5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Drawing_WMTOUCH.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

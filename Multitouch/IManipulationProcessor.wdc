@@ -1,0 +1,441 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IManipulationProcessor
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1b2276900049ba99
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACLbVKpMeZOhs8cj4rkL8DJoz18DIjNU/sfUvOAWIWvfwFsLlhDYNF9uHNzREjmrT53Wuog4LRqjJZ1IJWoKNasJdlsky2EAGD8Ztp0XioQ4gOxcEtiw44P2IAFXF85j7yN3V8pSrOSUgTWdyw=
+     code : |1-
+      // IManipulationProcessor class
+      // =======================
+      // (Implements the IManipulationProcessor COM interface)
+      // 
+      // Supplies the features to monitor and manage the multitouch entries
+      //
+      IManipulationProcessor is Class
+      	
+      PRIVATE
+      	_this_												is a COMObject		// COM object loaded
+      	
+      	CONSTANT 
+      		
+      		// Methods of the interface
+      		
+      		// -> IUnknown
+      		IManipulationProcessor_QueryInteface				= 0
+      		IManipulationProcessor_AddRef						= 1
+      		IManipulationProcessor_Release 						= 2
+      		
+      		// -> IManipulationProcessor: Properties
+      		IManipulationProcessor_get_SupportedManipulations	= 3
+      		IManipulationProcessor_put_SupportedManipulations	= 4
+      		IManipulationProcessor_get_PivotPointX				= 5
+      		IManipulationProcessor_put_PivotPointX				= 6
+      		IManipulationProcessor_get_PivotPointY				= 7
+      		IManipulationProcessor_put_PivotPointY				= 8 
+      		IManipulationProcessor_get_PivotRadius				= 9
+      		IManipulationProcessor_put_PivotRadius				= 10
+      		IManipulationProcessor_get_MinimumScaleRotateRadius	= 22
+      		IManipulationProcessor_put_MinimumScaleRotateRadius	= 23
+      		
+      		// -> IManipulationProcessor: Methods
+      		IManipulationProcessor_CompleteManipulation			= 11
+      		IManipulationProcessor_ProcessDown					= 12 
+      		IManipulationProcessor_ProcessMove					= 13
+      		IManipulationProcessor_ProcessUp					= 14
+      		IManipulationProcessor_ProcessDownWithTime			= 15
+      		IManipulationProcessor_ProcessMoveWithTime			= 16
+      		IManipulationProcessor_ProcessUpWithTime			= 17
+      		IManipulationProcessor_GetVelocityX					= 18
+      		IManipulationProcessor_GetVelocityY					= 19
+      		IManipulationProcessor_GetExpansionVelocity			= 20
+      		IManipulationProcessor_GetAngularVelocity			= 21
+      	END
+      	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1955255549084482201
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor()
+      
+      WHEN EXCEPTION IN
+      	
+      	// Creates an instance of IManipulationProcessor
+      	_this_ 		= COMCreateInstance(CLSID_ManipulationProcessor, IID_IManipulationProcessor)
+      DO
+      	
+      	// The instance cannot be created
+      	delete object
+      END		
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1955255549084547737
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : QueryInterface
+     procedure_id : 1955257451755109458
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing QueryInterface
+      PROCEDURE QueryInterface(LOCAL riid is system int, LOCAL ppvObject is system int)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_QueryInteface, riid, ppvObject)
+     type : 458752
+   -
+     name : AddRef
+     procedure_id : 1955258087410351915
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing AddRef
+      PROCEDURE AddRef()
+      RESULT COMCallMethod(_this_, IManipulationProcessor_AddRef)
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAAAF1QeeguPgu9jlYY6nw6zEtnEdBZTjZ5ZF4FTvNgPflJJ/d4FVfLtknKYjD+E7Ki0PBlqOvZqRJ4pCCZEj0I20mMj2Rb+gCUTf5ECQ2LAXWP1eKyZfF86BDMO5GLWXldxmeSeWfiLUI3Q9+1cAbwDtarSDNcIa5R6krzE6E6W9dL9XIPkda5Xc3onYAFh/HhnE+wf+
+     procedure_id : 1955258207669464439
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing Release
+      PROCEDURE Release()
+      RESULT COMCallMethod(_this_, IManipulationProcessor_Release)
+     type : 458752
+   -
+     name : CompleteManipulation
+     procedure_id : 1955258327928642531
+     type_code : 12
+     code : |1-
+      // Summary: This method must be called to end a manipulation. Triggers the ManipulationCompleted event
+      // Description of input/output parameters of 'CompleteManipulation':
+      //
+      // Syntax:
+      // [ <Result> = ] CompleteManipulation ()
+      //
+      // Parameters:
+      //	None
+      //
+      PROCEDURE CompleteManipulation()
+      RESULT COMCallMethod(_this_, IManipulationProcessor_CompleteManipulation)
+     type : 458752
+   -
+     name : GetAngularVelocity
+     procedure_id : 1955258856209677129
+     type_code : 12
+     code : |1-
+      // Summary: Calculates the rotation speed with which the object is handled
+      // Description of input/output parameters of 'GetAngularVelocity':
+      //
+      // Syntax:
+      // [ <Result> = ] GetAngularVelocity (<rAngularVelocity> is 4-byte real)
+      //
+      // Parameters:
+      //	rAngularVelocity (4-byte real): Real variable that will receive the rotation speed
+      //
+      PROCEDURE GetAngularVelocity(rAngularVelocity is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_GetAngularVelocity, &rAngularVelocity)
+     type : 458752
+   -
+     name : GetExpansionVelocity
+     procedure_id : 1955259032303377480
+     type_code : 12
+     code : |1-
+      // Summary: Calculate the expansion speed with which the object is handled
+      // Description of input/output parameters of 'GetExpansionVelocity':
+      //
+      // Syntax:
+      // [ <Result> = ] GetExpansionVelocity (<rExpansionVelocity> is 4-byte real)
+      //
+      // Parameters:
+      //	rExpansionVelocity (4-byte real): Real variable that will receive the expansion speed
+      //
+      PROCEDURE GetExpansionVelocity(rExpansionVelocity is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_GetExpansionVelocity, &rExpansionVelocity)
+     type : 458752
+   -
+     name : GetVelocityX
+     procedure_id : 1955259169742427766
+     type_code : 12
+     code : |1-
+      // Summary: Calculates the speed for horizontal move of the object handled
+      // Description of input/output parameters of 'GetVelocityX':
+      //
+      // Syntax:
+      // [ <Result> = ] GetVelocityX (<rX> is 4-byte real)
+      //
+      // Parameters:
+      //	rX (4-byte real): Real variable that will receive the speed for horizontal move
+      //
+      PROCEDURE GetVelocityX(rX is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_GetVelocityX, &rX)
+     type : 458752
+   -
+     name : GetVelocityY
+     procedure_id : 1955259229872049315
+     type_code : 12
+     code : |1-
+      // Summary: Calculate the speed for vertical move of the object handled
+      // Description of input/output parameters of 'GetVelocityY':
+      //
+      // Syntax:
+      // [ <Result> = ] GetVelocityY (<rY> is 4-byte real)
+      //
+      // Parameters:
+      //	rY (4-byte real): Real variable that will receive the speed for vertical move
+      // Return value:
+      // 	variant: <specify the possible values as well as their interpretation>
+      //
+      PROCEDURE GetVelocityY(rY is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_GetVelocityY, &rY)
+     type : 458752
+   -
+     name : ProcessDown
+     procedure_id : 1955259358721098709
+     type_code : 12
+     code : |1-
+      // Summary: Fills the processor with the multitouch data received for the beginning of a touch
+      // Describe the input/output parameters of 'ProcessDown':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessDown (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //
+      PROCEDURE ProcessDown(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessDown, nManipulatorID, rX, rY)
+     type : 458752
+   -
+     name : ProcessMove
+     procedure_id : 1955259749563213921
+     type_code : 12
+     code : |1-
+      // Summary: Fills the processor with the multitouch data received for the movement of a touch
+      // Description of input/output parameters of 'ProcessMove':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessMove (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //
+      PROCEDURE ProcessMove(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessMove, nManipulatorID, rX, rY)
+     type : 458752
+   -
+     name : ProcessUp
+     procedure_id : 1955259813987803436
+     type_code : 12
+     code : |1-
+      // Summary: Fills the processor with the multitouch data received for the end of a touch
+      // Describe the input/output parameters of 'ProcessUp':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessUp (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //
+      PROCEDURE ProcessUp(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessUp, nManipulatorID, rX, rY)
+     type : 458752
+   -
+     name : ProcessDownWithTime
+     internal_properties : CAAAAAgAAADsMdf4BvbrSufn0lK+9fkP9QVKBkQJ4Wip8ZVpVJvt3D1WncCSvmuPIvME3EKUNS0fJHODDSYcaXeTO8J5uvuER6JC4x4mQjaFaNW3U+UPcisPrVxe0/Uy88EPzpKztDI9LgeA28zlrp1X3b8/kwtNE8erswscjnUJ5Zn2rCHqWfU/KT6RvFVQ0NbJMTzemlMcbzN5/t3Cok9YWiHTbqIm26Ov
+     procedure_id : 1955259882707296708
+     type_code : 12
+     code : |1-
+      // Summary: Fills the processor with the multitouch data received for the beginning of a touch (including a "timestamp")
+      // Describe the input/output parameters of 'ProcessDownWithTime':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessDownWithTime (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real, <nTimestamp> is unsigned 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //	nTimestamp (unsigned 4-byte integer): Value of the "timestamp"
+      //
+      PROCEDURE ProcessDownWithTime(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimestamp is unsigned int)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessDownWithTime, nManipulatorID, rX, rY, nTimestamp)
+     type : 458752
+   -
+     name : ProcessMoveWithTime
+     internal_properties : CAAAAAgAAADcAceIdga7end3YiLuhWn/5RW6FLwh7bQpjan5ROsJXL36JSyCZg/7GidwzEKcWV3PMKMv3dZQdUcvDwKB8t9sl64S315efvq9LEHHczWDYgPpq5IEeZ9M3QPFHCAJPrjrmDX2UaL/iJ8hK0WFcTV7mRm5YdlCcIdTt+8E6n8kFwN5v1QPKgdC6mhfh0rErGMMXyMJbq2S8p/o6lEDXrI2y5Of
+     procedure_id : 1955259887002329634
+     type_code : 12
+     code : |1-
+      // Summary: // Summary: Fills the processor with the multitouch data received for the movement of a touch (including a "timestamp")
+      // Describe the input/output parameters of 'ProcessMoveWithTime':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessMoveWithTime (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real, <nTimestamp> is unsigned 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //	nTimestamp (unsigned 4-byte integer): Value of the "timestamp"
+      //
+      PROCEDURE ProcessMoveWithTime(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimestamp is unsigned int)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessMoveWithTime, nManipulatorID, rX, rY, nTimestamp)
+     type : 458752
+   -
+     name : ProcessUpWithTime
+     internal_properties : CAAAAAgAAADgPdP0AvLnVuv71mai+a0zobluuwjvZbKbfZvZ7k33/EcGRdz6oGMddC82NKgqw7EtEAfj6XCcc2k/nYLTpJ3cIRqSr3qENrxLOM/PRa+N3nkkaF/JstaFGk6SpbEWGyFi06prfmOG4RQIdJoSolqYtDhawvpnm5CInvhR/3DFsEo83Kkk0277g394ZC9ttW84A19NKunWtlNcXiXfcqYq36+j
+     procedure_id : 1955259887002395217
+     type_code : 12
+     code : |1-
+      // Summary: Fills the processor with the multitouch data received for the end of a touch (including a "timestamp")
+      // Describe the input/output parameters of 'ProcessUpWithTime':
+      //
+      // Syntax:
+      // [ <Result> = ] ProcessUpWithTime (<nManipulatorID> is unsigned 4-byte int, <rX> is 4-byte real, <rY> is 4-byte real, <nTimestamp> is unsigned 4-byte real)
+      //
+      // Parameters:
+      //	nManipulatorID (unsigned 4-byte integer): Identifier of the point of contact
+      //	rX (4-byte real): Associated X coordinate
+      //	rY (4-byte real): Associated Y coordinate
+      //	nTimestamp (unsigned 4-byte integer): Value of the "timestamp"
+      //
+      PROCEDURE ProcessUpWithTime(LOCAL nManipulatorID is unsigned int, LOCAL rX is 4-byte real, LOCAL rY is 4-byte real, LOCAL nTimestamp is unsigned int)
+      RESULT COMCallMethod(_this_, IManipulationProcessor_ProcessUpWithTime, nManipulatorID, rX, rY, nTimestamp)
+     type : 458752
+  properties :
+   -
+     name : MinimumScaleRotateRadius
+     identifier : 0x1b227ada005a7a01
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE MinimumScaleRotateRadius()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IManipulationProcessor_get_MinimumScaleRotateRadius, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE MinimumScaleRotateRadius(rValue is 4-byte real)
+         COMCallMethod(_this_, IManipulationProcessor_put_MinimumScaleRotateRadius, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : PivotPointX
+     identifier : 0x1b227ae2005b9b95
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PivotPointX()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IManipulationProcessor_get_PivotPointX, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PivotPointX(rValue is 4-byte real)
+         COMCallMethod(_this_, IManipulationProcessor_put_PivotPointX, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : PivotPointY
+     identifier : 0x1b227ae7005cae69
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PivotPointY()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IManipulationProcessor_get_PivotPointY, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PivotPointY(rValue is 4-byte real)
+         COMCallMethod(_this_, IManipulationProcessor_put_PivotPointY, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : PivotRadius
+     identifier : 0x1b227aee005dcb4c
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PivotRadius()
+         
+         rValue is 4-byte real
+         COMCallMethod(_this_, IManipulationProcessor_get_PivotRadius, &rValue)
+         
+         RESULT rValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PivotRadius(rValue is 4-byte real)
+         COMCallMethod(_this_, IManipulationProcessor_put_PivotRadius, rValue)
+        type : 2031616
+     template_refs : []
+   -
+     name : SupportedManipulations
+     identifier : 0x1b227af7005eebf5
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE SupportedManipulations()
+         
+         nValue is int
+         COMCallMethod(_this_, IManipulationProcessor_get_SupportedManipulations, &nValue)
+         
+         RESULT nValue
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE SupportedManipulations(nValue is int)
+         COMCallMethod(_this_, IManipulationProcessor_put_SupportedManipulations, nValue)
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x1b22768f0046b684
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

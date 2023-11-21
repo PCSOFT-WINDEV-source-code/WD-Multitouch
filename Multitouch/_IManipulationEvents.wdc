@@ -1,0 +1,517 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IManipulationEvents
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1b43790c02fd6a1b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACVX4NH9QYjxs+cj0ok74BJo/18zEiNE/vfEjOAWAWvP8FsbljDYFE9OPNzhAgm7b73GupgoHRK7DYVgDXIiHaMxbnMM01kYMAchroUfgowQiMRUGsCI25v+KDl/P+ZL5ytvb9JarCnGaW4aTI=
+     code : |1-
+      
+      // VTABLE of the class
+      VTABLE is Structure
+      	__vtblPointer		is system int
+      	__methodsPointers	is array fixed of 6 system int
+      END
+      
+      // IManipulationEvents class
+      // =======================
+      // (Implements the _IManipulationEvents COM interface)
+      // 
+      // Receives the events triggered by the IIntertiaProcessor and IManipulationProcessor interfaces
+      // This class can be overloaded to perform some specific operations according to the events received.
+      // This class is also linked point by point to the set of pIManipulationEvents procedures that manages the external calls toward this class.
+      //
+      IManipulationEvents is Class
+      	
+      PRIVATE
+      	__vtbl								is VTABLE											// VTABLE
+      	m_nRefCount							is unsigned int								// Reference counter
+      	m_nCookie							is unsigned int								// Connection cookie
+      	m_pclConnectionPoint					is IConnectionPoint dynamic						// Connection
+      	IID_IUnknown 						is WDGUID											// IID of IUnknown (used by QueryInterface)
+      	IID_IManipulationEvents				is WDGUID											// IID of IManipulationEvents (used by QueryInterface)
+      	
+      	// Callbacks
+      	m_sCallback_ManipulationStarted		is string											// Rebound functions
+      	m_sCallback_ManipulationDelta		is string
+      	m_sCallback_ManipulationCompleted	is string
+      	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1964546954960595483
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor()
+      
+      // Creates the necessary IIDs for QueryInterface
+      IID_IUnknown 				= [0x00000000, 0x0000, 0x0000, [0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46]]			// IID of IUnknown (used by QueryInterface)
+      IID_IManipulationEvents		= [0x4F62C8DA, 0x9C53, 0x4B22, [0x93, 0xDF, 0x92, 0x7A, 0x86, 0x2B, 0xBB, 0x03]]			// IID of IManipulationEvents (used by QueryInterface)
+      
+      // Saves the virtual pointers of methods	
+      // /!\ The order must not be modified
+      __vtbl.__methodsPointers[1] = &pIManipulationEvents.IManipulationEvents_QueryInterface
+      __vtbl.__methodsPointers[2] = &pIManipulationEvents.IManipulationEvents_AddRef
+      __vtbl.__methodsPointers[3] = &pIManipulationEvents.IManipulationEvents_Release
+      __vtbl.__methodsPointers[4] = &pIManipulationEvents.IManipulationEvents_ManipulationStarted
+      __vtbl.__methodsPointers[5] = &pIManipulationEvents.IManipulationEvents_ManipulationDelta
+      __vtbl.__methodsPointers[6] = &pIManipulationEvents.IManipulationEvents_ManipulationCompleted
+      __vtbl.__vtblPointer 		= &__vtbl.__methodsPointers
+      
+      // Saves the object toward the set of pIManipulationEvents procedures
+      __RegisterIManipulationEventsObject(object)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1964546954960661019
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+      
+      // Disconnection
+      Disconnect()
+     type : 655360
+   -
+     name : __vtblPtr
+     procedure_id : 1964546954960726555
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Returns the pointer of the virtual VTABLE of the class
+      PROCEDURE __vtblPtr()
+      RESULT &__vtbl
+     type : 458752
+   -
+     name : QueryInterface
+     procedure_id : 1964546954960792091
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing QueryInterface
+      PROCEDURE QueryInterface(riid is system int, ppvObject is system int)
+      
+      IID 	is WDGUID
+      nPtr	is system int = __vtblPtr()
+      
+      // Retrieves the requested IID
+      Transfer(&IID, riid, Dimension(IID))
+      
+      // Compares the IID to check whether the caller asks for an instance of IUnknown or IManipulationEvents
+      IF CompareIID(IID, IID_IUnknown) _OR_ CompareIID(IID, IID_IManipulationEvents) THEN
+      	
+      	// Adds a reference
+      	AddRef()
+      	
+      	// Return our pointer
+      	Transfer(ppvObject,  &nPtr, Dimension(ppvObject))		
+      ELSE
+      	
+      	// These IIDs are not supported, return E_NOINTERFACE
+      	RESULT E_NOINTERFACE
+      END
+      
+      // By default: everything is was successfully performed, returns S_OK (0)
+      RESULT S_OK
+     type : 458752
+   -
+     name : AddRef
+     procedure_id : 1964546954960857627
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing AddRef
+      PROCEDURE AddRef()
+      
+      // Increments the counter
+      m_nRefCount ++
+      
+      RESULT m_nRefCount
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAAAF1QeeguPgu9jlYY6nw6zEtnEdBZTjZ5ZF4FTvNgPflJJ/d4FVfLtknKYjD+E7Ki0PBlqOvZqRJ4pCCZEj0I20mMj2Rb+gCUTf5ECQ2LAXWP1eKyZfF86BDMO5GLWXldxmeSeWfiLUI3Q9+1cAbwDtarSDNcIa5R6krzE6E6W9dL9XIPkda5Xc3onYAFh/HhnE+wf+
+     procedure_id : 1964546954960923163
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Implementing Release
+      PROCEDURE Release()
+      
+      // Decrements the counter
+      m_nRefCount --
+      
+      RESULT m_nRefCount
+      
+      END:
+      
+      // Free the object
+      IF m_nRefCount = 0 THEN
+      	delete object
+      END
+     type : 458752
+   -
+     name : ManipulationCompleted
+     internal_properties : CAAAAAgAAAAs8RcRxgY1RLWvcHoQ50f7gznmhSQZkTgRUe25vAs95L0WNXhKBtM3Msu0dDJcLZ0nPGPzTaZ82f8TE/IBurvcB1JKG1YOSh6lkFVfw70H8hNLURgSZ7mGPwU70qbv4OZJOjv87/AJgun7GRODfydxP4Pv/z8woum1qfUqkE02nfFbjRrFQAnEbIoF1aAa9jbBlE60MZRzxZr95VhU4elmm+Nv
+     procedure_id : 1964546954960988699
+     type_code : 12
+     starred : true
+     code : |1-
+      // Summary: (EVENT - Overloadable) Manages the event received when a manipulation (IManipulationProcessor) or an inertia (IInertiaProcessor) is completed
+      // Description of input/output parameters of 'ManipulationCompleted':
+      //
+      // Syntax:
+      // [ <Result> = ] ManipulationCompleted (<x> is 4-byte real, <y> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> is 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): Initial X coordinate
+      //	y (4-byte real): Initial Y coordinate
+      //	rCumulativeTranslationX (4-byte real): Total horizontal move 
+      //	rCumulativeTranslationY (4-byte real): Total vertical move 
+      //	rCumulativeScale (4-byte real): Total enlargement
+      //	rCumulativeExpansion (4-byte real): Total expansion
+      //	rCumulativeRotation (4-byte real): Total rotation
+      // Return value:
+      // 	integer: S_OK if the process of the event was successful, S_FALSE if the process was not successful. In the other cases, it is better to return E_NOTIMPL
+      //
+      PROCEDURE VIRTUAL ManipulationCompleted(x is 4-byte real <useful>, y is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      bReturn is boolean
+      
+      // If a procedure was specified
+      IF m_sCallback_ManipulationCompleted <> "" THEN
+      	
+      	WHEN EXCEPTION IN
+      		
+      		// Runs the procedure
+      		bReturn = ExecuteProcess(m_sCallback_ManipulationCompleted, trtProcedure, MyParameters)
+      	DO
+      		bReturn = False
+      	END
+      	
+      	// According to the return
+      	IF bReturn THEN
+      		RESULT S_OK
+      	ELSE
+      		RESULT S_FALSE
+      	END
+      	
+      END
+      
+      RESULT E_NOTIMPL	
+     type : 458752
+   -
+     name : ManipulationDelta
+     internal_properties : CAAAAAgAAADHG8E9vB2OlbCt7+6jSwwsaq1l/949aQyNWHY3qiMfNB6L41+DSu0WQMI5X0WXql0bGh6M41hn9R6e11EfdKWkQPjCc50ux1JvrGVN85VKfQJ7DDdqDMtE40a+fZDsgCnTTswT3RPV4te0BHB/KCOyr1EgwhHLlhHLdoKb+o7UDVigvZ6k7C63pZxJsQ+wOb52Ncm8
+     procedure_id : 1964546954961054235
+     type_code : 12
+     starred : true
+     code : |1-
+      // Summary: (EVENT - Overloadable) Manages the event triggered when a manipulation data changes
+      // Description of input/output parameters of 'ManipulationDelta':
+      //
+      // Syntax:
+      //[ <Result> = ] ManipulationDelta (<x> is 4-byte real, <y> is 4-byte real, <rTranslationDeltaX> is 4-byte real, <rTranslationDeltaY> is 4-byte real, <rScaleDelta> is 4-byte real, <rExpansionDelta> is 4-byte real, <rRotationDelta> is 4-byte real, <rCumulativeTranslationX> is 4-byte real, <rCumulativeTranslationY> is 4-byte real, <rCumulativeScale> is 4-byte real, <rCumulativeExpansion> is 4-byte real, <rCumulativeRotation> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): Initial X coordinate
+      //	y (4-byte real): Initial Y coordinate
+      //	rTranslationDeltaX (4-byte real): Horizontal move since the last call
+      //	rTranslationDeltaY (4-byte real): Vertical move since the last call
+      //	rScaleDelta (4-byte real): Enlargement since the last call
+      //	rExpansionDelta (4-byte real): Expansion since the last call
+      //	rRotationDelta (4-byte real): Rotation since the last call
+      //	rCumulativeTranslationX (4-byte real): Total horizontal move 
+      //	rCumulativeTranslationY (4-byte real): Total vertical move 
+      //	rCumulativeScale (4-byte real): Total enlargement
+      //	rCumulativeExpansion (4-byte real): Total expansion
+      //	rCumulativeRotation (4-byte real): Total rotation
+      // Return value:
+      // 	integer:  S_OK if the process of the event was successful, S_FALSE if the process was not successful. In the other cases, it is better to return E_NOTIMPL
+      //
+      PROCEDURE ManipulationDelta(x is 4-byte real <useful>, y is 4-byte real <useful>, rTranslationDeltaX is 4-byte real <useful>, rTranslationDeltaY is 4-byte real <useful>, rScaleDelta is 4-byte real <useful>, rExpansionDelta is 4-byte real <useful>, rRotationDelta is 4-byte real <useful>, rCumulativeTranslationX is 4-byte real <useful>, rCumulativeTranslationY is 4-byte real <useful>, rCumulativeScale is 4-byte real <useful>, rCumulativeExpansion is 4-byte real <useful>, rCumulativeRotation is 4-byte real <useful>)
+      
+      bReturn is boolean
+      
+      // If a procedure was specified
+      IF m_sCallback_ManipulationDelta <> "" THEN
+      	
+      	WHEN EXCEPTION IN
+      		
+      		// Runs the procedure
+      		bReturn = ExecuteProcess(m_sCallback_ManipulationDelta, trtProcedure, MyParameters)
+      	DO
+      		bReturn = False
+      	END
+      	
+      	// According to the return
+      	IF bReturn THEN
+      		RESULT S_OK
+      	ELSE
+      		RESULT S_FALSE
+      	END
+      	
+      END
+      
+      RESULT E_NOTIMPL
+     type : 458752
+   -
+     name : ManipulationStarted
+     internal_properties : CAAAAAgAAADHG8E9vB2OlbCt7+6jSwwsaq1l/949aQyNWHY3qiMfNB6L41+DSu0WQMI5X0WXql0bGh6M41hn9R6e11EfdKWkQPjCc50ux1JvrGVN85VKfQJ7DDdqDMtE40a+fZDsgCnTTswT3RPV4te0BHB/KCOyr1EgwhHLlhHLdoKb+o7UDVigvZ6k7C63pZxJsQ+wOb52Ncm8
+     procedure_id : 1964546954961119771
+     type_code : 12
+     starred : true
+     code : |1-
+      // Summary: (EVENEMENT - Overloadable) Manages the event triggered when a manipulation or an inertia starts
+      // Description of input/output parameters of 'ManipulationStarted':
+      //
+      // Syntax:
+      // [ <Result> = ] ManipulationStarted (<x> is 4-byte real, <y> is 4-byte real)
+      //
+      // Parameters:
+      //	x (4-byte real): Initial X coordinate
+      //	y (4-byte real): Initial Y coordinate
+      // Return value:
+      // 	integer:  S_OK if the process of the event was successful, S_FALSE if the process was not successful. In the other cases, it is better to return E_NOTIMPL
+      //
+      PROCEDURE ManipulationStarted(x is 4-byte real <useful>, y is 4-byte real <useful>)
+      
+      bReturn is boolean
+      
+      // If a procedure was specified
+      IF m_sCallback_ManipulationStarted <> "" THEN
+      	
+      	WHEN EXCEPTION IN
+      		
+      		// Runs the procedure
+      		bReturn = ExecuteProcess(m_sCallback_ManipulationStarted, trtProcedure, MyParameters)
+      	DO
+      		bReturn = False
+      	END
+      	
+      	// According to the return
+      	IF bReturn THEN
+      		RESULT S_OK
+      	ELSE
+      		RESULT S_FALSE
+      	END
+      	
+      END
+      
+      RESULT E_NOTIMPL
+     type : 458752
+   -
+     name : Connected
+     procedure_id : 1964546954961185307
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: (Internal) Establishes the connection with the object
+      PROCEDURE Connected()
+      
+      HRESULT is system int
+      
+      // If the connection point was created
+      IF m_pclConnectionPoint <> Null  THEN
+      	
+      	// Establishes the connection
+      	HRESULT = m_pclConnectionPoint.Advise(__vtblPtr(), &m_nCookie)
+      	
+      ELSE
+      	
+      	// No connection was created
+      	HRESULT = E_NOINTERFACE
+      END
+      
+      RESULT HRESULT
+     type : 458752
+   -
+     name : Disconnect
+     procedure_id : 1964546954961250843
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: (Internal) Cuts the connection with the object
+      PROCEDURE Disconnect()
+      
+      HRESULT is system int
+      
+      // If the connection point was created
+      IF m_pclConnectionPoint <> Null THEN
+      	
+      	// If the connection was established
+      	IF m_nCookie <> 0 THEN
+      		
+      		// Ends the connection
+      		HRESULT = m_pclConnectionPoint.Unadvise(m_nCookie)
+      	ELSE
+      		
+      		// No connection was established
+      		HRESULT = S_FALSE
+      	END
+      ELSE
+      	
+      	// No connection was prepared
+      	HRESULT = E_NOINTERFACE
+      END
+      
+      RESULT HRESULT
+     type : 458752
+   -
+     name : CompareIID
+     internal_properties : CAAAAAgAAACarGqw1G5dYHI38AhQsOq/8JC1yCP9neQlVArvL7HciOQ5TVJCdd//+9kHCB3CsKJ5JAy9k7j1G97Ef7KtkEhCH9FVeSThEA3pgkb2RBOvNZfJgACLmppqURKDFG92d31KXHQ60gMCemuyo7e+mGCMVG/cn0jJVT9RmuMEHxxd5e3Mo0vLDg8tKxyUoB7PLv7fo1ILOw==
+     procedure_id : 1964546954961316379
+     type_code : 12
+     group : 2
+     code : |1-
+      // Summary: Compares two IIDs
+      // Syntax:
+      //[ <Result> = ] CompareIID (<IID1>, <IID2>)
+      //
+      // Parameters:
+      //	IID1: First IID to compare
+      //	IID2: Second IID to compare
+      // Return value:
+      // 	boolean: True if the two IIDs are identical, False otherwise
+      
+      PROCEDURE PRIVATE CompareIID(IID1 is WDGUID, IID2 is WDGUID)
+      
+      bIIDIdentical 	is boolean
+      bufIID1 		is buffers on 16
+      bufIID2 		is buffers on 16
+      
+      // Copies the IID into the buffers
+      Transfer(&bufIID1, &IID1, 16)
+      Transfer(&bufIID2, &IID2, 16)
+      
+      // Compare
+      bIIDIdentical = (bufIID1 = bufIID2)
+      
+      RESULT bIIDIdentical
+     type : 458752
+  properties :
+   -
+     name : Connection
+     identifier : 0x1b43790c02fe6a1b
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE connection()
+         RESULT m_pclConnectionPoint
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE connection(ppv is system int)
+         
+         // If the connection is canceled
+         IF ppv = Null THEN
+         	
+         	// If the object is valid
+         	IF m_pclConnectionPoint <> Null THEN
+         		
+         		// Disconnection
+         		Disconnect()
+         		
+         		// Frees the object
+         		m_pclConnectionPoint.Release()
+         		m_pclConnectionPoint <- Null
+         	END
+         ELSE
+         	
+         	// Keeps the pointer
+         	m_pclConnectionPoint = new IConnectionPoint(ppv)
+         END
+        type : 2031616
+     template_refs : []
+   -
+     name : Cookie
+     identifier : 0x1b43790c02ff6a1b
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE Cookie()
+         RESULT m_nCookie
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+   -
+     name : OnManipulationStart
+     identifier : 0x1b437b7004f8bdb7
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE OnManipulationStart()
+         RESULT m_sCallback_ManipulationStarted
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE OnManipulationStart(sProcedureWL is string)
+         
+         // Stores the procedure 
+         m_sCallback_ManipulationStarted = sProcedureWL
+        type : 2031616
+     template_refs : []
+   -
+     name : OnManipulationEnd
+     identifier : 0x1b437b9404f94a1d
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE OnManipulationEnd()
+         RESULT m_sCallback_ManipulationCompleted
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE OnManipulationEnd(sProcedureWL is string)
+         
+         // Stores the procedure
+         m_sCallback_ManipulationCompleted = sProcedureWL
+        type : 2031616
+     template_refs : []
+   -
+     name : OnManipulationModification
+     identifier : 0x1b437bcc04fa2761
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE OnManipulationModification()
+         RESULT m_sCallback_ManipulationDelta
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE OnManipulationModification(sProcedureWL is string)
+         
+         // Stores the procedure
+         m_sCallback_ManipulationDelta = sProcedureWL
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x1b226a3f001b9d68
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

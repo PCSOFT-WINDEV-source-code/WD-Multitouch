@@ -1,0 +1,152 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pIManipulationEvents
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1b226b460025a267
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      WDGUID is Structure
+      	Data1	is 4-byte unsigned int
+      	Data2	is 2-byte unsigned int
+      	Data3	is 2-byte unsigned int
+      	Data4	is array fixed of 8 1-byte unsigned int
+      END
+      
+      PRIVATE
+      
+      // List of declared IManipulationEvents objects
+      _IManipulationsEventsManager	is ASSOCIATIVE ARRAY (*, *, wlInt) of IManipulationEvents dynamic
+      
+      // The procedures available in this set must not be called directly.
+      // It is the rebound methods when a COM C++ object tries to call a WL object via a virtual VTABLE (the _this_ parameter contains the address of the _
+      // VTABLE used to identify the initial object)
+     type : 720896
+   -
+     code : |1-
+      
+     type : 720898
+  procedures :
+   -
+     name : IManipulationEvents_QueryInterface
+     procedure_id : 1955243149511535686
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_QueryInterface(_this_ is system int, riid is system int, ppvObject is system int)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT E_NOINTERFACE
+      
+      RESULT pclIMEvObj.QueryInterface(riid, ppvObject)
+     type : 458752
+   -
+     name : IManipulationEvents_AddRef
+     procedure_id : 1955243170986442819
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_AddRef(_this_ is system int)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT -1
+      
+      RESULT pclIMEvObj.AddRef()
+     type : 458752
+   -
+     name : IManipulationEvents_Release
+     procedure_id : 1955243183871413753
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_Release(_this_ is system int)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT -1
+      
+      RESULT pclIMEvObj.Release()
+     type : 458752
+   -
+     name : IManipulationEvents_ManipulationStarted
+     procedure_id : 1955243205346320184
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_ManipulationStarted(_this_ is system int, x is 4-byte real, y is 4-byte real)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT E_NOTIMPL
+      
+      RESULT pclIMEvObj.ManipulationStarted(x, y)
+     type : 458752
+   -
+     name : IManipulationEvents_ManipulationDelta
+     procedure_id : 1955243222526258773
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_ManipulationDelta(_this_ is system int, x is 4-byte real, y is 4-byte real, translationDeltaX is 4-byte real, translationDeltaY is 4-byte real, scaleDelta is 4-byte real, expansionDelta is 4-byte real, rotationDelta is 4-byte real, cumulativeTranslationX is 4-byte real, cumulativeTranslationY is 4-byte real, cumulativeScale is 4-byte real, cumulativeExpansion is 4-byte real, cumulativeRotation is 4-byte real)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT E_NOTIMPL
+      
+      RESULT pclIMEvObj.ManipulationDelta(x, y, translationDeltaX, translationDeltaY, scaleDelta, expansionDelta, rotationDelta, cumulativeTranslationX, cumulativeTranslationY, cumulativeScale, cumulativeExpansion, cumulativeRotation)
+     type : 458752
+   -
+     name : IManipulationEvents_ManipulationCompleted
+     procedure_id : 1955243239706132761
+     type_code : 15
+     group : 2
+     code : |1-
+      PROCEDURE RESTRICTED IManipulationEvents_ManipulationCompleted(_this_ is system int, x is 4-byte real, y is 4-byte real, cumulativeTranslationX is 4-byte real, cumulativeTranslationY is 4-byte real, cumulativeScale is 4-byte real, cumulativeExpansion is 4-byte real, cumulativeRotation is 4-byte real)
+      
+      pclIMEvObj	is IManipulationEvents dynamic = _IManipulationsEventsManager[_this_]
+      
+      // Return an error if the requested object does not exist
+      IF pclIMEvObj = Null THEN RESULT E_NOTIMPL
+      
+      RESULT pclIMEvObj.ManipulationCompleted(x, y, cumulativeTranslationX, cumulativeTranslationY, cumulativeScale, cumulativeExpansion, cumulativeRotation)
+     type : 458752
+   -
+     name : __RegisterIManipulationEventsObject
+     procedure_id : 1955243329900532574
+     type_code : 15
+     group : 4
+     code : |1-
+      // Summary: Saves a IManipulationEvents object
+      PROCEDURE RESTRICTED __RegisterIManipulationEventsObject(pclObject is IManipulationEvents dynamic)
+      
+      // Stores the instance associated with the pointer
+      IF pclObject <> Null THEN _IManipulationsEventsManager[pclObject:__vtblPtr()] = pclObject
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x1b226b3e002383fe
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
